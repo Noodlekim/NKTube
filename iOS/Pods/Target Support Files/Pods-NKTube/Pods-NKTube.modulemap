@@ -1,0 +1,6 @@
+framework module Pods_NKTube {
+  umbrella header "Pods-NKTube-umbrella.h"
+
+  export *
+  module * { export * }
+}

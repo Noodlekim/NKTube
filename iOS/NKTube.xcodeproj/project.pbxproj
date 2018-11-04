@@ -1,0 +1,2171 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00DCE9C7FA78B893391D1FA7 /* Pods_NKTube.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771226708172698D556ECA2E /* Pods_NKTube.framework */; };
+		030916751D104D6F00EB57AF /* NKVideoDescriptionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030916741D104D6F00EB57AF /* NKVideoDescriptionView.swift */; };
+		030ADEDB1D1ABEF70004FCA1 /* NKSuperVideoControlViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030ADEDA1D1ABEF60004FCA1 /* NKSuperVideoControlViewController.swift */; };
+		0310BF151CF083EE00B9013F /* NKTube.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0310BF101CF083EE00B9013F /* NKTube.xcdatamodeld */; };
+		0310BF1A1CF09A3C00B9013F /* NKSplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310BF181CF09A3C00B9013F /* NKSplashViewController.swift */; };
+		0310BF1E1CF0A59A00B9013F /* Intro.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0310BF1C1CF0A59A00B9013F /* Intro.storyboard */; };
+		031656811CBA2680005D957C /* NKChannelDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 031656801CBA2680005D957C /* NKChannelDetailViewController.swift */; };
+		0322D68B1C69F57200AA92ED /* NKCoreDataCachedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D68A1C69F57200AA92ED /* NKCoreDataCachedVideo.swift */; };
+		0322D68E1C6A05A800AA92ED /* NKAVAudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D68D1C6A05A800AA92ED /* NKAVAudioManager.swift */; };
+		0322D6911C75D18900AA92ED /* NKPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D6901C75D18900AA92ED /* NKPlayManager.swift */; };
+		0322D6961C7C7A8C00AA92ED /* NKUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D6951C7C7A8C00AA92ED /* NKUtility.swift */; };
+		0322D69C1C7D279500AA92ED /* NKDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D69A1C7D279500AA92ED /* NKDownloadManager.swift */; };
+		0322D69D1C7D279500AA92ED /* NKDownloadOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322D69B1C7D279500AA92ED /* NKDownloadOperation.swift */; };
+		03270A1D1E0E6CD00029751F /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03270A1C1E0E6CD00029751F /* Constants.swift */; };
+		0329C2B11C91C11700904299 /* NKGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C2B01C91C11700904299 /* NKGroupView.swift */; };
+		0329C2B31C91C13000904299 /* NKGroupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329C2B21C91C13000904299 /* NKGroupView.xib */; };
+		0329C2B71C91CE3300904299 /* GroupTitle+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C2B51C91CE3300904299 /* GroupTitle+CoreDataProperties.swift */; };
+		0329C2B81C91CE3300904299 /* GroupTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C2B61C91CE3300904299 /* GroupTitle.swift */; };
+		0329C2BA1C943B5200904299 /* NKCustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0329C2B91C943B5200904299 /* NKCustomTextField.swift */; };
+		0329C2BC1C943B6700904299 /* NKCustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329C2BB1C943B6700904299 /* NKCustomTextField.xib */; };
+		033059B41CAFC47800786CC9 /* NKMyMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059B31CAFC47800786CC9 /* NKMyMenuMainViewController.swift */; };
+		033059B71CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */; };
+		033059C01CB0019C00786CC9 /* NKYouTubeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */; };
+		03345E211D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03345E201D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift */; };
+		033CCCAD1C82C94D00F7BF93 /* NKCachedVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CCCAB1C82C94D00F7BF93 /* NKCachedVideoListCell.swift */; };
+		033CCCAE1C82C94D00F7BF93 /* NKCachedVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033CCCAC1C82C94D00F7BF93 /* NKCachedVideoListCell.xib */; };
+		033CCCB01C83253900F7BF93 /* NKGestureManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CCCAF1C83253900F7BF93 /* NKGestureManager.swift */; };
+		033DF1051D14EFE600E28984 /* NKStatusButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033DF1041D14EFE600E28984 /* NKStatusButton.swift */; };
+		0341EEE01C66D53700527023 /* NKFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341EEDF1C66D53700527023 /* NKFileManager.swift */; };
+		0341EEE41C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341EEE21C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift */; };
+		0341EEE51C66EC8E00527023 /* CachedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341EEE31C66EC8E00527023 /* CachedVideo.swift */; };
+		0341EEE71C66ECCE00527023 /* NKCoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341EEE61C66ECCE00527023 /* NKCoreDataManager.swift */; };
+		0341EEE91C67226B00527023 /* NKSuperCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0341EEE81C67226B00527023 /* NKSuperCoreData.swift */; };
+		034329CD1D17BB63007C4C77 /* NKStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034329CC1D17BB63007C4C77 /* NKStyle.swift */; };
+		034329D91D2D19AA007C4C77 /* NKSplitGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034329D81D2D19AA007C4C77 /* NKSplitGroupCell.swift */; };
+		0343799D1CF9590300A767E0 /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0343799C1CF9590300A767E0 /* CoreSpotlight.framework */; };
+		0343799F1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0343799E1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift */; };
+		034379A11CFAA18D00A767E0 /* NKPlayVideoLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 034379A01CFAA18D00A767E0 /* NKPlayVideoLoadingView.xib */; };
+		034379A31CFAC21200A767E0 /* neko.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 034379A21CFAC21200A767E0 /* neko.mp3 */; };
+		034379A51CFAC24A00A767E0 /* densi.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 034379A41CFAC24A00A767E0 /* densi.mp3 */; };
+		034379AA1CFB367700A767E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 034379A91CFB367700A767E0 /* GoogleService-Info.plist */; };
+		0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */; };
+		035F3D661D39B27000B3635D /* NKMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */; };
+		0363EF4A1CF14C3600FFA759 /* NKOtherMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */; };
+		036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */; };
+		036B8E9E1CEACC6700FDE9E2 /* NKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */; };
+		036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */; };
+		036CB1781D04104D00E94739 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 036CB1771D04104D00E94739 /* Images.xcassets */; };
+		036CB17B1D042CF300E94739 /* private.pem in Resources */ = {isa = PBXBuildFile; fileRef = 036CB1791D042CF300E94739 /* private.pem */; };
+		036CB17C1D042CF300E94739 /* public.pem in Resources */ = {isa = PBXBuildFile; fileRef = 036CB17A1D042CF300E94739 /* public.pem */; };
+		0379EBC11C4E434100C8AB13 /* NKMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0379EBC01C4E434100C8AB13 /* NKMacro.swift */; };
+		037E95E21D3E639E007B272C /* NKAboutThisAppViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 037E95E11D3E639E007B272C /* NKAboutThisAppViewController.swift */; };
+		0387DBC01D0B19CD0023D5F3 /* NKSearchAdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0387DBBE1D0B19CD0023D5F3 /* NKSearchAdCell.swift */; };
+		0387DBC11D0B19CD0023D5F3 /* NKSearchAdCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0387DBBF1D0B19CD0023D5F3 /* NKSearchAdCell.xib */; };
+		038F144B1CD91697008EE2D7 /* NKRelatedVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F144A1CD91697008EE2D7 /* NKRelatedVideoViewController.swift */; };
+		038F144D1CD99F48008EE2D7 /* VideoProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F144C1CD99F48008EE2D7 /* VideoProtocol.swift */; };
+		038F14501CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F144F1CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift */; };
+		038F14521CDED937008EE2D7 /* NKLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14511CDED937008EE2D7 /* NKLabel.swift */; };
+		038F14541CDF0D97008EE2D7 /* NKNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14531CDF0D97008EE2D7 /* NKNotification.swift */; };
+		038F14561CDF8CB7008EE2D7 /* NKDownloadListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14551CDF8CB7008EE2D7 /* NKDownloadListCell.swift */; };
+		038F145A1CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14591CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift */; };
+		038F145C1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F145B1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift */; };
+		038F145E1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F145D1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift */; };
+		038F14601CE4EC01008EE2D7 /* NKSelectionGroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F145F1CE4EC01008EE2D7 /* NKSelectionGroupCell.swift */; };
+		038F14621CE628A5008EE2D7 /* NKNewGroupHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14611CE628A5008EE2D7 /* NKNewGroupHeaderView.swift */; };
+		038F14641CE6B163008EE2D7 /* NKInputAccessary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14631CE6B163008EE2D7 /* NKInputAccessary.swift */; };
+		038F14661CE6B171008EE2D7 /* NKInputAccessary.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F14651CE6B171008EE2D7 /* NKInputAccessary.xib */; };
+		038F14681CE74A81008EE2D7 /* NKAlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F14671CE74A81008EE2D7 /* NKAlertView.swift */; };
+		038F146A1CE74A91008EE2D7 /* NKAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F14691CE74A91008EE2D7 /* NKAlertView.xib */; };
+		038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */; };
+		03A8A8311D22CAEE00944EEF /* NKSuperVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */; };
+		03A8AA851D25DAB300944EEF /* Flurry_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */; };
+		03A8AA881D25DD6500944EEF /* NKFlurryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */; };
+		03A8AA8A1D268B9F00944EEF /* NKNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */; };
+		03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8B1D29075100944EEF /* NKDesign.swift */; };
+		03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */; };
+		03A8AA901D2AAC3100944EEF /* NKDownloadBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8F1D2AAC3100944EEF /* NKDownloadBadgeViewController.swift */; };
+		03B75C52218D125C00398E1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B75C51218D125C00398E1B /* AudioToolbox.framework */; };
+		03BF095E1C620708000B3CCB /* NKVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF095C1C620708000B3CCB /* NKVideoListCell.swift */; };
+		03BF095F1C620708000B3CCB /* NKVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BF095D1C620708000B3CCB /* NKVideoListCell.xib */; };
+		03BF09611C6247B2000B3CCB /* NKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF09601C6247B2000B3CCB /* NKExtension.swift */; };
+		03BF09641C635A47000B3CCB /* NKUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF09631C635A46000B3CCB /* NKUserInfo.swift */; };
+		03C4A8171CB156DB008E67D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4A8151CB156DB008E67D1 /* Main.storyboard */; };
+		03C4A8221CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */; };
+		03C4A8231CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */; };
+		03C4A8241CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */; };
+		03C4A8B21CB7FCDC008E67D1 /* MABYT3_Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */; };
+		03C4A8B31CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */; };
+		03C4A8B41CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */; };
+		03C4A8B51CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */; };
+		03C4A8B61CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */; };
+		03C4A8B71CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */; };
+		03C4A8B81CB7FCDC008E67D1 /* MABYT3_APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */; };
+		03C4A8B91CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */; };
+		03C4A8BA1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */; };
+		03C4A8BB1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */; };
+		03C4A8BC1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */; };
+		03C4A8BD1CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */; };
+		03C4A8BE1CB7FCDC008E67D1 /* MABYT3_PropertyURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */; };
+		03C4A8BF1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */; };
+		03C4A8C01CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */; };
+		03C4A8C11CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */; };
+		03C4A8C21CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */; };
+		03C4A8C31CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */; };
+		03C4A8C41CB7FCDC008E67D1 /* MABYT3_Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */; };
+		03C4A8C51CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */; };
+		03C4A8C61CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */; };
+		03C4A8C71CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */; };
+		03C4A8C81CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */; };
+		03C4A8C91CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */; };
+		03C4A8CA1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */; };
+		03C4A8CB1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */; };
+		03C4A8CC1CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */; };
+		03C4A8CD1CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */; };
+		03C4A8CE1CB7FCDC008E67D1 /* MAB_GDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */; };
+		03C4A8CF1CB7FCDC008E67D1 /* MAB_GLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */; };
+		03C4A8D01CB7FCDC008E67D1 /* MABYT3_ContentRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */; };
+		03C4A8D11CB7FCDC008E67D1 /* MABYT3_GuideCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */; };
+		03C4A8D21CB7FCDC008E67D1 /* MABYT3_Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */; };
+		03C4A8D31CB7FCDC008E67D1 /* MABYT3_Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */; };
+		03C4A8D41CB7FCDC008E67D1 /* MABYT3_Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */; };
+		03C4A8D51CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */; };
+		03C4A8D61CB7FCDC008E67D1 /* MABYT3_ResourceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */; };
+		03C4A8D71CB7FCDC008E67D1 /* MABYT3_Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */; };
+		03C4A8D81CB7FCDC008E67D1 /* MABYT3_VideoCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */; };
+		03C4A8D91CB7FCDC008E67D1 /* MABYT3_PlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */; };
+		03C4A8DA1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */; };
+		03C4A8DB1CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */; };
+		03C4A8DC1CB7FCDC008E67D1 /* MABYT3_PlayListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */; };
+		03C4A8DD1CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */; };
+		03C4A8DE1CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */; };
+		03C4A8DF1CB7FCDC008E67D1 /* MABYT3_SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */; };
+		03C4A8E01CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */; };
+		03C4A8E11CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */; };
+		03C4A8E21CB7FCDC008E67D1 /* MABYT3_Subscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */; };
+		03C4A8E31CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */; };
+		03C4A8E41CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */; };
+		03C4A8E51CB7FCDC008E67D1 /* MABYT3_AudioStreams.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */; };
+		03C4A8E61CB7FCDC008E67D1 /* MABYT3_Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */; };
+		03C4A8E71CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */; };
+		03C4A8E81CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */; };
+		03C4A8E91CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */; };
+		03C4A8EA1CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */; };
+		03C4A8EB1CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */; };
+		03C4A8EC1CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */; };
+		03C4A8ED1CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */; };
+		03C4A8EE1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */; };
+		03C4A8EF1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */; };
+		03C4A8F01CB7FCDC008E67D1 /* MABYT3_VideoStreams.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */; };
+		03C4A8F11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */; };
+		03C4A8F31CB97158008E67D1 /* NKChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */; };
+		03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */; };
+		03C4A8F71CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */; };
+		03D83A291D1E085B006B123E /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03D83A281D1E085B006B123E /* FontAwesome.otf */; };
+		03D83A2B1D1FF62D006B123E /* NKOrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */; };
+		03D9F9741C960081001711A6 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D9F9721C960081001711A6 /* Fabric.framework */; };
+		03D9F9751C960081001711A6 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03D9F9731C960081001711A6 /* Crashlytics.framework */; };
+		03D9F9781C96FEDF001711A6 /* NKSearchResultCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D9F9761C96FEDF001711A6 /* NKSearchResultCell.swift */; };
+		03DBFEB21CD869B10044931E /* NKChannelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBFEB11CD869B10044931E /* NKChannelCell.swift */; };
+		03DBFEB41CD87F920044931E /* NKChannelDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBFEB31CD87F920044931E /* NKChannelDetailCell.swift */; };
+		03DBFEB61CD889AD0044931E /* NKFavoriteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBFEB51CD889AD0044931E /* NKFavoriteCell.swift */; };
+		03DBFEB81CD88B9C0044931E /* NKWatchAfterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBFEB71CD88B9C0044931E /* NKWatchAfterCell.swift */; };
+		03DBFEBA1CD8AE460044931E /* NKYouTubeMenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DBFEB91CD8AE460044931E /* NKYouTubeMenuCell.swift */; };
+		03DC945C1E0DF49A008ACFA0 /* BottomMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03DC945B1E0DF49A008ACFA0 /* BottomMenuViewController.swift */; };
+		03E1841E1C5F95AB00529D98 /* NKVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E1841D1C5F95AB00529D98 /* NKVideo.swift */; };
+		03E184251C5F97EA00529D98 /* NKParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E184241C5F97EA00529D98 /* NKParam.swift */; };
+		03F0C0031D31E396003B2F40 /* NKSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */; };
+		03F0C0051D322CDB003B2F40 /* NKSettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0041D322CDB003B2F40 /* NKSettingListCell.swift */; };
+		03F0C00A1D33E8B5003B2F40 /* NKProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */; };
+		03F0C00C1D33F12F003B2F40 /* NKFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */; };
+		03F26B331D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */; };
+		03F85B271C38F2880026F61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F85B261C38F2880026F61E /* AppDelegate.swift */; };
+		03F85B311C38F2880026F61E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 03F85B301C38F2880026F61E /* Assets.xcassets */; };
+		03F85B341C38F2880026F61E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03F85B321C38F2880026F61E /* LaunchScreen.storyboard */; };
+		03F85B3F1C38F2880026F61E /* NKTubeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F85B3E1C38F2880026F61E /* NKTubeTests.swift */; };
+		03F85B4A1C38F2880026F61E /* NKTubeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F85B491C38F2880026F61E /* NKTubeUITests.swift */; };
+		03FDEAB81C4A01CC0059EC3D /* NKSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAB61C4A01CC0059EC3D /* NKSearchViewController.swift */; };
+		03FDEABC1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEABA1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift */; };
+		03FDEABF1C4A053B0059EC3D /* NKMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEABE1C4A053B0059EC3D /* NKMainViewController.swift */; };
+		03FDEAC21C4A0DC80059EC3D /* NKMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */; };
+		03FDEAC51C4AEFC90059EC3D /* NKYouTubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */; };
+		927000CEC9B339B9FBFDE884 /* Pods_NKTubeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F39AB3E9B4FB91D6A639515A /* Pods_NKTubeTests.framework */; };
+		DEF562A40D6180C35DC6AE04 /* Pods_NKTubeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84EC33A9E530D46A3800E3A7 /* Pods_NKTubeUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		03F85B3B1C38F2880026F61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F85B1B1C38F2880026F61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F85B221C38F2880026F61E;
+			remoteInfo = NKTube;
+		};
+		03F85B461C38F2880026F61E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 03F85B1B1C38F2880026F61E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 03F85B221C38F2880026F61E;
+			remoteInfo = NKTube;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		030916741D104D6F00EB57AF /* NKVideoDescriptionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoDescriptionView.swift; path = View/Parts/NKVideoDescriptionView.swift; sourceTree = "<group>"; };
+		030ADEDA1D1ABEF60004FCA1 /* NKSuperVideoControlViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSuperVideoControlViewController.swift; path = Controller/MainScreen/NKSuperVideoControlViewController.swift; sourceTree = "<group>"; };
+		0310BF111CF083EE00B9013F /* NKTube.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube.xcdatamodel; sourceTree = "<group>"; };
+		0310BF121CF083EE00B9013F /* NKTube0.1.1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.1.xcdatamodel; sourceTree = "<group>"; };
+		0310BF131CF083EE00B9013F /* NKTube0.1.2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.2.xcdatamodel; sourceTree = "<group>"; };
+		0310BF141CF083EE00B9013F /* NKTube0.1.3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.3.xcdatamodel; sourceTree = "<group>"; };
+		0310BF181CF09A3C00B9013F /* NKSplashViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKSplashViewController.swift; sourceTree = "<group>"; };
+		0310BF1D1CF0A59A00B9013F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Intro.storyboard; sourceTree = "<group>"; };
+		031656801CBA2680005D957C /* NKChannelDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelDetailViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Channel/NKChannelDetailViewController.swift; sourceTree = "<group>"; };
+		0322D68A1C69F57200AA92ED /* NKCoreDataCachedVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCoreDataCachedVideo.swift; path = Model/CoreData/NKCoreDataCachedVideo.swift; sourceTree = "<group>"; };
+		0322D68D1C6A05A800AA92ED /* NKAVAudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAVAudioManager.swift; path = Controller/AVAudio/NKAVAudioManager.swift; sourceTree = "<group>"; };
+		0322D6901C75D18900AA92ED /* NKPlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKPlayManager.swift; path = Utility/NKPlayManager.swift; sourceTree = "<group>"; };
+		0322D6951C7C7A8C00AA92ED /* NKUtility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKUtility.swift; path = Utility/NKUtility.swift; sourceTree = "<group>"; };
+		0322D69A1C7D279500AA92ED /* NKDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKDownloadManager.swift; sourceTree = "<group>"; };
+		0322D69B1C7D279500AA92ED /* NKDownloadOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NKDownloadOperation.swift; sourceTree = "<group>"; };
+		03270A1C1E0E6CD00029751F /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		0329C2B01C91C11700904299 /* NKGroupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKGroupView.swift; path = View/Parts/NKGroupView.swift; sourceTree = "<group>"; };
+		0329C2B21C91C13000904299 /* NKGroupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKGroupView.xib; path = View/Parts/NKGroupView.xib; sourceTree = "<group>"; };
+		0329C2B51C91CE3300904299 /* GroupTitle+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "GroupTitle+CoreDataProperties.swift"; path = "Model/CoreData/GroupTitle+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0329C2B61C91CE3300904299 /* GroupTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupTitle.swift; path = Model/CoreData/GroupTitle.swift; sourceTree = "<group>"; };
+		0329C2B91C943B5200904299 /* NKCustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCustomTextField.swift; path = View/Parts/NKCustomTextField.swift; sourceTree = "<group>"; };
+		0329C2BB1C943B6700904299 /* NKCustomTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKCustomTextField.xib; path = View/Parts/NKCustomTextField.xib; sourceTree = "<group>"; };
+		033059B31CAFC47800786CC9 /* NKMyMenuMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKMyMenuMainViewController.swift; path = Controller/LeftMenu/NKMyMenuMainViewController.swift; sourceTree = "<group>"; };
+		033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeMenuViewController.swift; path = Controller/LeftMenu/YouTubeMenu/NKYouTubeMenuViewController.swift; sourceTree = "<group>"; };
+		033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeLoginViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Login/NKYouTubeLoginViewController.swift; sourceTree = "<group>"; };
+		03345E201D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoQulitySelectionViewController.swift; path = Controller/MainView/NKVideoQulitySelectionViewController.swift; sourceTree = "<group>"; };
+		033CCCAB1C82C94D00F7BF93 /* NKCachedVideoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCachedVideoListCell.swift; path = View/Parts/NKCachedVideoListCell.swift; sourceTree = "<group>"; };
+		033CCCAC1C82C94D00F7BF93 /* NKCachedVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKCachedVideoListCell.xib; path = View/Parts/NKCachedVideoListCell.xib; sourceTree = "<group>"; };
+		033CCCAF1C83253900F7BF93 /* NKGestureManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKGestureManager.swift; path = Utility/NKGestureManager.swift; sourceTree = "<group>"; };
+		033DF1041D14EFE600E28984 /* NKStatusButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKStatusButton.swift; path = View/Parts/NKStatusButton.swift; sourceTree = "<group>"; };
+		0341EEDF1C66D53700527023 /* NKFileManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFileManager.swift; path = Utility/NKFileManager.swift; sourceTree = "<group>"; };
+		0341EEE21C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "CachedVideo+CoreDataProperties.swift"; path = "Model/CoreData/CachedVideo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		0341EEE31C66EC8E00527023 /* CachedVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CachedVideo.swift; path = Model/CoreData/CachedVideo.swift; sourceTree = "<group>"; };
+		0341EEE61C66ECCE00527023 /* NKCoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCoreDataManager.swift; path = Model/CoreData/NKCoreDataManager.swift; sourceTree = "<group>"; };
+		0341EEE81C67226B00527023 /* NKSuperCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSuperCoreData.swift; path = Model/CoreData/NKSuperCoreData.swift; sourceTree = "<group>"; };
+		034329CC1D17BB63007C4C77 /* NKStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKStyle.swift; path = Utility/Extension/NKStyle.swift; sourceTree = "<group>"; };
+		034329D81D2D19AA007C4C77 /* NKSplitGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSplitGroupCell.swift; path = View/Parts/NKSplitGroupCell.swift; sourceTree = "<group>"; };
+		0343799C1CF9590300A767E0 /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		0343799E1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKPlayVideoLoadingView.swift; path = View/Parts/NKPlayVideoLoadingView.swift; sourceTree = "<group>"; };
+		034379A01CFAA18D00A767E0 /* NKPlayVideoLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKPlayVideoLoadingView.xib; path = View/Parts/NKPlayVideoLoadingView.xib; sourceTree = "<group>"; };
+		034379A21CFAC21200A767E0 /* neko.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = neko.mp3; sourceTree = "<group>"; };
+		034379A41CFAC24A00A767E0 /* densi.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = densi.mp3; sourceTree = "<group>"; };
+		034379A61CFAF13D00A767E0 /* NKTube0.1.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.4.xcdatamodel; sourceTree = "<group>"; };
+		034379A91CFB367700A767E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCacheSearchViewController.swift; path = Controller/CacheSearch/NKCacheSearchViewController.swift; sourceTree = "<group>"; };
+		0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKOtherMenuViewController.swift; path = Controller/LeftMenu/OtherMenu/NKOtherMenuViewController.swift; sourceTree = "<group>"; };
+		036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKLoadingView.swift; path = Utility/NKLoadingView.swift; sourceTree = "<group>"; };
+		036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKLoadingView.xib; path = Utility/NKLoadingView.xib; sourceTree = "<group>"; };
+		036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSplitviewController.swift; path = Controller/MainView/NKSplitviewController.swift; sourceTree = "<group>"; };
+		036CB1771D04104D00E94739 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		036CB1791D042CF300E94739 /* private.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = private.pem; sourceTree = "<group>"; };
+		036CB17A1D042CF300E94739 /* public.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = public.pem; sourceTree = "<group>"; };
+		0379EBC01C4E434100C8AB13 /* NKMacro.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKMacro.swift; path = Utility/Macro/NKMacro.swift; sourceTree = "<group>"; };
+		037E95E11D3E639E007B272C /* NKAboutThisAppViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAboutThisAppViewController.swift; path = Controller/LeftMenu/OtherMenu/NKAboutThisAppViewController.swift; sourceTree = "<group>"; };
+		03812F161CB0A8C70052CE1A /* Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Bridging-Header.h"; sourceTree = "<group>"; };
+		0387DBBE1D0B19CD0023D5F3 /* NKSearchAdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSearchAdCell.swift; path = View/Parts/NKSearchAdCell.swift; sourceTree = "<group>"; };
+		0387DBBF1D0B19CD0023D5F3 /* NKSearchAdCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKSearchAdCell.xib; path = View/Parts/NKSearchAdCell.xib; sourceTree = "<group>"; };
+		038F144A1CD91697008EE2D7 /* NKRelatedVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKRelatedVideoViewController.swift; path = Controller/MainView/NKRelatedVideoViewController.swift; sourceTree = "<group>"; };
+		038F144C1CD99F48008EE2D7 /* VideoProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = VideoProtocol.swift; path = Model/VideoProtocol.swift; sourceTree = "<group>"; };
+		038F144F1CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDownloadStatusViewController.swift; path = Controller/LeftMenu/DownloadStatus/NKDownloadStatusViewController.swift; sourceTree = "<group>"; };
+		038F14511CDED937008EE2D7 /* NKLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKLabel.swift; path = View/Parts/NKLabel.swift; sourceTree = "<group>"; };
+		038F14531CDF0D97008EE2D7 /* NKNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKNotification.swift; path = Utility/NKNotification.swift; sourceTree = "<group>"; };
+		038F14551CDF8CB7008EE2D7 /* NKDownloadListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDownloadListCell.swift; path = View/Parts/NKDownloadListCell.swift; sourceTree = "<group>"; };
+		038F14591CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCreatingGroupViewController.swift; path = Controller/LeftMenu/CreatingGroup/NKCreatingGroupViewController.swift; sourceTree = "<group>"; };
+		038F145B1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSelectionMovieCell.swift; path = View/Parts/NKSelectionMovieCell.swift; sourceTree = "<group>"; };
+		038F145D1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSelectGroupViewController.swift; path = Controller/LeftMenu/CreatingGroup/NKSelectGroupViewController.swift; sourceTree = "<group>"; };
+		038F145F1CE4EC01008EE2D7 /* NKSelectionGroupCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSelectionGroupCell.swift; path = View/Parts/NKSelectionGroupCell.swift; sourceTree = "<group>"; };
+		038F14611CE628A5008EE2D7 /* NKNewGroupHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKNewGroupHeaderView.swift; path = View/Parts/NKNewGroupHeaderView.swift; sourceTree = "<group>"; };
+		038F14631CE6B163008EE2D7 /* NKInputAccessary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKInputAccessary.swift; path = View/Parts/NKInputAccessary.swift; sourceTree = "<group>"; };
+		038F14651CE6B171008EE2D7 /* NKInputAccessary.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKInputAccessary.xib; path = View/Parts/NKInputAccessary.xib; sourceTree = "<group>"; };
+		038F14671CE74A81008EE2D7 /* NKAlertView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAlertView.swift; path = View/Parts/NKAlertView.swift; sourceTree = "<group>"; };
+		038F14691CE74A91008EE2D7 /* NKAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKAlertView.xib; path = View/Parts/NKAlertView.xib; sourceTree = "<group>"; };
+		038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAlertManager.swift; path = Controller/AlertManager/NKAlertManager.swift; sourceTree = "<group>"; };
+		03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSuperVideoListViewController.swift; path = Controller/MainScreen/NKSuperVideoListViewController.swift; sourceTree = "<group>"; };
+		03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flurry_iOS_SDK.framework; path = "Pods/../build/Debug-iphoneos/Flurry-iOS-SDK/Flurry_iOS_SDK.framework"; sourceTree = "<group>"; };
+		03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFlurryManager.swift; path = Utility/NKFlurryManager.swift; sourceTree = "<group>"; };
+		03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKNotificationManager.swift; path = Utility/NKNotificationManager.swift; sourceTree = "<group>"; };
+		03A8AA8B1D29075100944EEF /* NKDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDesign.swift; path = Constants/NKDesign.swift; sourceTree = "<group>"; };
+		03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoStatusManager.swift; path = Utility/NKVideoStatusManager.swift; sourceTree = "<group>"; };
+		03A8AA8F1D2AAC3100944EEF /* NKDownloadBadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDownloadBadgeViewController.swift; path = Controller/MainScreen/NKDownloadBadgeViewController.swift; sourceTree = "<group>"; };
+		03A958AA1D0ED5AE00FE2B12 /* NKTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NKTube.entitlements; sourceTree = "<group>"; };
+		03B75C51218D125C00398E1B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		03BF095C1C620708000B3CCB /* NKVideoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoListCell.swift; path = View/Parts/NKVideoListCell.swift; sourceTree = "<group>"; };
+		03BF095D1C620708000B3CCB /* NKVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKVideoListCell.xib; path = View/Parts/NKVideoListCell.xib; sourceTree = "<group>"; };
+		03BF09601C6247B2000B3CCB /* NKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKExtension.swift; path = Utility/Extension/NKExtension.swift; sourceTree = "<group>"; };
+		03BF09631C635A46000B3CCB /* NKUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKUserInfo.swift; path = Utility/UserInfo/NKUserInfo.swift; sourceTree = "<group>"; };
+		03C4A8161CB156DB008E67D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		03C4A81C1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleAccessToken.h; sourceTree = "<group>"; };
+		03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleAccessToken.m; sourceTree = "<group>"; };
+		03C4A81E1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleOAuthTouchViewController.h; sourceTree = "<group>"; };
+		03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleOAuthTouchViewController.m; sourceTree = "<group>"; };
+		03C4A8201CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleUserCredentials.h; sourceTree = "<group>"; };
+		03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleUserCredentials.m; sourceTree = "<group>"; };
+		03C4A8271CB7FCDC008E67D1 /* MABYT3_Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Activity.h; sourceTree = "<group>"; };
+		03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Activity.m; sourceTree = "<group>"; };
+		03C4A8291CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityContentDetails.h; sourceTree = "<group>"; };
+		03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityContentDetails.m; sourceTree = "<group>"; };
+		03C4A82B1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityPlaylistItem.h; sourceTree = "<group>"; };
+		03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityPlaylistItem.m; sourceTree = "<group>"; };
+		03C4A82D1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityRecommendation.h; sourceTree = "<group>"; };
+		03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityRecommendation.m; sourceTree = "<group>"; };
+		03C4A82F1CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivitySnippet.h; sourceTree = "<group>"; };
+		03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivitySnippet.m; sourceTree = "<group>"; };
+		03C4A8311CB7FCDC008E67D1 /* MABYT3_ActivitySocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivitySocial.h; sourceTree = "<group>"; };
+		03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivitySocial.m; sourceTree = "<group>"; };
+		03C4A8341CB7FCDC008E67D1 /* MABYT3_APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_APIRequest.h; sourceTree = "<group>"; };
+		03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_APIRequest.m; sourceTree = "<group>"; };
+		03C4A8381CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettings.h; sourceTree = "<group>"; };
+		03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettings.m; sourceTree = "<group>"; };
+		03C4A83A1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsChannel.h; sourceTree = "<group>"; };
+		03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsChannel.m; sourceTree = "<group>"; };
+		03C4A83C1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsImage.h; sourceTree = "<group>"; };
+		03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsImage.m; sourceTree = "<group>"; };
+		03C4A83E1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsWatch.h; sourceTree = "<group>"; };
+		03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsWatch.m; sourceTree = "<group>"; };
+		03C4A8401CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_LocalizedPropertyURL.h; sourceTree = "<group>"; };
+		03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_LocalizedPropertyURL.m; sourceTree = "<group>"; };
+		03C4A8421CB7FCDC008E67D1 /* MABYT3_PropertyURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PropertyURL.h; sourceTree = "<group>"; };
+		03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PropertyURL.m; sourceTree = "<group>"; };
+		03C4A8451CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotion.h; sourceTree = "<group>"; };
+		03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotion.m; sourceTree = "<group>"; };
+		03C4A8471CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionDefaultTiming.h; sourceTree = "<group>"; };
+		03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionDefaultTiming.m; sourceTree = "<group>"; };
+		03C4A8491CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionItem.h; sourceTree = "<group>"; };
+		03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionItem.m; sourceTree = "<group>"; };
+		03C4A84B1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionItemIdentifier.h; sourceTree = "<group>"; };
+		03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionItemIdentifier.m; sourceTree = "<group>"; };
+		03C4A84D1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionPosition.h; sourceTree = "<group>"; };
+		03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionPosition.m; sourceTree = "<group>"; };
+		03C4A84F1CB7FCDC008E67D1 /* MABYT3_Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Channel.h; sourceTree = "<group>"; };
+		03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Channel.m; sourceTree = "<group>"; };
+		03C4A8511CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelAuditDetails.h; sourceTree = "<group>"; };
+		03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelAuditDetails.m; sourceTree = "<group>"; };
+		03C4A8531CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelContentDetails.h; sourceTree = "<group>"; };
+		03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelContentDetails.m; sourceTree = "<group>"; };
+		03C4A8551CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelContentOwnerDetails.h; sourceTree = "<group>"; };
+		03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelContentOwnerDetails.m; sourceTree = "<group>"; };
+		03C4A8571CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSnippet.h; sourceTree = "<group>"; };
+		03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSnippet.m; sourceTree = "<group>"; };
+		03C4A8591CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelStatistics.h; sourceTree = "<group>"; };
+		03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelStatistics.m; sourceTree = "<group>"; };
+		03C4A85B1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelStatus.h; sourceTree = "<group>"; };
+		03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelStatus.m; sourceTree = "<group>"; };
+		03C4A85E1CB7FCDC008E67D1 /* MABYT3_ChannelSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSection.h; sourceTree = "<group>"; };
+		03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSection.m; sourceTree = "<group>"; };
+		03C4A8601CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSectionContentDetails.h; sourceTree = "<group>"; };
+		03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSectionContentDetails.m; sourceTree = "<group>"; };
+		03C4A8621CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSectionSnippet.h; sourceTree = "<group>"; };
+		03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSectionSnippet.m; sourceTree = "<group>"; };
+		03C4A8641CB7FCDC008E67D1 /* MAB_GDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GDate.h; sourceTree = "<group>"; };
+		03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GDate.m; sourceTree = "<group>"; };
+		03C4A8661CB7FCDC008E67D1 /* MAB_GLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GLink.h; sourceTree = "<group>"; };
+		03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GLink.m; sourceTree = "<group>"; };
+		03C4A8681CB7FCDC008E67D1 /* MABYT3_ContentRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ContentRating.h; sourceTree = "<group>"; };
+		03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ContentRating.m; sourceTree = "<group>"; };
+		03C4A86A1CB7FCDC008E67D1 /* MABYT3_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_enums.h; sourceTree = "<group>"; };
+		03C4A86B1CB7FCDC008E67D1 /* MABYT3_GuideCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_GuideCategory.h; sourceTree = "<group>"; };
+		03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_GuideCategory.m; sourceTree = "<group>"; };
+		03C4A86D1CB7FCDC008E67D1 /* MABYT3_Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Language.h; sourceTree = "<group>"; };
+		03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Language.m; sourceTree = "<group>"; };
+		03C4A86F1CB7FCDC008E67D1 /* MABYT3_Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Location.h; sourceTree = "<group>"; };
+		03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Location.m; sourceTree = "<group>"; };
+		03C4A8711CB7FCDC008E67D1 /* MABYT3_Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Region.h; sourceTree = "<group>"; };
+		03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Region.m; sourceTree = "<group>"; };
+		03C4A8731CB7FCDC008E67D1 /* MABYT3_RegionRestriction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_RegionRestriction.h; sourceTree = "<group>"; };
+		03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_RegionRestriction.m; sourceTree = "<group>"; };
+		03C4A8751CB7FCDC008E67D1 /* MABYT3_ResourceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ResourceId.h; sourceTree = "<group>"; };
+		03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ResourceId.m; sourceTree = "<group>"; };
+		03C4A8771CB7FCDC008E67D1 /* MABYT3_Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Thumbnail.h; sourceTree = "<group>"; };
+		03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Thumbnail.m; sourceTree = "<group>"; };
+		03C4A8791CB7FCDC008E67D1 /* MABYT3_VideoCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoCategory.h; sourceTree = "<group>"; };
+		03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoCategory.m; sourceTree = "<group>"; };
+		03C4A87C1CB7FCDC008E67D1 /* MABYT3_PlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayList.h; sourceTree = "<group>"; };
+		03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayList.m; sourceTree = "<group>"; };
+		03C4A87E1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListContentDetails.h; sourceTree = "<group>"; };
+		03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListContentDetails.m; sourceTree = "<group>"; };
+		03C4A8801CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListSnippet.h; sourceTree = "<group>"; };
+		03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListSnippet.m; sourceTree = "<group>"; };
+		03C4A8831CB7FCDC008E67D1 /* MABYT3_PlayListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItem.h; sourceTree = "<group>"; };
+		03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItem.m; sourceTree = "<group>"; };
+		03C4A8851CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItemContentDetails.h; sourceTree = "<group>"; };
+		03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItemContentDetails.m; sourceTree = "<group>"; };
+		03C4A8871CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItemSnippet.h; sourceTree = "<group>"; };
+		03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItemSnippet.m; sourceTree = "<group>"; };
+		03C4A88A1CB7FCDC008E67D1 /* MABYT3_SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SearchItem.h; sourceTree = "<group>"; };
+		03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SearchItem.m; sourceTree = "<group>"; };
+		03C4A88C1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SearchItemSnippet.h; sourceTree = "<group>"; };
+		03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SearchItemSnippet.m; sourceTree = "<group>"; };
+		03C4A88F1CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriberSnippet.h; sourceTree = "<group>"; };
+		03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriberSnippet.m; sourceTree = "<group>"; };
+		03C4A8911CB7FCDC008E67D1 /* MABYT3_Subscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Subscription.h; sourceTree = "<group>"; };
+		03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Subscription.m; sourceTree = "<group>"; };
+		03C4A8931CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriptionContentDetails.h; sourceTree = "<group>"; };
+		03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriptionContentDetails.m; sourceTree = "<group>"; };
+		03C4A8951CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriptionSnippet.h; sourceTree = "<group>"; };
+		03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriptionSnippet.m; sourceTree = "<group>"; };
+		03C4A8981CB7FCDC008E67D1 /* MABYT3_AudioStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_AudioStreams.h; sourceTree = "<group>"; };
+		03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_AudioStreams.m; sourceTree = "<group>"; };
+		03C4A89A1CB7FCDC008E67D1 /* MABYT3_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Video.h; sourceTree = "<group>"; };
+		03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Video.m; sourceTree = "<group>"; };
+		03C4A89C1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoContentDetails.h; sourceTree = "<group>"; };
+		03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoContentDetails.m; sourceTree = "<group>"; };
+		03C4A89E1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoFileDetails.h; sourceTree = "<group>"; };
+		03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoFileDetails.m; sourceTree = "<group>"; };
+		03C4A8A01CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoLiveStreamingDetails.h; sourceTree = "<group>"; };
+		03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoLiveStreamingDetails.m; sourceTree = "<group>"; };
+		03C4A8A21CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoProcessingDetails.h; sourceTree = "<group>"; };
+		03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoProcessingDetails.m; sourceTree = "<group>"; };
+		03C4A8A41CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoProcessingProgress.h; sourceTree = "<group>"; };
+		03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoProcessingProgress.m; sourceTree = "<group>"; };
+		03C4A8A61CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoRecordingDetails.h; sourceTree = "<group>"; };
+		03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoRecordingDetails.m; sourceTree = "<group>"; };
+		03C4A8A81CB7FCDC008E67D1 /* MABYT3_VideoSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoSnippet.h; sourceTree = "<group>"; };
+		03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoSnippet.m; sourceTree = "<group>"; };
+		03C4A8AA1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStatistics.h; sourceTree = "<group>"; };
+		03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStatistics.m; sourceTree = "<group>"; };
+		03C4A8AC1CB7FCDC008E67D1 /* MABYT3_VideoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStatus.h; sourceTree = "<group>"; };
+		03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStatus.m; sourceTree = "<group>"; };
+		03C4A8AE1CB7FCDC008E67D1 /* MABYT3_VideoStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStreams.h; sourceTree = "<group>"; };
+		03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStreams.m; sourceTree = "<group>"; };
+		03C4A8B01CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoSuggestions.h; sourceTree = "<group>"; };
+		03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoSuggestions.m; sourceTree = "<group>"; };
+		03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelListViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Channel/NKChannelListViewController.swift; sourceTree = "<group>"; };
+		03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKWatchAfterViewController.swift; path = Controller/LeftMenu/YouTubeMenu/WatchAfter/NKWatchAfterViewController.swift; sourceTree = "<group>"; };
+		03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFavoriteMoviesViewController.swift; path = Controller/LeftMenu/FavoriteMovies/NKFavoriteMoviesViewController.swift; sourceTree = "<group>"; };
+		03D83A281D1E085B006B123E /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
+		03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKOrderManager.swift; path = Utility/NKOrderManager.swift; sourceTree = "<group>"; };
+		03D96E381D04807E007AA338 /* GGLCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GGLCore.framework; sourceTree = "<group>"; };
+		03D96E391D04807E007AA338 /* GGLSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GGLSignIn.framework; sourceTree = "<group>"; };
+		03D96E3B1D04807E007AA338 /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
+		03D96E3C1D04807E007AA338 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		03D96E3E1D04807E007AA338 /* Analytics-Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Analytics-Module.h"; sourceTree = "<group>"; };
+		03D96E3F1D04807E007AA338 /* Core-Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Core-Module.h"; sourceTree = "<group>"; };
+		03D96E401D04807E007AA338 /* SignIn-Module.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SignIn-Module.h"; sourceTree = "<group>"; };
+		03D96E411D04807E007AA338 /* SignIn.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SignIn.h; sourceTree = "<group>"; };
+		03D96E421D04807E007AA338 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03D96E451D04807E007AA338 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		03D96E461D04807E007AA338 /* README.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		03D96E491D04807E007AA338 /* GoogleAppUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAppUtilities.framework; sourceTree = "<group>"; };
+		03D96E4C1D04807E007AA338 /* GoogleAuthUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleAuthUtilities.framework; sourceTree = "<group>"; };
+		03D96E4F1D04807E007AA338 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		03D96E521D04807E007AA338 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		03D96E541D04807E007AA338 /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		03D96E561D04807E007AA338 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSignIn.framework; sourceTree = "<group>"; };
+		03D96E571D04807E007AA338 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		03D96E591D04807E007AA338 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		03D96E5C1D04807E007AA338 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		03D96E5F1D04807E007AA338 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleUtilities.framework; sourceTree = "<group>"; };
+		03D9F9721C960081001711A6 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fabric.framework; path = ../../Fabric.framework; sourceTree = "<group>"; };
+		03D9F9731C960081001711A6 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crashlytics.framework; path = ../../Crashlytics.framework; sourceTree = "<group>"; };
+		03D9F9761C96FEDF001711A6 /* NKSearchResultCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSearchResultCell.swift; path = View/Parts/NKSearchResultCell.swift; sourceTree = "<group>"; };
+		03DBFEB11CD869B10044931E /* NKChannelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelCell.swift; path = View/Parts/NKChannelCell.swift; sourceTree = "<group>"; };
+		03DBFEB31CD87F920044931E /* NKChannelDetailCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelDetailCell.swift; path = View/Parts/NKChannelDetailCell.swift; sourceTree = "<group>"; };
+		03DBFEB51CD889AD0044931E /* NKFavoriteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFavoriteCell.swift; path = View/Parts/NKFavoriteCell.swift; sourceTree = "<group>"; };
+		03DBFEB71CD88B9C0044931E /* NKWatchAfterCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKWatchAfterCell.swift; path = View/Parts/NKWatchAfterCell.swift; sourceTree = "<group>"; };
+		03DBFEB91CD8AE460044931E /* NKYouTubeMenuCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeMenuCell.swift; path = View/Parts/NKYouTubeMenuCell.swift; sourceTree = "<group>"; };
+		03DC945B1E0DF49A008ACFA0 /* BottomMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BottomMenuViewController.swift; path = Controller/MainView/BottomMenuViewController.swift; sourceTree = "<group>"; };
+		03E1841D1C5F95AB00529D98 /* NKVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideo.swift; path = Model/NKVideo.swift; sourceTree = "<group>"; };
+		03E184241C5F97EA00529D98 /* NKParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKParam.swift; path = Constants/NKParam.swift; sourceTree = "<group>"; };
+		03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSettingViewController.swift; path = Controller/LeftMenu/OtherMenu/NKSettingViewController.swift; sourceTree = "<group>"; };
+		03F0C0041D322CDB003B2F40 /* NKSettingListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSettingListCell.swift; path = View/Parts/NKSettingListCell.swift; sourceTree = "<group>"; };
+		03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKProductManager.swift; path = "Service/과금/NKProductManager.swift"; sourceTree = "<group>"; };
+		03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFeedbackViewController.swift; path = Controller/LeftMenu/OtherMenu/NKFeedbackViewController.swift; sourceTree = "<group>"; };
+		03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKRecommnadVideoViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Recommand/NKRecommnadVideoViewController.swift; sourceTree = "<group>"; };
+		03F85B231C38F2880026F61E /* NKTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F85B261C38F2880026F61E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		03F85B301C38F2880026F61E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		03F85B331C38F2880026F61E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		03F85B351C38F2880026F61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F85B3A1C38F2880026F61E /* NKTubeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NKTubeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F85B3E1C38F2880026F61E /* NKTubeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTubeTests.swift; sourceTree = "<group>"; };
+		03F85B401C38F2880026F61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03F85B451C38F2880026F61E /* NKTubeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NKTubeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		03F85B491C38F2880026F61E /* NKTubeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NKTubeUITests.swift; sourceTree = "<group>"; };
+		03F85B4B1C38F2880026F61E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		03FDEAB61C4A01CC0059EC3D /* NKSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSearchViewController.swift; path = Controller/RightMenu/NKSearchViewController.swift; sourceTree = "<group>"; };
+		03FDEABA1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCachedMovieListViewController.swift; path = Controller/LeftMenu/NKCachedMovieListViewController.swift; sourceTree = "<group>"; };
+		03FDEABE1C4A053B0059EC3D /* NKMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKMainViewController.swift; path = Controller/MainScreen/NKMainViewController.swift; sourceTree = "<group>"; };
+		03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKMoviePlayerViewController.swift; path = Controller/MainView/NKMoviePlayerViewController.swift; sourceTree = "<group>"; };
+		03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeService.swift; path = Service/NKYouTubeService.swift; sourceTree = "<group>"; };
+		08AD9DAA972118416E09B2E1 /* Pods-NKTubeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTubeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKTubeUITests/Pods-NKTubeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		36A7C74CBFDEA41ECE342822 /* Pods-NKTubeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTubeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKTubeTests/Pods-NKTubeTests.release.xcconfig"; sourceTree = "<group>"; };
+		771226708172698D556ECA2E /* Pods_NKTube.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKTube.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84EC33A9E530D46A3800E3A7 /* Pods_NKTubeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKTubeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47E0A0B4C2FDB02032441AD /* Pods-NKTube.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTube.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKTube/Pods-NKTube.debug.xcconfig"; sourceTree = "<group>"; };
+		C4E8A9FB20A6A7A9C5ED9030 /* Pods-NKTubeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTubeUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKTubeUITests/Pods-NKTubeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C86C88F0E3A99787D31D45CA /* Pods-NKTubeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTubeTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NKTubeTests/Pods-NKTubeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC391F2EEDC96D8DF33431DC /* Pods-NKTube.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NKTube.release.xcconfig"; path = "Pods/Target Support Files/Pods-NKTube/Pods-NKTube.release.xcconfig"; sourceTree = "<group>"; };
+		F39AB3E9B4FB91D6A639515A /* Pods_NKTubeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NKTubeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		03F85B201C38F2880026F61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03A8AA851D25DAB300944EEF /* Flurry_iOS_SDK.framework in Frameworks */,
+				0343799D1CF9590300A767E0 /* CoreSpotlight.framework in Frameworks */,
+				03D9F9751C960081001711A6 /* Crashlytics.framework in Frameworks */,
+				03D9F9741C960081001711A6 /* Fabric.framework in Frameworks */,
+				00DCE9C7FA78B893391D1FA7 /* Pods_NKTube.framework in Frameworks */,
+				03B75C52218D125C00398E1B /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B371C38F2880026F61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				927000CEC9B339B9FBFDE884 /* Pods_NKTubeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B421C38F2880026F61E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEF562A40D6180C35DC6AE04 /* Pods_NKTubeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0322D6891C69F37A00AA92ED /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0341EEE21C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift */,
+				0341EEE31C66EC8E00527023 /* CachedVideo.swift */,
+				0329C2B51C91CE3300904299 /* GroupTitle+CoreDataProperties.swift */,
+				0329C2B61C91CE3300904299 /* GroupTitle.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		0322D68C1C6A04D700AA92ED /* AVAudio */ = {
+			isa = PBXGroup;
+			children = (
+				0322D68D1C6A05A800AA92ED /* NKAVAudioManager.swift */,
+			);
+			name = AVAudio;
+			sourceTree = "<group>";
+		};
+		0322D6991C7D279500AA92ED /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				0322D69A1C7D279500AA92ED /* NKDownloadManager.swift */,
+				0322D69B1C7D279500AA92ED /* NKDownloadOperation.swift */,
+			);
+			name = Download;
+			path = Service/Download;
+			sourceTree = "<group>";
+		};
+		033059B51CAFCD5900786CC9 /* YouTubeMenu */ = {
+			isa = PBXGroup;
+			children = (
+				033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */,
+				03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */,
+				031656801CBA2680005D957C /* NKChannelDetailViewController.swift */,
+				03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */,
+				03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */,
+				03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */,
+				033059BE1CB0016E00786CC9 /* Login */,
+			);
+			name = YouTubeMenu;
+			sourceTree = "<group>";
+		};
+		033059BB1CAFCDB700786CC9 /* CachedMovieList */ = {
+			isa = PBXGroup;
+			children = (
+				03FDEABA1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift */,
+			);
+			name = CachedMovieList;
+			sourceTree = "<group>";
+		};
+		033059BE1CB0016E00786CC9 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		0341EEE11C66EC3600527023 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0341EEE61C66ECCE00527023 /* NKCoreDataManager.swift */,
+				0341EEE81C67226B00527023 /* NKSuperCoreData.swift */,
+				0322D68A1C69F57200AA92ED /* NKCoreDataCachedVideo.swift */,
+				0322D6891C69F37A00AA92ED /* Models */,
+			);
+			name = CoreData;
+			sourceTree = "<group>";
+		};
+		0344BB911CF8DE6F00FE220E /* CacheSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */,
+			);
+			name = CacheSearchView;
+			sourceTree = "<group>";
+		};
+		0363EF481CF14C0800FFA759 /* OtherMenu */ = {
+			isa = PBXGroup;
+			children = (
+				0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */,
+				03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */,
+				03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */,
+				037E95E11D3E639E007B272C /* NKAboutThisAppViewController.swift */,
+			);
+			name = OtherMenu;
+			sourceTree = "<group>";
+		};
+		0379EBBD1C4E430C00C8AB13 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				03A8AA861D25DD3700944EEF /* Managers */,
+				03BF09621C635A2B000B3CCB /* UserInfo */,
+				0379EBBF1C4E431B00C8AB13 /* Macro */,
+				0379EBBE1C4E431400C8AB13 /* Extension */,
+				0322D6951C7C7A8C00AA92ED /* NKUtility.swift */,
+				033CCCAF1C83253900F7BF93 /* NKGestureManager.swift */,
+				038F14531CDF0D97008EE2D7 /* NKNotification.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		0379EBBE1C4E431400C8AB13 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				03BF09601C6247B2000B3CCB /* NKExtension.swift */,
+				034329CC1D17BB63007C4C77 /* NKStyle.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		0379EBBF1C4E431B00C8AB13 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				0379EBC01C4E434100C8AB13 /* NKMacro.swift */,
+			);
+			name = Macro;
+			sourceTree = "<group>";
+		};
+		038F144E1CDC5AD1008EE2D7 /* DownloadStatus */ = {
+			isa = PBXGroup;
+			children = (
+				038F144F1CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift */,
+			);
+			name = DownloadStatus;
+			sourceTree = "<group>";
+		};
+		038F14581CE4CA15008EE2D7 /* CreatingGroup */ = {
+			isa = PBXGroup;
+			children = (
+				038F145D1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift */,
+				038F14591CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift */,
+			);
+			name = CreatingGroup;
+			sourceTree = "<group>";
+		};
+		038F146B1CE74DEF008EE2D7 /* AlertManager */ = {
+			isa = PBXGroup;
+			children = (
+				038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */,
+			);
+			name = AlertManager;
+			sourceTree = "<group>";
+		};
+		03A8AA861D25DD3700944EEF /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				0341EEDF1C66D53700527023 /* NKFileManager.swift */,
+				0322D6901C75D18900AA92ED /* NKPlayManager.swift */,
+				03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */,
+				03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */,
+				03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */,
+				03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		03BF09621C635A2B000B3CCB /* UserInfo */ = {
+			isa = PBXGroup;
+			children = (
+				03BF09631C635A46000B3CCB /* NKUserInfo.swift */,
+			);
+			name = UserInfo;
+			sourceTree = "<group>";
+		};
+		03C4A81A1CB7FBA0008E67D1 /* ThirdParty */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8251CB7FCDC008E67D1 /* API */,
+				03C4A81B1CB7FBA0008E67D1 /* OAuthFrameWork */,
+				03D9F9721C960081001711A6 /* Fabric.framework */,
+				03D9F9731C960081001711A6 /* Crashlytics.framework */,
+			);
+			path = ThirdParty;
+			sourceTree = "<group>";
+		};
+		03C4A81B1CB7FBA0008E67D1 /* OAuthFrameWork */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A81C1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.h */,
+				03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */,
+				03C4A81E1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.h */,
+				03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */,
+				03C4A8201CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.h */,
+				03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */,
+			);
+			path = OAuthFrameWork;
+			sourceTree = "<group>";
+		};
+		03C4A8251CB7FCDC008E67D1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8261CB7FCDC008E67D1 /* Activity */,
+				03C4A8331CB7FCDC008E67D1 /* APICalls */,
+				03C4A8361CB7FCDC008E67D1 /* Channel */,
+				03C4A85D1CB7FCDC008E67D1 /* ChannelSection */,
+				03C4A8641CB7FCDC008E67D1 /* MAB_GDate.h */,
+				03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */,
+				03C4A8661CB7FCDC008E67D1 /* MAB_GLink.h */,
+				03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */,
+				03C4A8681CB7FCDC008E67D1 /* MABYT3_ContentRating.h */,
+				03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */,
+				03C4A86A1CB7FCDC008E67D1 /* MABYT3_enums.h */,
+				03C4A86B1CB7FCDC008E67D1 /* MABYT3_GuideCategory.h */,
+				03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */,
+				03C4A86D1CB7FCDC008E67D1 /* MABYT3_Language.h */,
+				03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */,
+				03C4A86F1CB7FCDC008E67D1 /* MABYT3_Location.h */,
+				03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */,
+				03C4A8711CB7FCDC008E67D1 /* MABYT3_Region.h */,
+				03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */,
+				03C4A8731CB7FCDC008E67D1 /* MABYT3_RegionRestriction.h */,
+				03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */,
+				03C4A8751CB7FCDC008E67D1 /* MABYT3_ResourceId.h */,
+				03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */,
+				03C4A8771CB7FCDC008E67D1 /* MABYT3_Thumbnail.h */,
+				03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */,
+				03C4A8791CB7FCDC008E67D1 /* MABYT3_VideoCategory.h */,
+				03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */,
+				03C4A87B1CB7FCDC008E67D1 /* PlayList */,
+				03C4A8821CB7FCDC008E67D1 /* PlayListItem */,
+				03C4A8891CB7FCDC008E67D1 /* SearchItem */,
+				03C4A88E1CB7FCDC008E67D1 /* Subscription */,
+				03C4A8971CB7FCDC008E67D1 /* Video */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		03C4A8261CB7FCDC008E67D1 /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8271CB7FCDC008E67D1 /* MABYT3_Activity.h */,
+				03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */,
+				03C4A8291CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.h */,
+				03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */,
+				03C4A82B1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.h */,
+				03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */,
+				03C4A82D1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.h */,
+				03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */,
+				03C4A82F1CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.h */,
+				03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */,
+				03C4A8311CB7FCDC008E67D1 /* MABYT3_ActivitySocial.h */,
+				03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		03C4A8331CB7FCDC008E67D1 /* APICalls */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8341CB7FCDC008E67D1 /* MABYT3_APIRequest.h */,
+				03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */,
+			);
+			path = APICalls;
+			sourceTree = "<group>";
+		};
+		03C4A8361CB7FCDC008E67D1 /* Channel */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8371CB7FCDC008E67D1 /* BrandingSettings */,
+				03C4A8441CB7FCDC008E67D1 /* InVideoPromotion */,
+				03C4A84F1CB7FCDC008E67D1 /* MABYT3_Channel.h */,
+				03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */,
+				03C4A8511CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.h */,
+				03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */,
+				03C4A8531CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.h */,
+				03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */,
+				03C4A8551CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.h */,
+				03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */,
+				03C4A8571CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.h */,
+				03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */,
+				03C4A8591CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.h */,
+				03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */,
+				03C4A85B1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.h */,
+				03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */,
+			);
+			path = Channel;
+			sourceTree = "<group>";
+		};
+		03C4A8371CB7FCDC008E67D1 /* BrandingSettings */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8381CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.h */,
+				03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */,
+				03C4A83A1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.h */,
+				03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */,
+				03C4A83C1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.h */,
+				03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */,
+				03C4A83E1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.h */,
+				03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */,
+				03C4A8401CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.h */,
+				03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */,
+				03C4A8421CB7FCDC008E67D1 /* MABYT3_PropertyURL.h */,
+				03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */,
+			);
+			path = BrandingSettings;
+			sourceTree = "<group>";
+		};
+		03C4A8441CB7FCDC008E67D1 /* InVideoPromotion */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8451CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.h */,
+				03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */,
+				03C4A8471CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.h */,
+				03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */,
+				03C4A8491CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.h */,
+				03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */,
+				03C4A84B1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.h */,
+				03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */,
+				03C4A84D1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.h */,
+				03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */,
+			);
+			path = InVideoPromotion;
+			sourceTree = "<group>";
+		};
+		03C4A85D1CB7FCDC008E67D1 /* ChannelSection */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A85E1CB7FCDC008E67D1 /* MABYT3_ChannelSection.h */,
+				03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */,
+				03C4A8601CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.h */,
+				03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */,
+				03C4A8621CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.h */,
+				03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */,
+			);
+			path = ChannelSection;
+			sourceTree = "<group>";
+		};
+		03C4A87B1CB7FCDC008E67D1 /* PlayList */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A87C1CB7FCDC008E67D1 /* MABYT3_PlayList.h */,
+				03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */,
+				03C4A87E1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.h */,
+				03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */,
+				03C4A8801CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.h */,
+				03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */,
+			);
+			path = PlayList;
+			sourceTree = "<group>";
+		};
+		03C4A8821CB7FCDC008E67D1 /* PlayListItem */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8831CB7FCDC008E67D1 /* MABYT3_PlayListItem.h */,
+				03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */,
+				03C4A8851CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.h */,
+				03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */,
+				03C4A8871CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.h */,
+				03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */,
+			);
+			path = PlayListItem;
+			sourceTree = "<group>";
+		};
+		03C4A8891CB7FCDC008E67D1 /* SearchItem */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A88A1CB7FCDC008E67D1 /* MABYT3_SearchItem.h */,
+				03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */,
+				03C4A88C1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.h */,
+				03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */,
+			);
+			path = SearchItem;
+			sourceTree = "<group>";
+		};
+		03C4A88E1CB7FCDC008E67D1 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A88F1CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.h */,
+				03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */,
+				03C4A8911CB7FCDC008E67D1 /* MABYT3_Subscription.h */,
+				03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */,
+				03C4A8931CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.h */,
+				03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */,
+				03C4A8951CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.h */,
+				03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		03C4A8971CB7FCDC008E67D1 /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				03C4A8981CB7FCDC008E67D1 /* MABYT3_AudioStreams.h */,
+				03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */,
+				03C4A89A1CB7FCDC008E67D1 /* MABYT3_Video.h */,
+				03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */,
+				03C4A89C1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.h */,
+				03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */,
+				03C4A89E1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.h */,
+				03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */,
+				03C4A8A01CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.h */,
+				03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */,
+				03C4A8A21CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.h */,
+				03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */,
+				03C4A8A41CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.h */,
+				03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */,
+				03C4A8A61CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.h */,
+				03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */,
+				03C4A8A81CB7FCDC008E67D1 /* MABYT3_VideoSnippet.h */,
+				03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */,
+				03C4A8AA1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.h */,
+				03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */,
+				03C4A8AC1CB7FCDC008E67D1 /* MABYT3_VideoStatus.h */,
+				03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */,
+				03C4A8AE1CB7FCDC008E67D1 /* MABYT3_VideoStreams.h */,
+				03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */,
+				03C4A8B01CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.h */,
+				03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */,
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		03D96E361D04807E007AA338 /* Google */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E371D04807E007AA338 /* Frameworks */,
+				03D96E3A1D04807E007AA338 /* Headers */,
+				03D96E421D04807E007AA338 /* README.md */,
+			);
+			name = Google;
+			path = Pods/Google;
+			sourceTree = "<group>";
+		};
+		03D96E371D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E381D04807E007AA338 /* GGLCore.framework */,
+				03D96E391D04807E007AA338 /* GGLSignIn.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E3A1D04807E007AA338 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E3B1D04807E007AA338 /* Core.h */,
+				03D96E3C1D04807E007AA338 /* module.modulemap */,
+				03D96E3D1D04807E007AA338 /* ModuleHeaders */,
+				03D96E411D04807E007AA338 /* SignIn.h */,
+			);
+			path = Headers;
+			sourceTree = "<group>";
+		};
+		03D96E3D1D04807E007AA338 /* ModuleHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E3E1D04807E007AA338 /* Analytics-Module.h */,
+				03D96E3F1D04807E007AA338 /* Core-Module.h */,
+				03D96E401D04807E007AA338 /* SignIn-Module.h */,
+			);
+			path = ModuleHeaders;
+			sourceTree = "<group>";
+		};
+		03D96E431D04807E007AA338 /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E441D04807E007AA338 /* Frameworks */,
+				03D96E461D04807E007AA338 /* README.txt */,
+			);
+			name = "Google-Mobile-Ads-SDK";
+			path = "Pods/Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		03D96E441D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E451D04807E007AA338 /* GoogleMobileAds.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E471D04807E007AA338 /* GoogleAppUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E481D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleAppUtilities;
+			path = Pods/GoogleAppUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E481D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E491D04807E007AA338 /* GoogleAppUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E4A1D04807E007AA338 /* GoogleAuthUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E4B1D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleAuthUtilities;
+			path = Pods/GoogleAuthUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E4B1D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E4C1D04807E007AA338 /* GoogleAuthUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E4D1D04807E007AA338 /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E4E1D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleInterchangeUtilities;
+			path = Pods/GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E4E1D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E4F1D04807E007AA338 /* GoogleInterchangeUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E501D04807E007AA338 /* GoogleNetworkingUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E511D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleNetworkingUtilities;
+			path = Pods/GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E511D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E521D04807E007AA338 /* GoogleNetworkingUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E531D04807E007AA338 /* GoogleSignIn */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E541D04807E007AA338 /* CHANGELOG.md */,
+				03D96E551D04807E007AA338 /* Frameworks */,
+				03D96E571D04807E007AA338 /* README.md */,
+				03D96E581D04807E007AA338 /* Resources */,
+			);
+			name = GoogleSignIn;
+			path = Pods/GoogleSignIn;
+			sourceTree = "<group>";
+		};
+		03D96E551D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E561D04807E007AA338 /* GoogleSignIn.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E581D04807E007AA338 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E591D04807E007AA338 /* GoogleSignIn.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		03D96E5A1D04807E007AA338 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E5B1D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleSymbolUtilities;
+			path = Pods/GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E5B1D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E5C1D04807E007AA338 /* GoogleSymbolUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03D96E5D1D04807E007AA338 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E5E1D04807E007AA338 /* Frameworks */,
+			);
+			name = GoogleUtilities;
+			path = Pods/GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		03D96E5E1D04807E007AA338 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03D96E5F1D04807E007AA338 /* GoogleUtilities.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		03E184211C5F976200529D98 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				03E184241C5F97EA00529D98 /* NKParam.swift */,
+				03A8AA8B1D29075100944EEF /* NKDesign.swift */,
+				03270A1C1E0E6CD00029751F /* Constants.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		03F85B1A1C38F2880026F61E = {
+			isa = PBXGroup;
+			children = (
+				03F85B251C38F2880026F61E /* NKTube */,
+				03F85B3D1C38F2880026F61E /* NKTubeTests */,
+				03F85B481C38F2880026F61E /* NKTubeUITests */,
+				03F85B241C38F2880026F61E /* Products */,
+				A82C29DFA5BE644D1D509BB8 /* Frameworks */,
+				F3823AA459A80CCB09BF9C45 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		03F85B241C38F2880026F61E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				03F85B231C38F2880026F61E /* NKTube.app */,
+				03F85B3A1C38F2880026F61E /* NKTubeTests.xctest */,
+				03F85B451C38F2880026F61E /* NKTubeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		03F85B251C38F2880026F61E /* NKTube */ = {
+			isa = PBXGroup;
+			children = (
+				03A958AA1D0ED5AE00FE2B12 /* NKTube.entitlements */,
+				03C4A81A1CB7FBA0008E67D1 /* ThirdParty */,
+				03E184211C5F976200529D98 /* Constants */,
+				0379EBBD1C4E430C00C8AB13 /* Utility */,
+				03FDEAAF1C49FFEF0059EC3D /* View */,
+				03FDEAB11C4A00150059EC3D /* Controller */,
+				03FDEAB01C4A00060059EC3D /* Model */,
+				03FDEAC31C4A24D30059EC3D /* Service */,
+				03F85B261C38F2880026F61E /* AppDelegate.swift */,
+				03812F161CB0A8C70052CE1A /* Bridging-Header.h */,
+				03F85B301C38F2880026F61E /* Assets.xcassets */,
+				0310BF181CF09A3C00B9013F /* NKSplashViewController.swift */,
+				03F85B321C38F2880026F61E /* LaunchScreen.storyboard */,
+				03F85B351C38F2880026F61E /* Info.plist */,
+				034379A41CFAC24A00A767E0 /* densi.mp3 */,
+				034379A21CFAC21200A767E0 /* neko.mp3 */,
+				034379A91CFB367700A767E0 /* GoogleService-Info.plist */,
+				03D83A281D1E085B006B123E /* FontAwesome.otf */,
+				036CB1791D042CF300E94739 /* private.pem */,
+				036CB17A1D042CF300E94739 /* public.pem */,
+				0310BF101CF083EE00B9013F /* NKTube.xcdatamodeld */,
+				036CB1771D04104D00E94739 /* Images.xcassets */,
+			);
+			path = NKTube;
+			sourceTree = "<group>";
+		};
+		03F85B3D1C38F2880026F61E /* NKTubeTests */ = {
+			isa = PBXGroup;
+			children = (
+				03F85B3E1C38F2880026F61E /* NKTubeTests.swift */,
+				03F85B401C38F2880026F61E /* Info.plist */,
+			);
+			path = NKTubeTests;
+			sourceTree = "<group>";
+		};
+		03F85B481C38F2880026F61E /* NKTubeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				03F85B491C38F2880026F61E /* NKTubeUITests.swift */,
+				03F85B4B1C38F2880026F61E /* Info.plist */,
+			);
+			path = NKTubeUITests;
+			sourceTree = "<group>";
+		};
+		03FDEAAF1C49FFEF0059EC3D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				03FDEAB21C4A003B0059EC3D /* StoryBoard */,
+				03FDEAB31C4A00450059EC3D /* Parts */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		03FDEAB01C4A00060059EC3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0341EEE11C66EC3600527023 /* CoreData */,
+				03E1841D1C5F95AB00529D98 /* NKVideo.swift */,
+				038F144C1CD99F48008EE2D7 /* VideoProtocol.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		03FDEAB11C4A00150059EC3D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				038F146B1CE74DEF008EE2D7 /* AlertManager */,
+				0322D68C1C6A04D700AA92ED /* AVAudio */,
+				03FDEABE1C4A053B0059EC3D /* NKMainViewController.swift */,
+				03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */,
+				03A8AA8F1D2AAC3100944EEF /* NKDownloadBadgeViewController.swift */,
+				03DC945B1E0DF49A008ACFA0 /* BottomMenuViewController.swift */,
+				03FDEAC01C4A0D7A0059EC3D /* MainView */,
+				03FDEAB51C4A018A0059EC3D /* RightSearchView */,
+				03FDEAB41C4A01760059EC3D /* LeftMenu */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		03FDEAB21C4A003B0059EC3D /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				0310BF1C1CF0A59A00B9013F /* Intro.storyboard */,
+				03C4A8151CB156DB008E67D1 /* Main.storyboard */,
+			);
+			name = StoryBoard;
+			sourceTree = "<group>";
+		};
+		03FDEAB31C4A00450059EC3D /* Parts */ = {
+			isa = PBXGroup;
+			children = (
+				038F14511CDED937008EE2D7 /* NKLabel.swift */,
+				03BF095C1C620708000B3CCB /* NKVideoListCell.swift */,
+				03BF095D1C620708000B3CCB /* NKVideoListCell.xib */,
+				033CCCAB1C82C94D00F7BF93 /* NKCachedVideoListCell.swift */,
+				033CCCAC1C82C94D00F7BF93 /* NKCachedVideoListCell.xib */,
+				03D9F9761C96FEDF001711A6 /* NKSearchResultCell.swift */,
+				0329C2B01C91C11700904299 /* NKGroupView.swift */,
+				0329C2B21C91C13000904299 /* NKGroupView.xib */,
+				0329C2B91C943B5200904299 /* NKCustomTextField.swift */,
+				0329C2BB1C943B6700904299 /* NKCustomTextField.xib */,
+				03DBFEB11CD869B10044931E /* NKChannelCell.swift */,
+				03DBFEB31CD87F920044931E /* NKChannelDetailCell.swift */,
+				03DBFEB51CD889AD0044931E /* NKFavoriteCell.swift */,
+				03DBFEB71CD88B9C0044931E /* NKWatchAfterCell.swift */,
+				03DBFEB91CD8AE460044931E /* NKYouTubeMenuCell.swift */,
+				038F14551CDF8CB7008EE2D7 /* NKDownloadListCell.swift */,
+				038F145B1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift */,
+				038F145F1CE4EC01008EE2D7 /* NKSelectionGroupCell.swift */,
+				038F14611CE628A5008EE2D7 /* NKNewGroupHeaderView.swift */,
+				038F14631CE6B163008EE2D7 /* NKInputAccessary.swift */,
+				038F14651CE6B171008EE2D7 /* NKInputAccessary.xib */,
+				038F14671CE74A81008EE2D7 /* NKAlertView.swift */,
+				038F14691CE74A91008EE2D7 /* NKAlertView.xib */,
+				036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */,
+				036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */,
+				0343799E1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift */,
+				034379A01CFAA18D00A767E0 /* NKPlayVideoLoadingView.xib */,
+				036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */,
+				0387DBBE1D0B19CD0023D5F3 /* NKSearchAdCell.swift */,
+				0387DBBF1D0B19CD0023D5F3 /* NKSearchAdCell.xib */,
+				030916741D104D6F00EB57AF /* NKVideoDescriptionView.swift */,
+				033DF1041D14EFE600E28984 /* NKStatusButton.swift */,
+				034329D81D2D19AA007C4C77 /* NKSplitGroupCell.swift */,
+				03F0C0041D322CDB003B2F40 /* NKSettingListCell.swift */,
+			);
+			name = Parts;
+			sourceTree = "<group>";
+		};
+		03FDEAB41C4A01760059EC3D /* LeftMenu */ = {
+			isa = PBXGroup;
+			children = (
+				033059B31CAFC47800786CC9 /* NKMyMenuMainViewController.swift */,
+				0344BB911CF8DE6F00FE220E /* CacheSearchView */,
+				0363EF481CF14C0800FFA759 /* OtherMenu */,
+				038F14581CE4CA15008EE2D7 /* CreatingGroup */,
+				038F144E1CDC5AD1008EE2D7 /* DownloadStatus */,
+				033059BB1CAFCDB700786CC9 /* CachedMovieList */,
+				033059B51CAFCD5900786CC9 /* YouTubeMenu */,
+			);
+			name = LeftMenu;
+			sourceTree = "<group>";
+		};
+		03FDEAB51C4A018A0059EC3D /* RightSearchView */ = {
+			isa = PBXGroup;
+			children = (
+				03FDEAB61C4A01CC0059EC3D /* NKSearchViewController.swift */,
+			);
+			name = RightSearchView;
+			sourceTree = "<group>";
+		};
+		03FDEAC01C4A0D7A0059EC3D /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */,
+				038F144A1CD91697008EE2D7 /* NKRelatedVideoViewController.swift */,
+				030ADEDA1D1ABEF60004FCA1 /* NKSuperVideoControlViewController.swift */,
+				03345E201D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift */,
+			);
+			name = MainView;
+			sourceTree = "<group>";
+		};
+		03FDEAC31C4A24D30059EC3D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				C643F6441D0E845B00576AB7 /* 과금 */,
+				0322D6991C7D279500AA92ED /* Download */,
+				03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */,
+			);
+			name = Service;
+			sourceTree = "<group>";
+		};
+		A82C29DFA5BE644D1D509BB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				03B75C51218D125C00398E1B /* AudioToolbox.framework */,
+				03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */,
+				03D96E361D04807E007AA338 /* Google */,
+				03D96E431D04807E007AA338 /* Google-Mobile-Ads-SDK */,
+				03D96E471D04807E007AA338 /* GoogleAppUtilities */,
+				03D96E4A1D04807E007AA338 /* GoogleAuthUtilities */,
+				03D96E4D1D04807E007AA338 /* GoogleInterchangeUtilities */,
+				03D96E501D04807E007AA338 /* GoogleNetworkingUtilities */,
+				03D96E531D04807E007AA338 /* GoogleSignIn */,
+				03D96E5A1D04807E007AA338 /* GoogleSymbolUtilities */,
+				03D96E5D1D04807E007AA338 /* GoogleUtilities */,
+				0343799C1CF9590300A767E0 /* CoreSpotlight.framework */,
+				771226708172698D556ECA2E /* Pods_NKTube.framework */,
+				F39AB3E9B4FB91D6A639515A /* Pods_NKTubeTests.framework */,
+				84EC33A9E530D46A3800E3A7 /* Pods_NKTubeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C643F6441D0E845B00576AB7 /* 과금 */ = {
+			isa = PBXGroup;
+			children = (
+				03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */,
+			);
+			name = "과금";
+			sourceTree = "<group>";
+		};
+		F3823AA459A80CCB09BF9C45 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C47E0A0B4C2FDB02032441AD /* Pods-NKTube.debug.xcconfig */,
+				DC391F2EEDC96D8DF33431DC /* Pods-NKTube.release.xcconfig */,
+				C86C88F0E3A99787D31D45CA /* Pods-NKTubeTests.debug.xcconfig */,
+				36A7C74CBFDEA41ECE342822 /* Pods-NKTubeTests.release.xcconfig */,
+				C4E8A9FB20A6A7A9C5ED9030 /* Pods-NKTubeUITests.debug.xcconfig */,
+				08AD9DAA972118416E09B2E1 /* Pods-NKTubeUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		03F85B221C38F2880026F61E /* NKTube */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F85B4E1C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTube" */;
+			buildPhases = (
+				32BD25E634B9A677F5F11BC5 /* [CP] Check Pods Manifest.lock */,
+				03F85B1F1C38F2880026F61E /* Sources */,
+				03F85B201C38F2880026F61E /* Frameworks */,
+				03F85B211C38F2880026F61E /* Resources */,
+				03D9F9711C96001F001711A6 /* ShellScript */,
+				FE2744B176BF664D90D29A5B /* [CP] Embed Pods Frameworks */,
+				2F37033F0F07D69A1704B288 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NKTube;
+			productName = NKTube;
+			productReference = 03F85B231C38F2880026F61E /* NKTube.app */;
+			productType = "com.apple.product-type.application";
+		};
+		03F85B391C38F2880026F61E /* NKTubeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F85B511C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTubeTests" */;
+			buildPhases = (
+				4C4955ED7B46DA9B889F02BE /* [CP] Check Pods Manifest.lock */,
+				03F85B361C38F2880026F61E /* Sources */,
+				03F85B371C38F2880026F61E /* Frameworks */,
+				03F85B381C38F2880026F61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F85B3C1C38F2880026F61E /* PBXTargetDependency */,
+			);
+			name = NKTubeTests;
+			productName = NKTubeTests;
+			productReference = 03F85B3A1C38F2880026F61E /* NKTubeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		03F85B441C38F2880026F61E /* NKTubeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 03F85B541C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTubeUITests" */;
+			buildPhases = (
+				E12ACBF2804A4DD9C9CAF89E /* [CP] Check Pods Manifest.lock */,
+				03F85B411C38F2880026F61E /* Sources */,
+				03F85B421C38F2880026F61E /* Frameworks */,
+				03F85B431C38F2880026F61E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				03F85B471C38F2880026F61E /* PBXTargetDependency */,
+			);
+			name = NKTubeUITests;
+			productName = NKTubeUITests;
+			productReference = 03F85B451C38F2880026F61E /* NKTubeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		03F85B1B1C38F2880026F61E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = GibongKim;
+				TargetAttributes = {
+					03F85B221C38F2880026F61E = {
+						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0820;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+							com.apple.InterAppAudio = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					03F85B391C38F2880026F61E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 03F85B221C38F2880026F61E;
+					};
+					03F85B441C38F2880026F61E = {
+						CreatedOnToolsVersion = 7.2;
+						TestTargetID = 03F85B221C38F2880026F61E;
+					};
+				};
+			};
+			buildConfigurationList = 03F85B1E1C38F2880026F61E /* Build configuration list for PBXProject "NKTube" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 03F85B1A1C38F2880026F61E;
+			productRefGroup = 03F85B241C38F2880026F61E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				03F85B221C38F2880026F61E /* NKTube */,
+				03F85B391C38F2880026F61E /* NKTubeTests */,
+				03F85B441C38F2880026F61E /* NKTubeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		03F85B211C38F2880026F61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03BF095F1C620708000B3CCB /* NKVideoListCell.xib in Resources */,
+				03C4A8171CB156DB008E67D1 /* Main.storyboard in Resources */,
+				03F85B341C38F2880026F61E /* LaunchScreen.storyboard in Resources */,
+				0310BF1E1CF0A59A00B9013F /* Intro.storyboard in Resources */,
+				036B8E9E1CEACC6700FDE9E2 /* NKLoadingView.xib in Resources */,
+				033CCCAE1C82C94D00F7BF93 /* NKCachedVideoListCell.xib in Resources */,
+				0329C2BC1C943B6700904299 /* NKCustomTextField.xib in Resources */,
+				036CB1781D04104D00E94739 /* Images.xcassets in Resources */,
+				038F14661CE6B171008EE2D7 /* NKInputAccessary.xib in Resources */,
+				034379A11CFAA18D00A767E0 /* NKPlayVideoLoadingView.xib in Resources */,
+				034379AA1CFB367700A767E0 /* GoogleService-Info.plist in Resources */,
+				036CB17B1D042CF300E94739 /* private.pem in Resources */,
+				034379A51CFAC24A00A767E0 /* densi.mp3 in Resources */,
+				03D83A291D1E085B006B123E /* FontAwesome.otf in Resources */,
+				036CB17C1D042CF300E94739 /* public.pem in Resources */,
+				038F146A1CE74A91008EE2D7 /* NKAlertView.xib in Resources */,
+				0329C2B31C91C13000904299 /* NKGroupView.xib in Resources */,
+				034379A31CFAC21200A767E0 /* neko.mp3 in Resources */,
+				03F85B311C38F2880026F61E /* Assets.xcassets in Resources */,
+				0387DBC11D0B19CD0023D5F3 /* NKSearchAdCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B381C38F2880026F61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B431C38F2880026F61E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D9F9711C96001F001711A6 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 45e8a635b616fce814d5876428367b41c3116759 ee812a236ddc4070668c591124ba1c614a2f40f8f60f958c56bf02fe134b3b92\n";
+		};
+		2F37033F0F07D69A1704B288 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32BD25E634B9A677F5F11BC5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NKTube-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4C4955ED7B46DA9B889F02BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NKTubeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12ACBF2804A4DD9C9CAF89E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NKTubeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE2744B176BF664D90D29A5B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
+				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		03F85B1F1C38F2880026F61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */,
+				03C4A8B81CB7FCDC008E67D1 /* MABYT3_APIRequest.m in Sources */,
+				03C4A8C91CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m in Sources */,
+				03C4A8DE1CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m in Sources */,
+				03C4A8C11CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m in Sources */,
+				0322D6911C75D18900AA92ED /* NKPlayManager.swift in Sources */,
+				03C4A8CD1CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m in Sources */,
+				03C4A8E31CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m in Sources */,
+				03C4A8C31CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m in Sources */,
+				03C4A8CB1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m in Sources */,
+				033059B41CAFC47800786CC9 /* NKMyMenuMainViewController.swift in Sources */,
+				038F14621CE628A5008EE2D7 /* NKNewGroupHeaderView.swift in Sources */,
+				03C4A8E41CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m in Sources */,
+				038F144D1CD99F48008EE2D7 /* VideoProtocol.swift in Sources */,
+				03C4A8B21CB7FCDC008E67D1 /* MABYT3_Activity.m in Sources */,
+				03E184251C5F97EA00529D98 /* NKParam.swift in Sources */,
+				038F14681CE74A81008EE2D7 /* NKAlertView.swift in Sources */,
+				03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */,
+				03C4A8F01CB7FCDC008E67D1 /* MABYT3_VideoStreams.m in Sources */,
+				03FDEAB81C4A01CC0059EC3D /* NKSearchViewController.swift in Sources */,
+				03C4A8B41CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m in Sources */,
+				03FDEAC21C4A0DC80059EC3D /* NKMoviePlayerViewController.swift in Sources */,
+				038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */,
+				03C4A8D61CB7FCDC008E67D1 /* MABYT3_ResourceId.m in Sources */,
+				03C4A8F31CB97158008E67D1 /* NKChannelListViewController.swift in Sources */,
+				03A8AA901D2AAC3100944EEF /* NKDownloadBadgeViewController.swift in Sources */,
+				03C4A8231CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m in Sources */,
+				03C4A8DC1CB7FCDC008E67D1 /* MABYT3_PlayListItem.m in Sources */,
+				038F144B1CD91697008EE2D7 /* NKRelatedVideoViewController.swift in Sources */,
+				03C4A8D31CB7FCDC008E67D1 /* MABYT3_Location.m in Sources */,
+				03C4A8B71CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m in Sources */,
+				03C4A8CE1CB7FCDC008E67D1 /* MAB_GDate.m in Sources */,
+				036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */,
+				038F14641CE6B163008EE2D7 /* NKInputAccessary.swift in Sources */,
+				03C4A8D21CB7FCDC008E67D1 /* MABYT3_Language.m in Sources */,
+				03345E211D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift in Sources */,
+				03C4A8C51CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m in Sources */,
+				03C4A8241CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m in Sources */,
+				03C4A8CF1CB7FCDC008E67D1 /* MAB_GLink.m in Sources */,
+				03270A1D1E0E6CD00029751F /* Constants.swift in Sources */,
+				03C4A8E71CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m in Sources */,
+				038F145A1CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift in Sources */,
+				03C4A8B51CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m in Sources */,
+				0310BF151CF083EE00B9013F /* NKTube.xcdatamodeld in Sources */,
+				030916751D104D6F00EB57AF /* NKVideoDescriptionView.swift in Sources */,
+				0343799F1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift in Sources */,
+				0379EBC11C4E434100C8AB13 /* NKMacro.swift in Sources */,
+				038F145C1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift in Sources */,
+				03DBFEB81CD88B9C0044931E /* NKWatchAfterCell.swift in Sources */,
+				03C4A8D71CB7FCDC008E67D1 /* MABYT3_Thumbnail.m in Sources */,
+				03C4A8D01CB7FCDC008E67D1 /* MABYT3_ContentRating.m in Sources */,
+				034329CD1D17BB63007C4C77 /* NKStyle.swift in Sources */,
+				03C4A8BB1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m in Sources */,
+				03C4A8C21CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m in Sources */,
+				033CCCAD1C82C94D00F7BF93 /* NKCachedVideoListCell.swift in Sources */,
+				038F14501CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift in Sources */,
+				038F14601CE4EC01008EE2D7 /* NKSelectionGroupCell.swift in Sources */,
+				03C4A8C71CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m in Sources */,
+				0341EEE91C67226B00527023 /* NKSuperCoreData.swift in Sources */,
+				03C4A8E01CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m in Sources */,
+				03F0C00C1D33F12F003B2F40 /* NKFeedbackViewController.swift in Sources */,
+				03F0C0031D31E396003B2F40 /* NKSettingViewController.swift in Sources */,
+				0341EEE01C66D53700527023 /* NKFileManager.swift in Sources */,
+				03F26B331D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift in Sources */,
+				03A8AA8A1D268B9F00944EEF /* NKNotificationManager.swift in Sources */,
+				03C4A8BA1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m in Sources */,
+				0322D68E1C6A05A800AA92ED /* NKAVAudioManager.swift in Sources */,
+				0329C2B11C91C11700904299 /* NKGroupView.swift in Sources */,
+				03DC945C1E0DF49A008ACFA0 /* BottomMenuViewController.swift in Sources */,
+				0322D69C1C7D279500AA92ED /* NKDownloadManager.swift in Sources */,
+				03C4A8C81CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m in Sources */,
+				03DBFEB21CD869B10044931E /* NKChannelCell.swift in Sources */,
+				03C4A8DA1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m in Sources */,
+				03C4A8C61CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m in Sources */,
+				03F0C00A1D33E8B5003B2F40 /* NKProductManager.swift in Sources */,
+				03C4A8D11CB7FCDC008E67D1 /* MABYT3_GuideCategory.m in Sources */,
+				03C4A8B31CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m in Sources */,
+				03C4A8BC1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m in Sources */,
+				03DBFEB41CD87F920044931E /* NKChannelDetailCell.swift in Sources */,
+				03D83A2B1D1FF62D006B123E /* NKOrderManager.swift in Sources */,
+				03C4A8B91CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m in Sources */,
+				03C4A8DF1CB7FCDC008E67D1 /* MABYT3_SearchItem.m in Sources */,
+				03C4A8EA1CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m in Sources */,
+				033CCCB01C83253900F7BF93 /* NKGestureManager.swift in Sources */,
+				03FDEAC51C4AEFC90059EC3D /* NKYouTubeService.swift in Sources */,
+				0329C2BA1C943B5200904299 /* NKCustomTextField.swift in Sources */,
+				03A8A8311D22CAEE00944EEF /* NKSuperVideoListViewController.swift in Sources */,
+				034329D91D2D19AA007C4C77 /* NKSplitGroupCell.swift in Sources */,
+				033059B71CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift in Sources */,
+				03D9F9781C96FEDF001711A6 /* NKSearchResultCell.swift in Sources */,
+				03C4A8BD1CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m in Sources */,
+				038F14561CDF8CB7008EE2D7 /* NKDownloadListCell.swift in Sources */,
+				03C4A8DD1CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m in Sources */,
+				03C4A8BF1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m in Sources */,
+				031656811CBA2680005D957C /* NKChannelDetailViewController.swift in Sources */,
+				03C4A8D91CB7FCDC008E67D1 /* MABYT3_PlayList.m in Sources */,
+				03C4A8E81CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m in Sources */,
+				03A8AA881D25DD6500944EEF /* NKFlurryManager.swift in Sources */,
+				03F85B271C38F2880026F61E /* AppDelegate.swift in Sources */,
+				03C4A8F11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m in Sources */,
+				030ADEDB1D1ABEF70004FCA1 /* NKSuperVideoControlViewController.swift in Sources */,
+				036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */,
+				0363EF4A1CF14C3600FFA759 /* NKOtherMenuViewController.swift in Sources */,
+				03BF09611C6247B2000B3CCB /* NKExtension.swift in Sources */,
+				0310BF1A1CF09A3C00B9013F /* NKSplashViewController.swift in Sources */,
+				03C4A8D51CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m in Sources */,
+				0341EEE41C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift in Sources */,
+				03C4A8EC1CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m in Sources */,
+				03F0C0051D322CDB003B2F40 /* NKSettingListCell.swift in Sources */,
+				0322D6961C7C7A8C00AA92ED /* NKUtility.swift in Sources */,
+				0329C2B81C91CE3300904299 /* GroupTitle.swift in Sources */,
+				037E95E21D3E639E007B272C /* NKAboutThisAppViewController.swift in Sources */,
+				03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */,
+				0329C2B71C91CE3300904299 /* GroupTitle+CoreDataProperties.swift in Sources */,
+				038F145E1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift in Sources */,
+				03C4A8EE1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m in Sources */,
+				03C4A8C01CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m in Sources */,
+				038F14521CDED937008EE2D7 /* NKLabel.swift in Sources */,
+				03C4A8ED1CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m in Sources */,
+				03C4A8B61CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m in Sources */,
+				03C4A8BE1CB7FCDC008E67D1 /* MABYT3_PropertyURL.m in Sources */,
+				03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */,
+				03C4A8CC1CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m in Sources */,
+				03C4A8E91CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m in Sources */,
+				03BF095E1C620708000B3CCB /* NKVideoListCell.swift in Sources */,
+				033DF1051D14EFE600E28984 /* NKStatusButton.swift in Sources */,
+				03C4A8F71CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift in Sources */,
+				03C4A8E51CB7FCDC008E67D1 /* MABYT3_AudioStreams.m in Sources */,
+				0322D68B1C69F57200AA92ED /* NKCoreDataCachedVideo.swift in Sources */,
+				03FDEABC1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift in Sources */,
+				03C4A8E11CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m in Sources */,
+				03DBFEB61CD889AD0044931E /* NKFavoriteCell.swift in Sources */,
+				03C4A8C41CB7FCDC008E67D1 /* MABYT3_Channel.m in Sources */,
+				03C4A8D81CB7FCDC008E67D1 /* MABYT3_VideoCategory.m in Sources */,
+				03C4A8E61CB7FCDC008E67D1 /* MABYT3_Video.m in Sources */,
+				03C4A8E21CB7FCDC008E67D1 /* MABYT3_Subscription.m in Sources */,
+				03BF09641C635A47000B3CCB /* NKUserInfo.swift in Sources */,
+				03C4A8DB1CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m in Sources */,
+				03E1841E1C5F95AB00529D98 /* NKVideo.swift in Sources */,
+				03C4A8221CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m in Sources */,
+				033059C01CB0019C00786CC9 /* NKYouTubeLoginViewController.swift in Sources */,
+				03C4A8EF1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m in Sources */,
+				03C4A8CA1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m in Sources */,
+				03C4A8EB1CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m in Sources */,
+				0322D69D1C7D279500AA92ED /* NKDownloadOperation.swift in Sources */,
+				03FDEABF1C4A053B0059EC3D /* NKMainViewController.swift in Sources */,
+				038F14541CDF0D97008EE2D7 /* NKNotification.swift in Sources */,
+				0387DBC01D0B19CD0023D5F3 /* NKSearchAdCell.swift in Sources */,
+				03C4A8D41CB7FCDC008E67D1 /* MABYT3_Region.m in Sources */,
+				03DBFEBA1CD8AE460044931E /* NKYouTubeMenuCell.swift in Sources */,
+				0341EEE51C66EC8E00527023 /* CachedVideo.swift in Sources */,
+				0341EEE71C66ECCE00527023 /* NKCoreDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B361C38F2880026F61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F85B3F1C38F2880026F61E /* NKTubeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		03F85B411C38F2880026F61E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				03F85B4A1C38F2880026F61E /* NKTubeUITests.swift in Sources */,
+				035F3D661D39B27000B3635D /* NKMoviePlayerViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		03F85B3C1C38F2880026F61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F85B221C38F2880026F61E /* NKTube */;
+			targetProxy = 03F85B3B1C38F2880026F61E /* PBXContainerItemProxy */;
+		};
+		03F85B471C38F2880026F61E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 03F85B221C38F2880026F61E /* NKTube */;
+			targetProxy = 03F85B461C38F2880026F61E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0310BF1C1CF0A59A00B9013F /* Intro.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0310BF1D1CF0A59A00B9013F /* Base */,
+			);
+			name = Intro.storyboard;
+			sourceTree = "<group>";
+		};
+		03C4A8151CB156DB008E67D1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03C4A8161CB156DB008E67D1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		03F85B321C38F2880026F61E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				03F85B331C38F2880026F61E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		03F85B4C1C38F2880026F61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		03F85B4D1C38F2880026F61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		03F85B4F1C38F2880026F61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C47E0A0B4C2FDB02032441AD /* Pods-NKTube.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NKTube/NKTube.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/DZNEmptyDataSet",
+					"$(PROJECT_DIR)/build/Release-iphoneos/MBProgressHUD",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SDWebImage",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyRSA",
+					"$(PROJECT_DIR)/build/Release-iphoneos/XCDYouTubeKit",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Flurry-iOS-SDK",
+				);
+				INFOPLIST_FILE = NKTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				OTHER_SWIFT_FLAGS = "$(inherited) \"-D\" \"COCOAPODS\" -D DEBUG";
+				PRODUCT_BUNDLE_IDENTIFIER = your.identifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NKTube/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		03F85B501C38F2880026F61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC391F2EEDC96D8DF33431DC /* Pods-NKTube.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NKTube/NKTube.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/build/Release-iphoneos/Alamofire",
+					"$(PROJECT_DIR)/build/Release-iphoneos/DZNEmptyDataSet",
+					"$(PROJECT_DIR)/build/Release-iphoneos/MBProgressHUD",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SDWebImage",
+					"$(PROJECT_DIR)/build/Release-iphoneos/SwiftyRSA",
+					"$(PROJECT_DIR)/build/Release-iphoneos/XCDYouTubeKit",
+					"$(PROJECT_DIR)/Pods/Google-Mobile-Ads-SDK/Frameworks",
+					"$(PROJECT_DIR)/build/Debug-iphoneos/Flurry-iOS-SDK",
+				);
+				INFOPLIST_FILE = NKTube/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = your.identifier;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "NKTube/Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		03F85B521C38F2880026F61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C86C88F0E3A99787D31D45CA /* Pods-NKTubeTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NKTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlekim.nktube.NKTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKTube.app/NKTube";
+			};
+			name = Debug;
+		};
+		03F85B531C38F2880026F61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 36A7C74CBFDEA41ECE342822 /* Pods-NKTubeTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = NKTubeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlekim.nktube.NKTubeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NKTube.app/NKTube";
+			};
+			name = Release;
+		};
+		03F85B551C38F2880026F61E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C4E8A9FB20A6A7A9C5ED9030 /* Pods-NKTubeUITests.debug.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NKTubeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlekim.nktube.NKTubeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NKTube;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		03F85B561C38F2880026F61E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08AD9DAA972118416E09B2E1 /* Pods-NKTubeUITests.release.xcconfig */;
+			buildSettings = {
+				INFOPLIST_FILE = NKTubeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.noodlekim.nktube.NKTubeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = NKTube;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		03F85B1E1C38F2880026F61E /* Build configuration list for PBXProject "NKTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F85B4C1C38F2880026F61E /* Debug */,
+				03F85B4D1C38F2880026F61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F85B4E1C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTube" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F85B4F1C38F2880026F61E /* Debug */,
+				03F85B501C38F2880026F61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F85B511C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTubeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F85B521C38F2880026F61E /* Debug */,
+				03F85B531C38F2880026F61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		03F85B541C38F2880026F61E /* Build configuration list for PBXNativeTarget "NKTubeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				03F85B551C38F2880026F61E /* Debug */,
+				03F85B561C38F2880026F61E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0310BF101CF083EE00B9013F /* NKTube.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				034379A61CFAF13D00A767E0 /* NKTube0.1.4.xcdatamodel */,
+				0310BF111CF083EE00B9013F /* NKTube.xcdatamodel */,
+				0310BF121CF083EE00B9013F /* NKTube0.1.1.xcdatamodel */,
+				0310BF131CF083EE00B9013F /* NKTube0.1.2.xcdatamodel */,
+				0310BF141CF083EE00B9013F /* NKTube0.1.3.xcdatamodel */,
+			);
+			currentVersion = 034379A61CFAF13D00A767E0 /* NKTube0.1.4.xcdatamodel */;
+			path = NKTube.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 03F85B1B1C38F2880026F61E /* Project object */;
+}

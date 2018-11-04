@@ -1,0 +1,6 @@
+framework module Pods_NKTubeTests {
+  umbrella header "Pods-NKTubeTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKGroupView" customModule="KKTube" customModuleProvider="target">
+            <connections>
+                <outlet property="olContentView" destination="iN0-l3-epB" id="q10-oK-01F"/>
+                <outlet property="olDeleteButton" destination="JsK-1q-8qe" id="WbW-Ha-rGx"/>
+                <outlet property="olDeleteWidth" destination="uSJ-hK-VAC" id="Fsb-GD-8X6"/>
+                <outlet property="olGroupTitleTxf" destination="iuJ-SU-fCe" id="GQW-fQ-n55"/>
+                <outlet property="olLeftMarginGroupTitle" destination="g4L-e4-xY5" id="bsF-nb-79w"/>
+                <outlet property="olToggleButton" destination="lMj-Bk-7Xh" id="z02-rB-XtJ"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="36"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iuJ-SU-fCe">
+                    <rect key="frame" x="47" y="0.0" width="259" height="36"/>
+                    <color key="textColor" red="0.43921568630000002" green="0.43921568630000002" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="tXs-Ue-K5B"/>
+                    </connections>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JsK-1q-8qe">
+                    <rect key="frame" x="0.0" y="0.0" width="32" height="36"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="32" id="uSJ-hK-VAC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="14"/>
+                    <state key="normal" title="">
+                        <color key="titleColor" red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="acDeleteGroup:" destination="-1" eventType="touchUpInside" id="z3e-Tj-ZBr"/>
+                    </connections>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bottom_line" translatesAutoresizingMaskIntoConstraints="NO" id="9VI-xS-dng">
+                    <rect key="frame" x="0.0" y="35" width="306" height="1"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="qEn-g5-ryK"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lMj-Bk-7Xh">
+                    <rect key="frame" x="0.0" y="0.0" width="306" height="35"/>
+                    <connections>
+                        <action selector="acToggleGroupView:" destination="-1" eventType="touchUpInside" id="VJt-xN-BsX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="iuJ-SU-fCe" secondAttribute="trailing" id="0kt-50-eHx"/>
+                <constraint firstAttribute="bottom" secondItem="9VI-xS-dng" secondAttribute="bottom" id="61r-y3-4rw"/>
+                <constraint firstAttribute="bottom" secondItem="JsK-1q-8qe" secondAttribute="bottom" constant="8" id="DZ8-ru-ibz"/>
+                <constraint firstAttribute="bottom" secondItem="JsK-1q-8qe" secondAttribute="bottom" id="IJm-7M-Mir"/>
+                <constraint firstItem="9VI-xS-dng" firstAttribute="top" secondItem="lMj-Bk-7Xh" secondAttribute="bottom" id="J63-3G-fmC"/>
+                <constraint firstItem="iuJ-SU-fCe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="NuM-v6-leJ"/>
+                <constraint firstItem="JsK-1q-8qe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="QDf-5H-zcu"/>
+                <constraint firstAttribute="trailing" secondItem="lMj-Bk-7Xh" secondAttribute="trailing" id="S3K-UC-clN"/>
+                <constraint firstItem="JsK-1q-8qe" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="TPP-rg-74y"/>
+                <constraint firstAttribute="bottom" secondItem="iuJ-SU-fCe" secondAttribute="bottom" id="bYj-S7-qou"/>
+                <constraint firstItem="9VI-xS-dng" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fw8-l5-LTY"/>
+                <constraint firstItem="iuJ-SU-fCe" firstAttribute="leading" secondItem="JsK-1q-8qe" secondAttribute="trailing" constant="15" id="g4L-e4-xY5"/>
+                <constraint firstItem="lMj-Bk-7Xh" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="gqs-q5-vfT"/>
+                <constraint firstItem="lMj-Bk-7Xh" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="m8b-Js-tYP"/>
+                <constraint firstAttribute="trailing" secondItem="9VI-xS-dng" secondAttribute="trailing" id="qr3-vY-iY2"/>
+                <constraint firstItem="JsK-1q-8qe" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="vqm-Ld-yV4"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <nil key="simulatedTopBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="DZ8-ru-ibz"/>
+                    <exclude reference="QDf-5H-zcu"/>
+                </mask>
+            </variation>
+            <point key="canvasLocation" x="363" y="235"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bottom_line" width="320" height="2"/>
+    </resources>
+</document>

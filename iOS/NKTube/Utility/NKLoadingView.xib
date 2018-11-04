@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="NKLoadingView" customModule="KKTube" customModuleProvider="target">
+            <connections>
+                <outlet property="backgroundBlurView" destination="QfP-wu-gzn" id="oYT-Y8-nDq"/>
+                <outlet property="olBackgroundImage" destination="FWk-ym-rKg" id="XpF-nM-I9x"/>
+                <outlet property="olContainerView" destination="iN0-l3-epB" id="sJ0-Vo-PWe"/>
+                <outlet property="olLoadingAnimationView" destination="3qE-xU-JcO" id="HLX-XD-jgy"/>
+                <outlet property="olTopMargin" destination="Ha0-eC-uGo" id="flz-g7-onw"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view userInteractionEnabled="NO" contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QfP-wu-gzn">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                </imageView>
+                <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lwx-B3-jBE" userLabel="LoadingView Container">
+                    <rect key="frame" x="153" y="300.5" width="70" height="67"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iSt-rP-mcC">
+                            <rect key="frame" x="0.0" y="0.0" width="70" height="67"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="6"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="FWk-ym-rKg">
+                            <rect key="frame" x="10" y="0.0" width="50" height="50"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="GF9-GE-A03"/>
+                                <constraint firstAttribute="width" constant="50" id="bf8-lS-1Zo"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3qE-xU-JcO">
+                            <rect key="frame" x="0.0" y="60" width="70" height="7"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="7" id="Q18-cm-5IX"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="iSt-rP-mcC" firstAttribute="leading" secondItem="lwx-B3-jBE" secondAttribute="leading" id="0JQ-Rd-PLY"/>
+                        <constraint firstAttribute="trailing" secondItem="3qE-xU-JcO" secondAttribute="trailing" id="40X-nz-Grm"/>
+                        <constraint firstAttribute="height" constant="67" id="5c9-Ru-FyZ"/>
+                        <constraint firstItem="3qE-xU-JcO" firstAttribute="leading" secondItem="lwx-B3-jBE" secondAttribute="leading" id="6LD-65-i2a"/>
+                        <constraint firstItem="FWk-ym-rKg" firstAttribute="top" secondItem="lwx-B3-jBE" secondAttribute="top" id="Ha0-eC-uGo"/>
+                        <constraint firstAttribute="width" constant="70" id="Rjn-iK-33f"/>
+                        <constraint firstItem="FWk-ym-rKg" firstAttribute="leading" secondItem="lwx-B3-jBE" secondAttribute="leading" constant="10" id="Rmu-Yl-ohd"/>
+                        <constraint firstItem="3qE-xU-JcO" firstAttribute="top" secondItem="FWk-ym-rKg" secondAttribute="bottom" constant="10" id="XFp-Rf-saI"/>
+                        <constraint firstItem="iSt-rP-mcC" firstAttribute="top" secondItem="lwx-B3-jBE" secondAttribute="top" id="adk-KV-Wfu"/>
+                        <constraint firstAttribute="bottom" secondItem="3qE-xU-JcO" secondAttribute="bottom" id="bLE-Hb-9oQ"/>
+                        <constraint firstAttribute="trailing" secondItem="iSt-rP-mcC" secondAttribute="trailing" id="btY-hM-PGf"/>
+                        <constraint firstAttribute="trailing" secondItem="FWk-ym-rKg" secondAttribute="trailing" constant="10" id="q40-9J-kEh"/>
+                        <constraint firstAttribute="bottom" secondItem="iSt-rP-mcC" secondAttribute="bottom" id="uyV-Hy-Qb5"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="lwx-B3-jBE" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="9t5-m8-RYm"/>
+                <constraint firstItem="QfP-wu-gzn" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CZx-aF-D7q"/>
+                <constraint firstAttribute="bottom" secondItem="QfP-wu-gzn" secondAttribute="bottom" id="HNq-cM-LYu"/>
+                <constraint firstItem="QfP-wu-gzn" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="jx5-oV-57u"/>
+                <constraint firstAttribute="trailing" secondItem="QfP-wu-gzn" secondAttribute="trailing" id="n32-23-zge"/>
+                <constraint firstItem="lwx-B3-jBE" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="oAv-qy-flO"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+            <point key="canvasLocation" x="285.5" y="341.5"/>
+        </view>
+    </objects>
+</document>
