@@ -2,8 +2,8 @@
 .DS_Store
 
 # Xcode
-build/*
+iOS/build/*
 
 #CocoaPod
-Pods/*
+iOS/Pods/*
 

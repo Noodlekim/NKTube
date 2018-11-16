@@ -51,7 +51,7 @@ PODS:
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
   - SDWebImage/Core (4.4.2)
-  - XCDYouTubeKit (2.6.0)
+  - XCDYouTubeKit (2.7.1)
 
 DEPENDENCIES:
   - Alamofire
@@ -103,7 +103,7 @@ SPEC CHECKSUMS:
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
   RNCryptor: c93d19029dcf7ff160aca0f24d6c9e7b0d82f664
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
-  XCDYouTubeKit: 76f14b161e9563541a3674b6b5bfb61c4b72b269
+  XCDYouTubeKit: c8567fd5cb388a3099fa26eee4b30df2a467847d
 
 PODFILE CHECKSUM: 2516c7a2da40b259103b4810c2b0c9ec8b349f30
 
