@@ -37,43 +37,42 @@ class LoginManager: NSObject {
                 if let accessToken = authState?.lastTokenResponse?.accessToken,
                     let refreshToken = authState?.lastTokenResponse?.refreshToken
                 {
-                    // Flurry 로그인 성공
                     // FlurryManager.shared.actionBottomMenuLoginLoginSuccess()
                     // TODO: UserDefault의 저장 방식을 바꿀예정.
-                    UserInfos.accessToken.set(value: accessToken)
-                    UserInfos.refreshToken.set(value: refreshToken)
+                    NKUserInfo.sharedInstance.setAccessToken(accessToken)
+                    NKUserInfo.sharedInstance.setRefreshToken(refreshToken)
+
+                    // ログイン完了Notificationを通知
                     
-                    let parameters: [String: Any] = [
-                        "part": "id,snippet,contentDetails,status,topicDetails",
-                        "mine": "true"
-                    ]
-                    YouTubeService.shared.getUserRelatedPlaylists(param: parameters, completion: { (relatedPlaylists, error) in
-                        if let relatedPlaylists = relatedPlaylists {
-                            
-                            if let favorites = relatedPlaylists.favorites {
-                                UserInfos.favorites.set(value: favorites)
-                            }
-                            if let likes = relatedPlaylists.likes {
-                                UserInfos.likes.set(value: likes)
-                            }
-                            if let uploads = relatedPlaylists.uploads {
-                                UserInfos.uploads.set(value: uploads)
-                            }
-                        }
-                        // TODO: 이걸 사이드쪽으로 바꾸던지 아니면 없애든지 해야함.
-                        BottomMenuManager.shared.completeLogin(isLogin: true)
-                    })
+//                    let parameters: [String: Any] = [
+//                        "part": "id,snippet,contentDetails,status,topicDetails",
+//                        "mine": "true"
+//                    ]
+//                    YouTubeService.shared.getUserRelatedPlaylists(param: parameters, completion: { (relatedPlaylists, error) in
+//                        if let relatedPlaylists = relatedPlaylists {
+//                            
+//                            if let favorites = relatedPlaylists.favorites {
+//                                UserInfos.favorites.set(value: favorites)
+//                            }
+//                            if let likes = relatedPlaylists.likes {
+//                                UserInfos.likes.set(value: likes)
+//                            }
+//                            if let uploads = relatedPlaylists.uploads {
+//                                UserInfos.uploads.set(value: uploads)
+//                            }
+//                        }
+//                    })
                     
                 } else {
                     print("로그인 에러")
-                    BottomMenuManager.shared.completeLogin(isLogin: false)
+                    // TODO: ログイン失敗Notificationを通知
                 }
             })
         })
     }
     
     var isLogin: Bool {
-        guard let accessToken = UserInfos.accessToken.get() as? String, let refreshToken = UserInfos.refreshToken.get() as? String else {
+        guard let _ = NKUserInfo.sharedInstance.accessToken as? String, let refreshToken = NKUserInfo.sharedInstance.refreshToken as? String else {
             return false
         }
         return true

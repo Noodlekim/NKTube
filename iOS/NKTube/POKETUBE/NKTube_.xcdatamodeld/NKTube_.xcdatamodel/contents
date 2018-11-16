@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="9525" systemVersion="15C50" minimumToolsVersion="Automatic">
+    <entity name="CachedVideo" representedClassName=".CachedVideo" syncable="YES">
+        <attribute name="channelTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="embedHtml" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="path" attributeType="String" syncable="YES"/>
+        <attribute name="quality" attributeType="String" syncable="YES"/>
+        <attribute name="thumbDefault" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbHigh" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbMaxres" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbMedium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbStandard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" attributeType="String" syncable="YES"/>
+        <attribute name="videoDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CachedVideo" positionX="-63" positionY="-18" width="128" height="225"/>
+    </elements>
+</model>

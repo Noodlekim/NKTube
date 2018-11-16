@@ -31,14 +31,14 @@ class NKVideoDescriptionView: UIView {
     @IBAction func addChannel(_ sender: UIButton) {
         if let channelId = self.video?.channelId {
             
-            MABYT3_APIRequest.sharedInstance().insertSubscription(channelId, andHandler: { (error, success) in
-                
-                if success {
-                    NKUtility.showMessage(message: "채널 등록 성공")
-                } else {
-                    NKUtility.showMessage(message: "채널 등록 실패: \(error)")
-                }
-            })
+//            MABYT3_APIRequest.sharedInstance().insertSubscription(channelId, andHandler: { (error, success) in
+//                
+//                if success {
+//                    NKUtility.showMessage(message: "채널 등록 성공")
+//                } else {
+//                    NKUtility.showMessage(message: "채널 등록 실패: \(error)")
+//                }
+//            })
         }
     }
 

@@ -8,12 +8,12 @@
 
 import UIKit
 
-enum VideoStatus: Int {
+enum VideoQuality: Int {
     case canDownload = 1000
     case downloaded = 2000
     case inQue = 3000
     
-    static func statusFromRawValue(_ value: Int) -> VideoStatus {
+    static func statusFromRawValue(_ value: Int) -> VideoQuality {
         switch value {
         case 1000:
             return .canDownload
@@ -26,7 +26,7 @@ enum VideoStatus: Int {
     }
 
     
-    static func statusFromVideo(_ video: VideoProtocol) -> VideoStatus {
+    static func statusFromVideo(_ video: VideoProtocol) -> VideoQuality {
         if let video = video as? NKVideo, NKDownloadManager.sharedInstance.isInQueVideos.contains(video) {
             return .inQue
         } else {
@@ -43,8 +43,8 @@ enum VideoStatus: Int {
 
 class NKStatusButton: UIButton {
 
-    var tempVideoStatus: VideoStatus = .canDownload
-    var videoStatus: VideoStatus {
+    var tempVideoStatus: VideoQuality = .canDownload
+    var videoStatus: VideoQuality {
         get {
             return tempVideoStatus
         }

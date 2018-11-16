@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SDWebImage
 
 class NKChannelCell: UITableViewCell {
 
@@ -26,14 +27,13 @@ class NKChannelCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func setData(_ snippet: MABYT3_SubscriptionSnippet) {
+    func setData(_ channel: Channel) {
         
-        if let thumbnail = snippet.thumbnails["default"] as? MABYT3_Thumbnail
-            , let imageUrl = URL(string: thumbnail.url) {
-            olThumbnail.sd_setImage(with: imageUrl, placeholderImage: NKImage.defaultThumbnail)
+        if let thumbnail = channel.defaultThumb,
+            let url = URL(string: thumbnail) {
+            olThumbnail?.sd_setImage(with: url, completed: nil)
         }
-
-        olTitle.text = snippet.title
+        olTitle.text = channel.title
     }
     
     class func height() -> CGFloat {

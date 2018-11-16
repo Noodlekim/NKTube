@@ -50,6 +50,7 @@ let KeyMigration: String = "kMigration"
 let KeySearchHistory: String = "kSearchHistory"
 
 let KeyAccessToken: String = "kAccessToken"
+let KeyRefreshToken: String = "kRefreshToken"
 
 class NKUserInfo: NSObject {
 
@@ -166,4 +167,19 @@ class NKUserInfo: NSObject {
         }
     }
     
+    
+    func setRefreshToken(_ token: String) {
+        userInfo.set(token, forKey: KeyRefreshToken)
+    }
+    
+    var refreshToken: String? {        
+        get {
+            if let token = userInfo.object(forKey: KeyRefreshToken) {
+                return token as? String
+            } else {
+                return nil
+            }
+        }
+    }
+
 }

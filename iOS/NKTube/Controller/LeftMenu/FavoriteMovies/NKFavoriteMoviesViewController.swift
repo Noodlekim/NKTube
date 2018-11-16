@@ -11,7 +11,7 @@ import DZNEmptyDataSet
 
 class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCommonProtocol, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
     
-    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
+//    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     var playListId: String?
     var videos: [NKVideo] = []
     
@@ -46,12 +46,12 @@ class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCo
         
         if let playListId = playListId {
             NKLoadingView.showLoadingView(true, type: .youtubeMenuGood)
-            NKYouTubeService.sharedInstance.getWatchLater((userCredentials?.token.accessToken)!, playlistId: playListId, completion: { (videos, nextPageToken, error, canPaging) in
-                KLog("videos >> \(videos)")
-                self.videos = videos
-                self.olTableView.reloadData()
-                NKLoadingView.hideLoadingView(.youtubeMenuGood)
-            })
+//            NKYouTubeService.sharedInstance.getWatchLater((userCredentials?.token.accessToken)!, playlistId: playListId, completion: { (videos, nextPageToken, error, canPaging) in
+//                KLog("videos >> \(videos)")
+//                self.videos = videos
+//                self.olTableView.reloadData()
+//                NKLoadingView.hideLoadingView(.youtubeMenuGood)
+//            })
         }
     }
 

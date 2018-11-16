@@ -572,7 +572,7 @@ class NKMainViewController: UIViewController, NKAVAudioManagerDelegate, NKMyMenu
     
     func didSuccessYouTubeLogin()  {
 
-        let accessToken = MAB_GoogleUserCredentials.sharedInstance().token.accessToken
+        let accessToken = NKUserInfo.sharedInstance.accessToken
         NKUserInfo.sharedInstance.setAccessToken(accessToken!)
 
         if let moviePlayerVC = self.moviePlayerViewController {

@@ -11,7 +11,7 @@ import DZNEmptyDataSet
 
 class NKWatchAfterViewController: NKSuperVideoListViewController, MainViewCommonProtocol, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
 
-    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
+//    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     var playListId: String?
     var videos: [NKVideo] = []
     
@@ -29,10 +29,22 @@ class NKWatchAfterViewController: NKSuperVideoListViewController, MainViewCommon
         olTableView.emptyDataSetDelegate = self
         olTableView.emptyDataSetSource = self
 
-        fetch()
+//        fetch()
         NKFlurryManager.sharedInstance.viewForYoutubeMenuWatchAfter()
     }
 
+    // MARK: - MainViewCommonProtocol
+    
+    func doScrollToTop() {
+        olTableView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
+    func doNeedToReload() {
+        olTableView.reloadData()
+    }
+    
+
+    /*
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -125,5 +137,5 @@ class NKWatchAfterViewController: NKSuperVideoListViewController, MainViewCommon
         NKFlurryManager.sharedInstance.actionForPlayVideoOnYoutubeMenuWatchAfter(video)
         NKAVAudioManager.sharedInstance.startPlay(video)
     }
-
+     */
 }

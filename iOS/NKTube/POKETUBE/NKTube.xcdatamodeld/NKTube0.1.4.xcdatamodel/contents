@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="16C67" minimumToolsVersion="Xcode 7.0" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="CachedVideo" representedClassName=".CachedVideo" syncable="YES">
+        <attribute name="channelTitle" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="definition" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="downloadDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="duration" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="embedHtml" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="group" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="license" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="likeCount" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="path" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="playedCount" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="privacyStatus" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicStatsViewable" optional="YES" attributeType="Boolean" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="quality" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbDefault" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbHigh" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbMaxres" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbMedium" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="thumbStandard" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="unLike" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoData" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="videoDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoId" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="videoQulity" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="viewsCount" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="GroupTitle" representedClassName=".GroupTitle" syncable="YES">
+        <attribute name="editable" optional="YES" attributeType="Boolean" defaultValueString="YES" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="order" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="CachedVideo" positionX="-63" positionY="-18" width="128" height="435"/>
+        <element name="GroupTitle" positionX="-63" positionY="108" width="128" height="90"/>
+    </elements>
+</model>

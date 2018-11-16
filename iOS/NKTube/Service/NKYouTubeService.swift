@@ -269,7 +269,6 @@ class NKYouTubeService: NSObject {
     
     
     
-    
     // MARK: 유투브 상세 리스트 요청 (videoIds)
     func getVideoDetailLists(_ videoIds: [String], complete: @escaping (_ videos: [NKVideo], _ detailError: NSError?) -> Void) {
         
@@ -740,8 +739,35 @@ class NKYouTubeService: NSObject {
                 
             }
         }
-
-        
-    }
-    
+    }    
 }
+
+//extension NKYouTubeService {
+//
+//
+//    func getSubscriptions() {
+//     
+//        let parameters: [String: Any] = ["part": "id,snippet,contentDetails",
+//                                    "mine": true,
+//                                    "maxResults": 30]
+//
+//        var url = YouTubeURL.baseURL + "/subscriptions"
+//        
+//        if !parameters.isEmpty {
+//            url += "?"
+//            url += parameters.map({ (k: String, v: Any) -> String in "\(k)=\(v)" }).joined(separator: "&")
+//            url += "&key=" + apiKey
+//        }
+//
+//        var headers: HTTPHeaders?
+//        if let accessToken = NKUserInfo.sharedInstance.accessToken as? String {
+//            headers = ["Authorization": "Bearer \(accessToken)"]
+//        }
+//
+//        Alamofire.request(encodingUrl, headers: headers).responseJSON { (response: DataResponse<Any>) in
+//            KLog("JSON \(String(describing: response.result.value))")
+//
+//            
+//        }
+//    }
+//}

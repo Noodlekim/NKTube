@@ -89,7 +89,7 @@ class NKVideoListCell: UITableViewCell {
         
         
         // 비디오 상태에 따른 버튼 상태 처리
-        self.olCachedButton.videoStatus = VideoStatus.statusFromVideo(video)
+        self.olCachedButton.videoStatus = VideoQuality.statusFromVideo(video)
         
         if let definition = video.definition, definition == "hd"  {
             olHDLabel.text = definition.uppercased()

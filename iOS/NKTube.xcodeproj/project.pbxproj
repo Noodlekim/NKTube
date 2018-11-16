@@ -50,6 +50,31 @@
 		0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */; };
 		035F3D661D39B27000B3635D /* NKMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */; };
 		0365A76A219EB3E5002B6C07 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A769219EB3E5002B6C07 /* LoginManager.swift */; };
+		0365A8A6219F1041002B6C07 /* RecommandVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A891219F103D002B6C07 /* RecommandVideo.swift */; };
+		0365A8A8219F1041002B6C07 /* LikeRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A893219F103D002B6C07 /* LikeRoot.swift */; };
+		0365A8A9219F1041002B6C07 /* RecommandsRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A894219F103E002B6C07 /* RecommandsRoot.swift */; };
+		0365A8AA219F1041002B6C07 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A895219F103E002B6C07 /* APIError.swift */; };
+		0365A8AB219F1041002B6C07 /* VideoRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A896219F103E002B6C07 /* VideoRoot.swift */; };
+		0365A8AC219F1041002B6C07 /* ChannelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A897219F103E002B6C07 /* ChannelItem.swift */; };
+		0365A8AD219F1041002B6C07 /* RelatedVideoRoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A898219F103E002B6C07 /* RelatedVideoRoot.swift */; };
+		0365A8AE219F1041002B6C07 /* ChannelList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A899219F103E002B6C07 /* ChannelList.swift */; };
+		0365A8AF219F1041002B6C07 /* AdOptions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89A219F103E002B6C07 /* AdOptions.swift */; };
+		0365A8B0219F1041002B6C07 /* AdNative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89B219F103F002B6C07 /* AdNative.swift */; };
+		0365A8B1219F1041002B6C07 /* RelatedVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89C219F103F002B6C07 /* RelatedVideo.swift */; };
+		0365A8B2219F1041002B6C07 /* PageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89D219F103F002B6C07 /* PageInfo.swift */; };
+		0365A8B3219F1041002B6C07 /* AuthResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89E219F103F002B6C07 /* AuthResults.swift */; };
+		0365A8B4219F1041002B6C07 /* ContentDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A89F219F103F002B6C07 /* ContentDetail.swift */; };
+		0365A8B5219F1041002B6C07 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A0219F103F002B6C07 /* Channel.swift */; };
+		0365A8B6219F1041002B6C07 /* Statistics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A1219F1040002B6C07 /* Statistics.swift */; };
+		0365A8B7219F1041002B6C07 /* UserRelatedPlaylists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A2219F1040002B6C07 /* UserRelatedPlaylists.swift */; };
+		0365A8B8219F1041002B6C07 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A3219F1040002B6C07 /* Video.swift */; };
+		0365A8B9219F1041002B6C07 /* LikesVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A4219F1041002B6C07 /* LikesVideo.swift */; };
+		0365A8BA219F1041002B6C07 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8A5219F1041002B6C07 /* Subscription.swift */; };
+		0365A8BC219F1077002B6C07 /* YouTubeService2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8BB219F1076002B6C07 /* YouTubeService2.swift */; };
+		0365A8BE219F121A002B6C07 /* PTError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8BD219F121A002B6C07 /* PTError.swift */; };
+		0365A8C0219F15D9002B6C07 /* VideoStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8BF219F15D9002B6C07 /* VideoStatus.swift */; };
+		0365A8C2219F1810002B6C07 /* FavoriteVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8C1219F1810002B6C07 /* FavoriteVideo.swift */; };
+		0365A8C4219F1A7C002B6C07 /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A8C3219F1A7B002B6C07 /* Param.swift */; };
 		036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */; };
 		036B8E9E1CEACC6700FDE9E2 /* NKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */; };
 		036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */; };
@@ -89,73 +114,6 @@
 		03BF09611C6247B2000B3CCB /* NKExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF09601C6247B2000B3CCB /* NKExtension.swift */; };
 		03BF09641C635A47000B3CCB /* NKUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF09631C635A46000B3CCB /* NKUserInfo.swift */; };
 		03C4A8171CB156DB008E67D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4A8151CB156DB008E67D1 /* Main.storyboard */; };
-		03C4A8221CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */; };
-		03C4A8231CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */; };
-		03C4A8241CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */; };
-		03C4A8B21CB7FCDC008E67D1 /* MABYT3_Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */; };
-		03C4A8B31CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */; };
-		03C4A8B41CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */; };
-		03C4A8B51CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */; };
-		03C4A8B61CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */; };
-		03C4A8B71CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */; };
-		03C4A8B81CB7FCDC008E67D1 /* MABYT3_APIRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */; };
-		03C4A8B91CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */; };
-		03C4A8BA1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */; };
-		03C4A8BB1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */; };
-		03C4A8BC1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */; };
-		03C4A8BD1CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */; };
-		03C4A8BE1CB7FCDC008E67D1 /* MABYT3_PropertyURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */; };
-		03C4A8BF1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */; };
-		03C4A8C01CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */; };
-		03C4A8C11CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */; };
-		03C4A8C21CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */; };
-		03C4A8C31CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */; };
-		03C4A8C41CB7FCDC008E67D1 /* MABYT3_Channel.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */; };
-		03C4A8C51CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */; };
-		03C4A8C61CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */; };
-		03C4A8C71CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */; };
-		03C4A8C81CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */; };
-		03C4A8C91CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */; };
-		03C4A8CA1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */; };
-		03C4A8CB1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */; };
-		03C4A8CC1CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */; };
-		03C4A8CD1CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */; };
-		03C4A8CE1CB7FCDC008E67D1 /* MAB_GDate.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */; };
-		03C4A8CF1CB7FCDC008E67D1 /* MAB_GLink.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */; };
-		03C4A8D01CB7FCDC008E67D1 /* MABYT3_ContentRating.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */; };
-		03C4A8D11CB7FCDC008E67D1 /* MABYT3_GuideCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */; };
-		03C4A8D21CB7FCDC008E67D1 /* MABYT3_Language.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */; };
-		03C4A8D31CB7FCDC008E67D1 /* MABYT3_Location.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */; };
-		03C4A8D41CB7FCDC008E67D1 /* MABYT3_Region.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */; };
-		03C4A8D51CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */; };
-		03C4A8D61CB7FCDC008E67D1 /* MABYT3_ResourceId.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */; };
-		03C4A8D71CB7FCDC008E67D1 /* MABYT3_Thumbnail.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */; };
-		03C4A8D81CB7FCDC008E67D1 /* MABYT3_VideoCategory.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */; };
-		03C4A8D91CB7FCDC008E67D1 /* MABYT3_PlayList.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */; };
-		03C4A8DA1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */; };
-		03C4A8DB1CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */; };
-		03C4A8DC1CB7FCDC008E67D1 /* MABYT3_PlayListItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */; };
-		03C4A8DD1CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */; };
-		03C4A8DE1CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */; };
-		03C4A8DF1CB7FCDC008E67D1 /* MABYT3_SearchItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */; };
-		03C4A8E01CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */; };
-		03C4A8E11CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */; };
-		03C4A8E21CB7FCDC008E67D1 /* MABYT3_Subscription.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */; };
-		03C4A8E31CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */; };
-		03C4A8E41CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */; };
-		03C4A8E51CB7FCDC008E67D1 /* MABYT3_AudioStreams.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */; };
-		03C4A8E61CB7FCDC008E67D1 /* MABYT3_Video.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */; };
-		03C4A8E71CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */; };
-		03C4A8E81CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */; };
-		03C4A8E91CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */; };
-		03C4A8EA1CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */; };
-		03C4A8EB1CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */; };
-		03C4A8EC1CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */; };
-		03C4A8ED1CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */; };
-		03C4A8EE1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */; };
-		03C4A8EF1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */; };
-		03C4A8F01CB7FCDC008E67D1 /* MABYT3_VideoStreams.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */; };
-		03C4A8F11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */; };
 		03C4A8F31CB97158008E67D1 /* NKChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */; };
 		03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */; };
 		03C4A8F71CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */; };
@@ -253,6 +211,31 @@
 		034379A91CFB367700A767E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCacheSearchViewController.swift; path = Controller/CacheSearch/NKCacheSearchViewController.swift; sourceTree = "<group>"; };
 		0365A769219EB3E5002B6C07 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
+		0365A891219F103D002B6C07 /* RecommandVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandVideo.swift; sourceTree = "<group>"; };
+		0365A893219F103D002B6C07 /* LikeRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeRoot.swift; sourceTree = "<group>"; };
+		0365A894219F103E002B6C07 /* RecommandsRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecommandsRoot.swift; sourceTree = "<group>"; };
+		0365A895219F103E002B6C07 /* APIError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
+		0365A896219F103E002B6C07 /* VideoRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoRoot.swift; sourceTree = "<group>"; };
+		0365A897219F103E002B6C07 /* ChannelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelItem.swift; sourceTree = "<group>"; };
+		0365A898219F103E002B6C07 /* RelatedVideoRoot.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedVideoRoot.swift; sourceTree = "<group>"; };
+		0365A899219F103E002B6C07 /* ChannelList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChannelList.swift; sourceTree = "<group>"; };
+		0365A89A219F103E002B6C07 /* AdOptions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdOptions.swift; sourceTree = "<group>"; };
+		0365A89B219F103F002B6C07 /* AdNative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdNative.swift; sourceTree = "<group>"; };
+		0365A89C219F103F002B6C07 /* RelatedVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RelatedVideo.swift; sourceTree = "<group>"; };
+		0365A89D219F103F002B6C07 /* PageInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageInfo.swift; sourceTree = "<group>"; };
+		0365A89E219F103F002B6C07 /* AuthResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthResults.swift; sourceTree = "<group>"; };
+		0365A89F219F103F002B6C07 /* ContentDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentDetail.swift; sourceTree = "<group>"; };
+		0365A8A0219F103F002B6C07 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		0365A8A1219F1040002B6C07 /* Statistics.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Statistics.swift; sourceTree = "<group>"; };
+		0365A8A2219F1040002B6C07 /* UserRelatedPlaylists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserRelatedPlaylists.swift; sourceTree = "<group>"; };
+		0365A8A3219F1040002B6C07 /* Video.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
+		0365A8A4219F1041002B6C07 /* LikesVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesVideo.swift; sourceTree = "<group>"; };
+		0365A8A5219F1041002B6C07 /* Subscription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		0365A8BB219F1076002B6C07 /* YouTubeService2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YouTubeService2.swift; sourceTree = "<group>"; };
+		0365A8BD219F121A002B6C07 /* PTError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PTError.swift; sourceTree = "<group>"; };
+		0365A8BF219F15D9002B6C07 /* VideoStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VideoStatus.swift; sourceTree = "<group>"; };
+		0365A8C1219F1810002B6C07 /* FavoriteVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FavoriteVideo.swift; sourceTree = "<group>"; };
+		0365A8C3219F1A7B002B6C07 /* Param.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKLoadingView.swift; path = Utility/NKLoadingView.swift; sourceTree = "<group>"; };
 		036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKLoadingView.xib; path = Utility/NKLoadingView.xib; sourceTree = "<group>"; };
 		036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSplitviewController.swift; path = Controller/MainView/NKSplitviewController.swift; sourceTree = "<group>"; };
@@ -294,141 +277,6 @@
 		03BF09601C6247B2000B3CCB /* NKExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKExtension.swift; path = Utility/Extension/NKExtension.swift; sourceTree = "<group>"; };
 		03BF09631C635A46000B3CCB /* NKUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKUserInfo.swift; path = Utility/UserInfo/NKUserInfo.swift; sourceTree = "<group>"; };
 		03C4A8161CB156DB008E67D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		03C4A81C1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleAccessToken.h; sourceTree = "<group>"; };
-		03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleAccessToken.m; sourceTree = "<group>"; };
-		03C4A81E1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleOAuthTouchViewController.h; sourceTree = "<group>"; };
-		03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleOAuthTouchViewController.m; sourceTree = "<group>"; };
-		03C4A8201CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GoogleUserCredentials.h; sourceTree = "<group>"; };
-		03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GoogleUserCredentials.m; sourceTree = "<group>"; };
-		03C4A8271CB7FCDC008E67D1 /* MABYT3_Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Activity.h; sourceTree = "<group>"; };
-		03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Activity.m; sourceTree = "<group>"; };
-		03C4A8291CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityContentDetails.h; sourceTree = "<group>"; };
-		03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityContentDetails.m; sourceTree = "<group>"; };
-		03C4A82B1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityPlaylistItem.h; sourceTree = "<group>"; };
-		03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityPlaylistItem.m; sourceTree = "<group>"; };
-		03C4A82D1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivityRecommendation.h; sourceTree = "<group>"; };
-		03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivityRecommendation.m; sourceTree = "<group>"; };
-		03C4A82F1CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivitySnippet.h; sourceTree = "<group>"; };
-		03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivitySnippet.m; sourceTree = "<group>"; };
-		03C4A8311CB7FCDC008E67D1 /* MABYT3_ActivitySocial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ActivitySocial.h; sourceTree = "<group>"; };
-		03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ActivitySocial.m; sourceTree = "<group>"; };
-		03C4A8341CB7FCDC008E67D1 /* MABYT3_APIRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_APIRequest.h; sourceTree = "<group>"; };
-		03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_APIRequest.m; sourceTree = "<group>"; };
-		03C4A8381CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettings.h; sourceTree = "<group>"; };
-		03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettings.m; sourceTree = "<group>"; };
-		03C4A83A1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsChannel.h; sourceTree = "<group>"; };
-		03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsChannel.m; sourceTree = "<group>"; };
-		03C4A83C1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsImage.h; sourceTree = "<group>"; };
-		03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsImage.m; sourceTree = "<group>"; };
-		03C4A83E1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelBrandingSettingsWatch.h; sourceTree = "<group>"; };
-		03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelBrandingSettingsWatch.m; sourceTree = "<group>"; };
-		03C4A8401CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_LocalizedPropertyURL.h; sourceTree = "<group>"; };
-		03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_LocalizedPropertyURL.m; sourceTree = "<group>"; };
-		03C4A8421CB7FCDC008E67D1 /* MABYT3_PropertyURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PropertyURL.h; sourceTree = "<group>"; };
-		03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PropertyURL.m; sourceTree = "<group>"; };
-		03C4A8451CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotion.h; sourceTree = "<group>"; };
-		03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotion.m; sourceTree = "<group>"; };
-		03C4A8471CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionDefaultTiming.h; sourceTree = "<group>"; };
-		03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionDefaultTiming.m; sourceTree = "<group>"; };
-		03C4A8491CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionItem.h; sourceTree = "<group>"; };
-		03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionItem.m; sourceTree = "<group>"; };
-		03C4A84B1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionItemIdentifier.h; sourceTree = "<group>"; };
-		03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionItemIdentifier.m; sourceTree = "<group>"; };
-		03C4A84D1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelInvideoPromotionPosition.h; sourceTree = "<group>"; };
-		03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelInvideoPromotionPosition.m; sourceTree = "<group>"; };
-		03C4A84F1CB7FCDC008E67D1 /* MABYT3_Channel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Channel.h; sourceTree = "<group>"; };
-		03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Channel.m; sourceTree = "<group>"; };
-		03C4A8511CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelAuditDetails.h; sourceTree = "<group>"; };
-		03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelAuditDetails.m; sourceTree = "<group>"; };
-		03C4A8531CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelContentDetails.h; sourceTree = "<group>"; };
-		03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelContentDetails.m; sourceTree = "<group>"; };
-		03C4A8551CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelContentOwnerDetails.h; sourceTree = "<group>"; };
-		03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelContentOwnerDetails.m; sourceTree = "<group>"; };
-		03C4A8571CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSnippet.h; sourceTree = "<group>"; };
-		03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSnippet.m; sourceTree = "<group>"; };
-		03C4A8591CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelStatistics.h; sourceTree = "<group>"; };
-		03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelStatistics.m; sourceTree = "<group>"; };
-		03C4A85B1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelStatus.h; sourceTree = "<group>"; };
-		03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelStatus.m; sourceTree = "<group>"; };
-		03C4A85E1CB7FCDC008E67D1 /* MABYT3_ChannelSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSection.h; sourceTree = "<group>"; };
-		03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSection.m; sourceTree = "<group>"; };
-		03C4A8601CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSectionContentDetails.h; sourceTree = "<group>"; };
-		03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSectionContentDetails.m; sourceTree = "<group>"; };
-		03C4A8621CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ChannelSectionSnippet.h; sourceTree = "<group>"; };
-		03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ChannelSectionSnippet.m; sourceTree = "<group>"; };
-		03C4A8641CB7FCDC008E67D1 /* MAB_GDate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GDate.h; sourceTree = "<group>"; };
-		03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GDate.m; sourceTree = "<group>"; };
-		03C4A8661CB7FCDC008E67D1 /* MAB_GLink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MAB_GLink.h; sourceTree = "<group>"; };
-		03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MAB_GLink.m; sourceTree = "<group>"; };
-		03C4A8681CB7FCDC008E67D1 /* MABYT3_ContentRating.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ContentRating.h; sourceTree = "<group>"; };
-		03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ContentRating.m; sourceTree = "<group>"; };
-		03C4A86A1CB7FCDC008E67D1 /* MABYT3_enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_enums.h; sourceTree = "<group>"; };
-		03C4A86B1CB7FCDC008E67D1 /* MABYT3_GuideCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_GuideCategory.h; sourceTree = "<group>"; };
-		03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_GuideCategory.m; sourceTree = "<group>"; };
-		03C4A86D1CB7FCDC008E67D1 /* MABYT3_Language.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Language.h; sourceTree = "<group>"; };
-		03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Language.m; sourceTree = "<group>"; };
-		03C4A86F1CB7FCDC008E67D1 /* MABYT3_Location.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Location.h; sourceTree = "<group>"; };
-		03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Location.m; sourceTree = "<group>"; };
-		03C4A8711CB7FCDC008E67D1 /* MABYT3_Region.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Region.h; sourceTree = "<group>"; };
-		03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Region.m; sourceTree = "<group>"; };
-		03C4A8731CB7FCDC008E67D1 /* MABYT3_RegionRestriction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_RegionRestriction.h; sourceTree = "<group>"; };
-		03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_RegionRestriction.m; sourceTree = "<group>"; };
-		03C4A8751CB7FCDC008E67D1 /* MABYT3_ResourceId.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_ResourceId.h; sourceTree = "<group>"; };
-		03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_ResourceId.m; sourceTree = "<group>"; };
-		03C4A8771CB7FCDC008E67D1 /* MABYT3_Thumbnail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Thumbnail.h; sourceTree = "<group>"; };
-		03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Thumbnail.m; sourceTree = "<group>"; };
-		03C4A8791CB7FCDC008E67D1 /* MABYT3_VideoCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoCategory.h; sourceTree = "<group>"; };
-		03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoCategory.m; sourceTree = "<group>"; };
-		03C4A87C1CB7FCDC008E67D1 /* MABYT3_PlayList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayList.h; sourceTree = "<group>"; };
-		03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayList.m; sourceTree = "<group>"; };
-		03C4A87E1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListContentDetails.h; sourceTree = "<group>"; };
-		03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListContentDetails.m; sourceTree = "<group>"; };
-		03C4A8801CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListSnippet.h; sourceTree = "<group>"; };
-		03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListSnippet.m; sourceTree = "<group>"; };
-		03C4A8831CB7FCDC008E67D1 /* MABYT3_PlayListItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItem.h; sourceTree = "<group>"; };
-		03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItem.m; sourceTree = "<group>"; };
-		03C4A8851CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItemContentDetails.h; sourceTree = "<group>"; };
-		03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItemContentDetails.m; sourceTree = "<group>"; };
-		03C4A8871CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_PlayListItemSnippet.h; sourceTree = "<group>"; };
-		03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_PlayListItemSnippet.m; sourceTree = "<group>"; };
-		03C4A88A1CB7FCDC008E67D1 /* MABYT3_SearchItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SearchItem.h; sourceTree = "<group>"; };
-		03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SearchItem.m; sourceTree = "<group>"; };
-		03C4A88C1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SearchItemSnippet.h; sourceTree = "<group>"; };
-		03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SearchItemSnippet.m; sourceTree = "<group>"; };
-		03C4A88F1CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriberSnippet.h; sourceTree = "<group>"; };
-		03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriberSnippet.m; sourceTree = "<group>"; };
-		03C4A8911CB7FCDC008E67D1 /* MABYT3_Subscription.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Subscription.h; sourceTree = "<group>"; };
-		03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Subscription.m; sourceTree = "<group>"; };
-		03C4A8931CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriptionContentDetails.h; sourceTree = "<group>"; };
-		03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriptionContentDetails.m; sourceTree = "<group>"; };
-		03C4A8951CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_SubscriptionSnippet.h; sourceTree = "<group>"; };
-		03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_SubscriptionSnippet.m; sourceTree = "<group>"; };
-		03C4A8981CB7FCDC008E67D1 /* MABYT3_AudioStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_AudioStreams.h; sourceTree = "<group>"; };
-		03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_AudioStreams.m; sourceTree = "<group>"; };
-		03C4A89A1CB7FCDC008E67D1 /* MABYT3_Video.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_Video.h; sourceTree = "<group>"; };
-		03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_Video.m; sourceTree = "<group>"; };
-		03C4A89C1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoContentDetails.h; sourceTree = "<group>"; };
-		03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoContentDetails.m; sourceTree = "<group>"; };
-		03C4A89E1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoFileDetails.h; sourceTree = "<group>"; };
-		03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoFileDetails.m; sourceTree = "<group>"; };
-		03C4A8A01CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoLiveStreamingDetails.h; sourceTree = "<group>"; };
-		03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoLiveStreamingDetails.m; sourceTree = "<group>"; };
-		03C4A8A21CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoProcessingDetails.h; sourceTree = "<group>"; };
-		03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoProcessingDetails.m; sourceTree = "<group>"; };
-		03C4A8A41CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoProcessingProgress.h; sourceTree = "<group>"; };
-		03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoProcessingProgress.m; sourceTree = "<group>"; };
-		03C4A8A61CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoRecordingDetails.h; sourceTree = "<group>"; };
-		03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoRecordingDetails.m; sourceTree = "<group>"; };
-		03C4A8A81CB7FCDC008E67D1 /* MABYT3_VideoSnippet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoSnippet.h; sourceTree = "<group>"; };
-		03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoSnippet.m; sourceTree = "<group>"; };
-		03C4A8AA1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStatistics.h; sourceTree = "<group>"; };
-		03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStatistics.m; sourceTree = "<group>"; };
-		03C4A8AC1CB7FCDC008E67D1 /* MABYT3_VideoStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStatus.h; sourceTree = "<group>"; };
-		03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStatus.m; sourceTree = "<group>"; };
-		03C4A8AE1CB7FCDC008E67D1 /* MABYT3_VideoStreams.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoStreams.h; sourceTree = "<group>"; };
-		03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoStreams.m; sourceTree = "<group>"; };
-		03C4A8B01CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MABYT3_VideoSuggestions.h; sourceTree = "<group>"; };
-		03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MABYT3_VideoSuggestions.m; sourceTree = "<group>"; };
 		03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelListViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Channel/NKChannelListViewController.swift; sourceTree = "<group>"; };
 		03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKWatchAfterViewController.swift; path = Controller/LeftMenu/YouTubeMenu/WatchAfter/NKWatchAfterViewController.swift; sourceTree = "<group>"; };
 		03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFavoriteMoviesViewController.swift; path = Controller/LeftMenu/FavoriteMovies/NKFavoriteMoviesViewController.swift; sourceTree = "<group>"; };
@@ -617,6 +465,36 @@
 			name = OtherMenu;
 			sourceTree = "<group>";
 		};
+		0365A890219F1033002B6C07 /* Mapper */ = {
+			isa = PBXGroup;
+			children = (
+				0365A89A219F103E002B6C07 /* AdOptions.swift */,
+				0365A89B219F103F002B6C07 /* AdNative.swift */,
+				0365A895219F103E002B6C07 /* APIError.swift */,
+				0365A8BD219F121A002B6C07 /* PTError.swift */,
+				0365A89E219F103F002B6C07 /* AuthResults.swift */,
+				0365A8A0219F103F002B6C07 /* Channel.swift */,
+				0365A899219F103E002B6C07 /* ChannelList.swift */,
+				0365A897219F103E002B6C07 /* ChannelItem.swift */,
+				0365A89F219F103F002B6C07 /* ContentDetail.swift */,
+				0365A893219F103D002B6C07 /* LikeRoot.swift */,
+				0365A8A4219F1041002B6C07 /* LikesVideo.swift */,
+				0365A89D219F103F002B6C07 /* PageInfo.swift */,
+				0365A894219F103E002B6C07 /* RecommandsRoot.swift */,
+				0365A89C219F103F002B6C07 /* RelatedVideo.swift */,
+				0365A891219F103D002B6C07 /* RecommandVideo.swift */,
+				0365A898219F103E002B6C07 /* RelatedVideoRoot.swift */,
+				0365A8A1219F1040002B6C07 /* Statistics.swift */,
+				0365A8A5219F1041002B6C07 /* Subscription.swift */,
+				0365A8A2219F1040002B6C07 /* UserRelatedPlaylists.swift */,
+				0365A8A3219F1040002B6C07 /* Video.swift */,
+				0365A896219F103E002B6C07 /* VideoRoot.swift */,
+				0365A8BF219F15D9002B6C07 /* VideoStatus.swift */,
+				0365A8C1219F1810002B6C07 /* FavoriteVideo.swift */,
+			);
+			name = Mapper;
+			sourceTree = "<group>";
+		};
 		0379EBBD1C4E430C00C8AB13 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
@@ -698,249 +576,10 @@
 		03C4A81A1CB7FBA0008E67D1 /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
-				03C4A8251CB7FCDC008E67D1 /* API */,
-				03C4A81B1CB7FBA0008E67D1 /* OAuthFrameWork */,
 				03D9F9721C960081001711A6 /* Fabric.framework */,
 				03D9F9731C960081001711A6 /* Crashlytics.framework */,
 			);
 			path = ThirdParty;
-			sourceTree = "<group>";
-		};
-		03C4A81B1CB7FBA0008E67D1 /* OAuthFrameWork */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A81C1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.h */,
-				03C4A81D1CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m */,
-				03C4A81E1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.h */,
-				03C4A81F1CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m */,
-				03C4A8201CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.h */,
-				03C4A8211CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m */,
-			);
-			path = OAuthFrameWork;
-			sourceTree = "<group>";
-		};
-		03C4A8251CB7FCDC008E67D1 /* API */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8261CB7FCDC008E67D1 /* Activity */,
-				03C4A8331CB7FCDC008E67D1 /* APICalls */,
-				03C4A8361CB7FCDC008E67D1 /* Channel */,
-				03C4A85D1CB7FCDC008E67D1 /* ChannelSection */,
-				03C4A8641CB7FCDC008E67D1 /* MAB_GDate.h */,
-				03C4A8651CB7FCDC008E67D1 /* MAB_GDate.m */,
-				03C4A8661CB7FCDC008E67D1 /* MAB_GLink.h */,
-				03C4A8671CB7FCDC008E67D1 /* MAB_GLink.m */,
-				03C4A8681CB7FCDC008E67D1 /* MABYT3_ContentRating.h */,
-				03C4A8691CB7FCDC008E67D1 /* MABYT3_ContentRating.m */,
-				03C4A86A1CB7FCDC008E67D1 /* MABYT3_enums.h */,
-				03C4A86B1CB7FCDC008E67D1 /* MABYT3_GuideCategory.h */,
-				03C4A86C1CB7FCDC008E67D1 /* MABYT3_GuideCategory.m */,
-				03C4A86D1CB7FCDC008E67D1 /* MABYT3_Language.h */,
-				03C4A86E1CB7FCDC008E67D1 /* MABYT3_Language.m */,
-				03C4A86F1CB7FCDC008E67D1 /* MABYT3_Location.h */,
-				03C4A8701CB7FCDC008E67D1 /* MABYT3_Location.m */,
-				03C4A8711CB7FCDC008E67D1 /* MABYT3_Region.h */,
-				03C4A8721CB7FCDC008E67D1 /* MABYT3_Region.m */,
-				03C4A8731CB7FCDC008E67D1 /* MABYT3_RegionRestriction.h */,
-				03C4A8741CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m */,
-				03C4A8751CB7FCDC008E67D1 /* MABYT3_ResourceId.h */,
-				03C4A8761CB7FCDC008E67D1 /* MABYT3_ResourceId.m */,
-				03C4A8771CB7FCDC008E67D1 /* MABYT3_Thumbnail.h */,
-				03C4A8781CB7FCDC008E67D1 /* MABYT3_Thumbnail.m */,
-				03C4A8791CB7FCDC008E67D1 /* MABYT3_VideoCategory.h */,
-				03C4A87A1CB7FCDC008E67D1 /* MABYT3_VideoCategory.m */,
-				03C4A87B1CB7FCDC008E67D1 /* PlayList */,
-				03C4A8821CB7FCDC008E67D1 /* PlayListItem */,
-				03C4A8891CB7FCDC008E67D1 /* SearchItem */,
-				03C4A88E1CB7FCDC008E67D1 /* Subscription */,
-				03C4A8971CB7FCDC008E67D1 /* Video */,
-			);
-			path = API;
-			sourceTree = "<group>";
-		};
-		03C4A8261CB7FCDC008E67D1 /* Activity */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8271CB7FCDC008E67D1 /* MABYT3_Activity.h */,
-				03C4A8281CB7FCDC008E67D1 /* MABYT3_Activity.m */,
-				03C4A8291CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.h */,
-				03C4A82A1CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m */,
-				03C4A82B1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.h */,
-				03C4A82C1CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m */,
-				03C4A82D1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.h */,
-				03C4A82E1CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m */,
-				03C4A82F1CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.h */,
-				03C4A8301CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m */,
-				03C4A8311CB7FCDC008E67D1 /* MABYT3_ActivitySocial.h */,
-				03C4A8321CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m */,
-			);
-			path = Activity;
-			sourceTree = "<group>";
-		};
-		03C4A8331CB7FCDC008E67D1 /* APICalls */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8341CB7FCDC008E67D1 /* MABYT3_APIRequest.h */,
-				03C4A8351CB7FCDC008E67D1 /* MABYT3_APIRequest.m */,
-			);
-			path = APICalls;
-			sourceTree = "<group>";
-		};
-		03C4A8361CB7FCDC008E67D1 /* Channel */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8371CB7FCDC008E67D1 /* BrandingSettings */,
-				03C4A8441CB7FCDC008E67D1 /* InVideoPromotion */,
-				03C4A84F1CB7FCDC008E67D1 /* MABYT3_Channel.h */,
-				03C4A8501CB7FCDC008E67D1 /* MABYT3_Channel.m */,
-				03C4A8511CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.h */,
-				03C4A8521CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m */,
-				03C4A8531CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.h */,
-				03C4A8541CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m */,
-				03C4A8551CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.h */,
-				03C4A8561CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m */,
-				03C4A8571CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.h */,
-				03C4A8581CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m */,
-				03C4A8591CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.h */,
-				03C4A85A1CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m */,
-				03C4A85B1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.h */,
-				03C4A85C1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m */,
-			);
-			path = Channel;
-			sourceTree = "<group>";
-		};
-		03C4A8371CB7FCDC008E67D1 /* BrandingSettings */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8381CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.h */,
-				03C4A8391CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m */,
-				03C4A83A1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.h */,
-				03C4A83B1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m */,
-				03C4A83C1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.h */,
-				03C4A83D1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m */,
-				03C4A83E1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.h */,
-				03C4A83F1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m */,
-				03C4A8401CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.h */,
-				03C4A8411CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m */,
-				03C4A8421CB7FCDC008E67D1 /* MABYT3_PropertyURL.h */,
-				03C4A8431CB7FCDC008E67D1 /* MABYT3_PropertyURL.m */,
-			);
-			path = BrandingSettings;
-			sourceTree = "<group>";
-		};
-		03C4A8441CB7FCDC008E67D1 /* InVideoPromotion */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8451CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.h */,
-				03C4A8461CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m */,
-				03C4A8471CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.h */,
-				03C4A8481CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m */,
-				03C4A8491CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.h */,
-				03C4A84A1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m */,
-				03C4A84B1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.h */,
-				03C4A84C1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m */,
-				03C4A84D1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.h */,
-				03C4A84E1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m */,
-			);
-			path = InVideoPromotion;
-			sourceTree = "<group>";
-		};
-		03C4A85D1CB7FCDC008E67D1 /* ChannelSection */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A85E1CB7FCDC008E67D1 /* MABYT3_ChannelSection.h */,
-				03C4A85F1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m */,
-				03C4A8601CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.h */,
-				03C4A8611CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m */,
-				03C4A8621CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.h */,
-				03C4A8631CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m */,
-			);
-			path = ChannelSection;
-			sourceTree = "<group>";
-		};
-		03C4A87B1CB7FCDC008E67D1 /* PlayList */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A87C1CB7FCDC008E67D1 /* MABYT3_PlayList.h */,
-				03C4A87D1CB7FCDC008E67D1 /* MABYT3_PlayList.m */,
-				03C4A87E1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.h */,
-				03C4A87F1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m */,
-				03C4A8801CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.h */,
-				03C4A8811CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m */,
-			);
-			path = PlayList;
-			sourceTree = "<group>";
-		};
-		03C4A8821CB7FCDC008E67D1 /* PlayListItem */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8831CB7FCDC008E67D1 /* MABYT3_PlayListItem.h */,
-				03C4A8841CB7FCDC008E67D1 /* MABYT3_PlayListItem.m */,
-				03C4A8851CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.h */,
-				03C4A8861CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m */,
-				03C4A8871CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.h */,
-				03C4A8881CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m */,
-			);
-			path = PlayListItem;
-			sourceTree = "<group>";
-		};
-		03C4A8891CB7FCDC008E67D1 /* SearchItem */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A88A1CB7FCDC008E67D1 /* MABYT3_SearchItem.h */,
-				03C4A88B1CB7FCDC008E67D1 /* MABYT3_SearchItem.m */,
-				03C4A88C1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.h */,
-				03C4A88D1CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m */,
-			);
-			path = SearchItem;
-			sourceTree = "<group>";
-		};
-		03C4A88E1CB7FCDC008E67D1 /* Subscription */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A88F1CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.h */,
-				03C4A8901CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m */,
-				03C4A8911CB7FCDC008E67D1 /* MABYT3_Subscription.h */,
-				03C4A8921CB7FCDC008E67D1 /* MABYT3_Subscription.m */,
-				03C4A8931CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.h */,
-				03C4A8941CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m */,
-				03C4A8951CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.h */,
-				03C4A8961CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m */,
-			);
-			path = Subscription;
-			sourceTree = "<group>";
-		};
-		03C4A8971CB7FCDC008E67D1 /* Video */ = {
-			isa = PBXGroup;
-			children = (
-				03C4A8981CB7FCDC008E67D1 /* MABYT3_AudioStreams.h */,
-				03C4A8991CB7FCDC008E67D1 /* MABYT3_AudioStreams.m */,
-				03C4A89A1CB7FCDC008E67D1 /* MABYT3_Video.h */,
-				03C4A89B1CB7FCDC008E67D1 /* MABYT3_Video.m */,
-				03C4A89C1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.h */,
-				03C4A89D1CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m */,
-				03C4A89E1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.h */,
-				03C4A89F1CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m */,
-				03C4A8A01CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.h */,
-				03C4A8A11CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m */,
-				03C4A8A21CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.h */,
-				03C4A8A31CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m */,
-				03C4A8A41CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.h */,
-				03C4A8A51CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m */,
-				03C4A8A61CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.h */,
-				03C4A8A71CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m */,
-				03C4A8A81CB7FCDC008E67D1 /* MABYT3_VideoSnippet.h */,
-				03C4A8A91CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m */,
-				03C4A8AA1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.h */,
-				03C4A8AB1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m */,
-				03C4A8AC1CB7FCDC008E67D1 /* MABYT3_VideoStatus.h */,
-				03C4A8AD1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m */,
-				03C4A8AE1CB7FCDC008E67D1 /* MABYT3_VideoStreams.h */,
-				03C4A8AF1CB7FCDC008E67D1 /* MABYT3_VideoStreams.m */,
-				03C4A8B01CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.h */,
-				03C4A8B11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m */,
-			);
-			path = Video;
 			sourceTree = "<group>";
 		};
 		03D96E361D04807E007AA338 /* Google */ = {
@@ -1138,6 +777,7 @@
 				03E184241C5F97EA00529D98 /* NKParam.swift */,
 				03A8AA8B1D29075100944EEF /* NKDesign.swift */,
 				03270A1C1E0E6CD00029751F /* Constants.swift */,
+				0365A8C3219F1A7B002B6C07 /* Param.swift */,
 			);
 			name = Constants;
 			sourceTree = "<group>";
@@ -1223,6 +863,7 @@
 		03FDEAB01C4A00060059EC3D /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0365A890219F1033002B6C07 /* Mapper */,
 				0341EEE11C66EC3600527023 /* CoreData */,
 				03E1841D1C5F95AB00529D98 /* NKVideo.swift */,
 				038F144C1CD99F48008EE2D7 /* VideoProtocol.swift */,
@@ -1334,6 +975,7 @@
 			children = (
 				0322D6991C7D279500AA92ED /* Download */,
 				03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */,
+				0365A8BB219F1076002B6C07 /* YouTubeService2.swift */,
 			);
 			name = Service;
 			sourceTree = "<group>";
@@ -1479,6 +1121,8 @@
 			knownRegions = (
 				en,
 				Base,
+				ja,
+				ko,
 			);
 			mainGroup = 03F85B1A1C38F2880026F61E;
 			productRefGroup = 03F85B241C38F2880026F61E /* Products */;
@@ -1617,6 +1261,7 @@
 				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
 				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/XCDYouTubeKit/XCDYouTubeKit.framework",
@@ -1629,6 +1274,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCDYouTubeKit.framework",
@@ -1645,89 +1291,61 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0365A8BE219F121A002B6C07 /* PTError.swift in Sources */,
 				0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */,
-				03C4A8B81CB7FCDC008E67D1 /* MABYT3_APIRequest.m in Sources */,
-				03C4A8C91CB7FCDC008E67D1 /* MABYT3_ChannelStatistics.m in Sources */,
-				03C4A8DE1CB7FCDC008E67D1 /* MABYT3_PlayListItemSnippet.m in Sources */,
-				03C4A8C11CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItem.m in Sources */,
 				0322D6911C75D18900AA92ED /* NKPlayManager.swift in Sources */,
-				03C4A8CD1CB7FCDC008E67D1 /* MABYT3_ChannelSectionSnippet.m in Sources */,
-				03C4A8E31CB7FCDC008E67D1 /* MABYT3_SubscriptionContentDetails.m in Sources */,
-				03C4A8C31CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionPosition.m in Sources */,
-				03C4A8CB1CB7FCDC008E67D1 /* MABYT3_ChannelSection.m in Sources */,
 				033059B41CAFC47800786CC9 /* NKMyMenuMainViewController.swift in Sources */,
 				038F14621CE628A5008EE2D7 /* NKNewGroupHeaderView.swift in Sources */,
-				03C4A8E41CB7FCDC008E67D1 /* MABYT3_SubscriptionSnippet.m in Sources */,
 				038F144D1CD99F48008EE2D7 /* VideoProtocol.swift in Sources */,
-				03C4A8B21CB7FCDC008E67D1 /* MABYT3_Activity.m in Sources */,
+				0365A8AE219F1041002B6C07 /* ChannelList.swift in Sources */,
 				03E184251C5F97EA00529D98 /* NKParam.swift in Sources */,
 				038F14681CE74A81008EE2D7 /* NKAlertView.swift in Sources */,
 				03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */,
-				03C4A8F01CB7FCDC008E67D1 /* MABYT3_VideoStreams.m in Sources */,
 				03FDEAB81C4A01CC0059EC3D /* NKSearchViewController.swift in Sources */,
-				03C4A8B41CB7FCDC008E67D1 /* MABYT3_ActivityPlaylistItem.m in Sources */,
 				03FDEAC21C4A0DC80059EC3D /* NKMoviePlayerViewController.swift in Sources */,
 				038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */,
-				03C4A8D61CB7FCDC008E67D1 /* MABYT3_ResourceId.m in Sources */,
+				0365A8AC219F1041002B6C07 /* ChannelItem.swift in Sources */,
 				03C4A8F31CB97158008E67D1 /* NKChannelListViewController.swift in Sources */,
 				03A8AA901D2AAC3100944EEF /* NKDownloadBadgeViewController.swift in Sources */,
-				03C4A8231CB7FBA0008E67D1 /* MAB_GoogleOAuthTouchViewController.m in Sources */,
-				03C4A8DC1CB7FCDC008E67D1 /* MABYT3_PlayListItem.m in Sources */,
 				038F144B1CD91697008EE2D7 /* NKRelatedVideoViewController.swift in Sources */,
-				03C4A8D31CB7FCDC008E67D1 /* MABYT3_Location.m in Sources */,
-				03C4A8B71CB7FCDC008E67D1 /* MABYT3_ActivitySocial.m in Sources */,
-				03C4A8CE1CB7FCDC008E67D1 /* MAB_GDate.m in Sources */,
+				0365A8C2219F1810002B6C07 /* FavoriteVideo.swift in Sources */,
 				036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */,
 				038F14641CE6B163008EE2D7 /* NKInputAccessary.swift in Sources */,
-				03C4A8D21CB7FCDC008E67D1 /* MABYT3_Language.m in Sources */,
+				0365A8B3219F1041002B6C07 /* AuthResults.swift in Sources */,
 				03345E211D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift in Sources */,
-				03C4A8C51CB7FCDC008E67D1 /* MABYT3_ChannelAuditDetails.m in Sources */,
-				03C4A8241CB7FBA0008E67D1 /* MAB_GoogleUserCredentials.m in Sources */,
-				03C4A8CF1CB7FCDC008E67D1 /* MAB_GLink.m in Sources */,
+				0365A8BA219F1041002B6C07 /* Subscription.swift in Sources */,
 				03270A1D1E0E6CD00029751F /* Constants.swift in Sources */,
-				03C4A8E71CB7FCDC008E67D1 /* MABYT3_VideoContentDetails.m in Sources */,
+				0365A8AB219F1041002B6C07 /* VideoRoot.swift in Sources */,
 				038F145A1CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift in Sources */,
-				03C4A8B51CB7FCDC008E67D1 /* MABYT3_ActivityRecommendation.m in Sources */,
+				0365A8B2219F1041002B6C07 /* PageInfo.swift in Sources */,
 				0310BF151CF083EE00B9013F /* NKTube.xcdatamodeld in Sources */,
 				030916751D104D6F00EB57AF /* NKVideoDescriptionView.swift in Sources */,
 				0343799F1CFAA17D00A767E0 /* NKPlayVideoLoadingView.swift in Sources */,
 				0379EBC11C4E434100C8AB13 /* NKMacro.swift in Sources */,
 				038F145C1CE4E0D4008EE2D7 /* NKSelectionMovieCell.swift in Sources */,
 				03DBFEB81CD88B9C0044931E /* NKWatchAfterCell.swift in Sources */,
-				03C4A8D71CB7FCDC008E67D1 /* MABYT3_Thumbnail.m in Sources */,
-				03C4A8D01CB7FCDC008E67D1 /* MABYT3_ContentRating.m in Sources */,
+				0365A8A9219F1041002B6C07 /* RecommandsRoot.swift in Sources */,
 				034329CD1D17BB63007C4C77 /* NKStyle.swift in Sources */,
-				03C4A8BB1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsImage.m in Sources */,
-				03C4A8C21CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionItemIdentifier.m in Sources */,
 				033CCCAD1C82C94D00F7BF93 /* NKCachedVideoListCell.swift in Sources */,
 				038F14501CDC5B41008EE2D7 /* NKDownloadStatusViewController.swift in Sources */,
 				038F14601CE4EC01008EE2D7 /* NKSelectionGroupCell.swift in Sources */,
-				03C4A8C71CB7FCDC008E67D1 /* MABYT3_ChannelContentOwnerDetails.m in Sources */,
 				0341EEE91C67226B00527023 /* NKSuperCoreData.swift in Sources */,
-				03C4A8E01CB7FCDC008E67D1 /* MABYT3_SearchItemSnippet.m in Sources */,
 				03F0C00C1D33F12F003B2F40 /* NKFeedbackViewController.swift in Sources */,
 				03F0C0031D31E396003B2F40 /* NKSettingViewController.swift in Sources */,
 				0341EEE01C66D53700527023 /* NKFileManager.swift in Sources */,
 				03F26B331D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift in Sources */,
 				03A8AA8A1D268B9F00944EEF /* NKNotificationManager.swift in Sources */,
-				03C4A8BA1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsChannel.m in Sources */,
 				0322D68E1C6A05A800AA92ED /* NKAVAudioManager.swift in Sources */,
 				0329C2B11C91C11700904299 /* NKGroupView.swift in Sources */,
 				03DC945C1E0DF49A008ACFA0 /* BottomMenuViewController.swift in Sources */,
+				0365A8B4219F1041002B6C07 /* ContentDetail.swift in Sources */,
 				0322D69C1C7D279500AA92ED /* NKDownloadManager.swift in Sources */,
-				03C4A8C81CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m in Sources */,
 				03DBFEB21CD869B10044931E /* NKChannelCell.swift in Sources */,
-				03C4A8DA1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m in Sources */,
 				0365A76A219EB3E5002B6C07 /* LoginManager.swift in Sources */,
-				03C4A8C61CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m in Sources */,
-				03C4A8D11CB7FCDC008E67D1 /* MABYT3_GuideCategory.m in Sources */,
-				03C4A8B31CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m in Sources */,
-				03C4A8BC1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m in Sources */,
+				0365A8B5219F1041002B6C07 /* Channel.swift in Sources */,
 				03DBFEB41CD87F920044931E /* NKChannelDetailCell.swift in Sources */,
+				0365A8B8219F1041002B6C07 /* Video.swift in Sources */,
 				03D83A2B1D1FF62D006B123E /* NKOrderManager.swift in Sources */,
-				03C4A8B91CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettings.m in Sources */,
-				03C4A8DF1CB7FCDC008E67D1 /* MABYT3_SearchItem.m in Sources */,
-				03C4A8EA1CB7FCDC008E67D1 /* MABYT3_VideoProcessingDetails.m in Sources */,
 				033CCCB01C83253900F7BF93 /* NKGestureManager.swift in Sources */,
 				03FDEAC51C4AEFC90059EC3D /* NKYouTubeService.swift in Sources */,
 				0329C2BA1C943B5200904299 /* NKCustomTextField.swift in Sources */,
@@ -1735,65 +1353,51 @@
 				034329D91D2D19AA007C4C77 /* NKSplitGroupCell.swift in Sources */,
 				033059B71CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift in Sources */,
 				03D9F9781C96FEDF001711A6 /* NKSearchResultCell.swift in Sources */,
-				03C4A8BD1CB7FCDC008E67D1 /* MABYT3_LocalizedPropertyURL.m in Sources */,
 				038F14561CDF8CB7008EE2D7 /* NKDownloadListCell.swift in Sources */,
-				03C4A8DD1CB7FCDC008E67D1 /* MABYT3_PlayListItemContentDetails.m in Sources */,
-				03C4A8BF1CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotion.m in Sources */,
+				0365A8B0219F1041002B6C07 /* AdNative.swift in Sources */,
 				031656811CBA2680005D957C /* NKChannelDetailViewController.swift in Sources */,
-				03C4A8D91CB7FCDC008E67D1 /* MABYT3_PlayList.m in Sources */,
-				03C4A8E81CB7FCDC008E67D1 /* MABYT3_VideoFileDetails.m in Sources */,
 				03A8AA881D25DD6500944EEF /* NKFlurryManager.swift in Sources */,
+				0365A8A6219F1041002B6C07 /* RecommandVideo.swift in Sources */,
 				03F85B271C38F2880026F61E /* AppDelegate.swift in Sources */,
-				03C4A8F11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m in Sources */,
 				030ADEDB1D1ABEF70004FCA1 /* NKSuperVideoControlViewController.swift in Sources */,
+				0365A8B1219F1041002B6C07 /* RelatedVideo.swift in Sources */,
+				0365A8AA219F1041002B6C07 /* APIError.swift in Sources */,
 				036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */,
 				03BF09611C6247B2000B3CCB /* NKExtension.swift in Sources */,
 				0310BF1A1CF09A3C00B9013F /* NKSplashViewController.swift in Sources */,
-				03C4A8D51CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m in Sources */,
 				0341EEE41C66EC8E00527023 /* CachedVideo+CoreDataProperties.swift in Sources */,
-				03C4A8EC1CB7FCDC008E67D1 /* MABYT3_VideoRecordingDetails.m in Sources */,
 				03F0C0051D322CDB003B2F40 /* NKSettingListCell.swift in Sources */,
 				0322D6961C7C7A8C00AA92ED /* NKUtility.swift in Sources */,
 				0329C2B81C91CE3300904299 /* GroupTitle.swift in Sources */,
 				037E95E21D3E639E007B272C /* NKAboutThisAppViewController.swift in Sources */,
 				03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */,
+				0365A8A8219F1041002B6C07 /* LikeRoot.swift in Sources */,
 				0329C2B71C91CE3300904299 /* GroupTitle+CoreDataProperties.swift in Sources */,
 				038F145E1CE4EAD1008EE2D7 /* NKSelectGroupViewController.swift in Sources */,
-				03C4A8EE1CB7FCDC008E67D1 /* MABYT3_VideoStatistics.m in Sources */,
-				03C4A8C01CB7FCDC008E67D1 /* MABYT3_ChannelInvideoPromotionDefaultTiming.m in Sources */,
 				038F14521CDED937008EE2D7 /* NKLabel.swift in Sources */,
-				03C4A8ED1CB7FCDC008E67D1 /* MABYT3_VideoSnippet.m in Sources */,
-				03C4A8B61CB7FCDC008E67D1 /* MABYT3_ActivitySnippet.m in Sources */,
-				03C4A8BE1CB7FCDC008E67D1 /* MABYT3_PropertyURL.m in Sources */,
 				03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */,
-				03C4A8CC1CB7FCDC008E67D1 /* MABYT3_ChannelSectionContentDetails.m in Sources */,
-				03C4A8E91CB7FCDC008E67D1 /* MABYT3_VideoLiveStreamingDetails.m in Sources */,
 				03BF095E1C620708000B3CCB /* NKVideoListCell.swift in Sources */,
 				033DF1051D14EFE600E28984 /* NKStatusButton.swift in Sources */,
+				0365A8B7219F1041002B6C07 /* UserRelatedPlaylists.swift in Sources */,
 				03C4A8F71CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift in Sources */,
-				03C4A8E51CB7FCDC008E67D1 /* MABYT3_AudioStreams.m in Sources */,
+				0365A8AD219F1041002B6C07 /* RelatedVideoRoot.swift in Sources */,
 				0322D68B1C69F57200AA92ED /* NKCoreDataCachedVideo.swift in Sources */,
 				03FDEABC1C4A04ED0059EC3D /* NKCachedMovieListViewController.swift in Sources */,
-				03C4A8E11CB7FCDC008E67D1 /* MABYT3_SubscriberSnippet.m in Sources */,
 				03DBFEB61CD889AD0044931E /* NKFavoriteCell.swift in Sources */,
-				03C4A8C41CB7FCDC008E67D1 /* MABYT3_Channel.m in Sources */,
-				03C4A8D81CB7FCDC008E67D1 /* MABYT3_VideoCategory.m in Sources */,
-				03C4A8E61CB7FCDC008E67D1 /* MABYT3_Video.m in Sources */,
-				03C4A8E21CB7FCDC008E67D1 /* MABYT3_Subscription.m in Sources */,
+				0365A8BC219F1077002B6C07 /* YouTubeService2.swift in Sources */,
+				0365A8C4219F1A7C002B6C07 /* Param.swift in Sources */,
+				0365A8B6219F1041002B6C07 /* Statistics.swift in Sources */,
 				03BF09641C635A47000B3CCB /* NKUserInfo.swift in Sources */,
-				03C4A8DB1CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m in Sources */,
 				03E1841E1C5F95AB00529D98 /* NKVideo.swift in Sources */,
-				03C4A8221CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m in Sources */,
-				03C4A8EF1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m in Sources */,
-				03C4A8CA1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m in Sources */,
-				03C4A8EB1CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m in Sources */,
 				0322D69D1C7D279500AA92ED /* NKDownloadOperation.swift in Sources */,
 				03FDEABF1C4A053B0059EC3D /* NKMainViewController.swift in Sources */,
 				038F14541CDF0D97008EE2D7 /* NKNotification.swift in Sources */,
 				0387DBC01D0B19CD0023D5F3 /* NKSearchAdCell.swift in Sources */,
-				03C4A8D41CB7FCDC008E67D1 /* MABYT3_Region.m in Sources */,
+				0365A8AF219F1041002B6C07 /* AdOptions.swift in Sources */,
+				0365A8C0219F15D9002B6C07 /* VideoStatus.swift in Sources */,
 				03DBFEBA1CD8AE460044931E /* NKYouTubeMenuCell.swift in Sources */,
 				0341EEE51C66EC8E00527023 /* CachedVideo.swift in Sources */,
+				0365A8B9219F1041002B6C07 /* LikesVideo.swift in Sources */,
 				0341EEE71C66ECCE00527023 /* NKCoreDataManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

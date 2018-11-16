@@ -82,3 +82,5 @@ struct NKImage {
     static let defaultProfile: UIImage = UIImage(named: "test_profile")!
     
 }
+
+let apiKey: String = "AIzaSyBTXM066IdBgr8M6h-zfDB4VDbIDGrF0B0"

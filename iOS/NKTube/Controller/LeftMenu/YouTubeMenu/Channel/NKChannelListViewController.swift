@@ -10,7 +10,6 @@ import UIKit
 
 class NKChannelListViewController: UIViewController, MainViewCommonProtocol {
 
-    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     @IBOutlet weak var olTableView: UITableView!
     
     override func viewDidLoad() {
@@ -24,24 +23,40 @@ class NKChannelListViewController: UIViewController, MainViewCommonProtocol {
         navigationItem.titleView = NKStyle.navititleLabel("チャンネル一覧")
     }
     
+    // MARK: - MainViewCommonProtocol
+    
+    func doScrollToTop() {
+        olTableView.setContentOffset(CGPoint.zero, animated: true)
+    }
+    
+    func doNeedToReload() {
+        olTableView.reloadData()
+    }
+
+    /*
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         self.setEmptyBackButton()
     }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
+        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-        if let channelDetailViewController = segue.destination as? NKChannelDetailViewController {
-
-            if let item = sender as? MABYT3_Subscription {
-                channelDetailViewController.channelId = item.snippet.resourceId.channelId
-            }
-        }
+//        if let channelDetailViewController = segue.destination as? NKChannelDetailViewController {
+//
+//            if let item = sender as? MABYT3_Subscription {
+//                channelDetailViewController.channelId = item.snippet.resourceId.channelId
+//            }
+//        }
     }
+    
+    private func fetchSubscriptions() {
+        
+        let param: [String: Any] = ["part": "id,snippet,contentDetails",
+                                    "mine": true,
+                                    "maxResults": 30]
+
+    }
+
 
     // MARK: - MainViewCommonProtocol
     
@@ -80,5 +95,5 @@ class NKChannelListViewController: UIViewController, MainViewCommonProtocol {
         let item: MABYT3_Subscription = userCredentials!.ytSubs[indexPath.row] as! MABYT3_Subscription        
         performSegue(withIdentifier: "showChannelDetail", sender: item)
     }
-
+     */
 }

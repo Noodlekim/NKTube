@@ -6,13 +6,9 @@ use_frameworks!
 target 'NKTube' do
     use_frameworks!
     pod 'Alamofire'
-#    pod 'XCDYouTubeKit'
     pod 'XCDYouTubeKit'
     pod 'SDWebImage'
     pod 'MBProgressHUD'
-#    pod 'google-plus-ios-sdk', '~> 1.7'
-#    pod 'Google'
-#    pod 'Google/SignIn'
     pod 'AppAuth'
     pod 'DZNEmptyDataSet'
     pod 'Firebase'
@@ -21,6 +17,8 @@ target 'NKTube' do
     
     pod 'RNCryptor'
     pod 'Flurry-iOS-SDK/FlurrySDK'
+    pod 'ObjectMapper'
+
 
 end
 

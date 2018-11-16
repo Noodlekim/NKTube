@@ -7,13 +7,14 @@
 //
 
 import Foundation
+import UIKit
 
 class NKNotification {
     
     static var sharedInstance = NKNotification()
 
     func postLocalNotification(_ body: String, userInfo: [AnyHashable: Any]? = nil) {
-        
+            
         if UIApplication.shared.applicationState != .active {
             // Notificationの生成する.
             let notification = UILocalNotification()

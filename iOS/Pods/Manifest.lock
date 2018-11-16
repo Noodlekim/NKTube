@@ -24,6 +24,7 @@ PODS:
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - MBProgressHUD (1.1.0)
+  - ObjectMapper (3.4.1)
   - RNCryptor (5.0.3)
   - SDWebImage (4.4.2):
     - SDWebImage/Core (= 4.4.2)
@@ -39,6 +40,7 @@ DEPENDENCIES:
   - Firebase/Core
   - Flurry-iOS-SDK/FlurrySDK
   - MBProgressHUD
+  - ObjectMapper
   - RNCryptor
   - SDWebImage
   - XCDYouTubeKit
@@ -56,6 +58,7 @@ SPEC REPOS:
     - Google-Mobile-Ads-SDK
     - GoogleToolboxForMac
     - MBProgressHUD
+    - ObjectMapper
     - RNCryptor
     - SDWebImage
     - XCDYouTubeKit
@@ -72,10 +75,11 @@ SPEC CHECKSUMS:
   Google-Mobile-Ads-SDK: 43ac87810e4961f5093024d3525bfe022f956da3
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
   RNCryptor: c93d19029dcf7ff160aca0f24d6c9e7b0d82f664
   SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
   XCDYouTubeKit: c8567fd5cb388a3099fa26eee4b30df2a467847d
 
-PODFILE CHECKSUM: a06fadcbb2081e0a81dcf25c7080f2abd89814a9
+PODFILE CHECKSUM: a2ed4738bcb7c0133d5886baadadf41116a9c22f
 
 COCOAPODS: 1.5.3

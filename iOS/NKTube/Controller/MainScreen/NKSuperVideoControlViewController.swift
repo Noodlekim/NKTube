@@ -192,7 +192,7 @@ class NKSuperVideoControlViewController: UIViewController {
         playingVideo = video
         
         // 비디오 상태에 따른 버튼 상태 처리
-        let videoStatus = VideoStatus.statusFromVideo(video)
+        let videoStatus = VideoQuality.statusFromVideo(video)
         olCacheButton.videoStatus = videoStatus
         
         switch videoStatus {

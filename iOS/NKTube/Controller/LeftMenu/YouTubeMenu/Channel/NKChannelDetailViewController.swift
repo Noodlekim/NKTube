@@ -12,7 +12,7 @@ import DZNEmptyDataSet
 class NKChannelDetailViewController: NKSuperVideoListViewController, MainViewCommonProtocol, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
 
     var channelId: String?
-    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
+//    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     var channelItems: [NKVideo] = []
     
     override func viewDidLoad() {
