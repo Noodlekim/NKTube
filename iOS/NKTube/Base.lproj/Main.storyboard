@@ -869,53 +869,6 @@
             </objects>
             <point key="canvasLocation" x="2070" y="959"/>
         </scene>
-        <!--You Tube Login View Controller-->
-        <scene sceneID="hgp-QB-549">
-            <objects>
-                <viewController id="AD9-D0-a8o" customClass="NKYouTubeLoginViewController" customModule="NKTube" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9Sy-Hf-PbJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="geT-br-j7f"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="9Ng-xP-wll">
-                        <rect key="frame" x="0.0" y="0.0" width="323" height="146"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <webView clipsSubviews="YES" contentMode="scaleAspectFill" misplaced="YES" scalesPageToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HSl-Tu-jb9">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.28958413004875183" green="0.31462949514389038" blue="0.32950475811958313" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <connections>
-                                    <outlet property="delegate" destination="AD9-D0-a8o" id="C2c-cU-Abs"/>
-                                </connections>
-                            </webView>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="geT-br-j7f" firstAttribute="top" secondItem="HSl-Tu-jb9" secondAttribute="bottom" id="2pz-RP-6GX"/>
-                            <constraint firstItem="HSl-Tu-jb9" firstAttribute="top" secondItem="9Sy-Hf-PbJ" secondAttribute="bottom" id="LBo-oG-GON"/>
-                            <constraint firstItem="geT-br-j7f" firstAttribute="top" secondItem="HSl-Tu-jb9" secondAttribute="bottom" id="UYE-4u-0dc"/>
-                            <constraint firstAttribute="trailing" secondItem="HSl-Tu-jb9" secondAttribute="trailing" id="bRA-da-mOF"/>
-                            <constraint firstItem="HSl-Tu-jb9" firstAttribute="top" secondItem="9Sy-Hf-PbJ" secondAttribute="bottom" id="daZ-QQ-3NX"/>
-                            <constraint firstItem="HSl-Tu-jb9" firstAttribute="leading" secondItem="9Ng-xP-wll" secondAttribute="leading" id="dqL-GM-hmC"/>
-                        </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="LBo-oG-GON"/>
-                                <exclude reference="2pz-RP-6GX"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
-                    <navigationItem key="navigationItem" id="nxV-XE-sqJ"/>
-                    <nil key="simulatedTopBarMetrics"/>
-                    <connections>
-                        <outlet property="olWebView" destination="HSl-Tu-jb9" id="7Wm-bV-bbf"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Fke-IC-dj7" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2110" y="510"/>
-        </scene>
         <!--You Tube Menu View Controller-->
         <scene sceneID="dcd-x7-Idh">
             <objects>
@@ -1201,7 +1154,6 @@
                         <outletCollection property="subButtons" destination="Rer-zY-dED" collectionClass="NSMutableArray" id="Jkb-Ef-bVP"/>
                         <outletCollection property="subButtons" destination="f7k-EX-AqW" collectionClass="NSMutableArray" id="TzK-cp-42V"/>
                         <outletCollection property="subButtons" destination="XeC-jH-l5r" collectionClass="NSMutableArray" id="rrp-Nk-b5a"/>
-                        <segue destination="AD9-D0-a8o" kind="show" identifier="showYouTubeLogin" id="W6K-aU-HPq"/>
                         <segue destination="7aI-l0-wNe" kind="show" identifier="showChannelList" id="G3t-BC-Rk5"/>
                         <segue destination="KVo-Sy-dK7" kind="show" identifier="showFavoriteMovies" id="vpq-1i-211"/>
                         <segue destination="hJk-B4-FnL" kind="show" identifier="showWatchAfter" id="4hq-cU-VTK"/>

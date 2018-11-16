@@ -15,7 +15,7 @@ import Fabric
 import Crashlytics
 import Firebase
 import Flurry_iOS_SDK
-//import StoreKit
+import AppAuth
 
 
 @UIApplicationMain
@@ -23,6 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
     var identifier: UIBackgroundTaskIdentifier = UIBackgroundTaskInvalid
+    var currentAuthorizationFlow: OIDAuthorizationFlowSession?
 
     static let window: UIWindow? = {
         return UIApplication.shared.delegate?.window!

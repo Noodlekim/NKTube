@@ -9,9 +9,6 @@
 #ifndef Bridging_Header_h
 #define Bridging_Header_h
 
-#import <GoogleSignIn/GoogleSignIn.h>
-#import <Google/SignIn.h>
-
 #import "MAB_GoogleAccessToken.h"
 #import "MAB_GoogleUserCredentials.h"
 #import "MAB_GoogleOAuthTouchViewController.h"

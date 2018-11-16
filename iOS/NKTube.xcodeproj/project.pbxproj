@@ -29,7 +29,6 @@
 		0329C2BC1C943B6700904299 /* NKCustomTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0329C2BB1C943B6700904299 /* NKCustomTextField.xib */; };
 		033059B41CAFC47800786CC9 /* NKMyMenuMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059B31CAFC47800786CC9 /* NKMyMenuMainViewController.swift */; };
 		033059B71CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */; };
-		033059C01CB0019C00786CC9 /* NKYouTubeLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */; };
 		03345E211D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03345E201D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift */; };
 		033CCCAD1C82C94D00F7BF93 /* NKCachedVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 033CCCAB1C82C94D00F7BF93 /* NKCachedVideoListCell.swift */; };
 		033CCCAE1C82C94D00F7BF93 /* NKCachedVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 033CCCAC1C82C94D00F7BF93 /* NKCachedVideoListCell.xib */; };
@@ -50,6 +49,7 @@
 		034379AA1CFB367700A767E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 034379A91CFB367700A767E0 /* GoogleService-Info.plist */; };
 		0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */; };
 		035F3D661D39B27000B3635D /* NKMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */; };
+		0365A76A219EB3E5002B6C07 /* LoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0365A769219EB3E5002B6C07 /* LoginManager.swift */; };
 		036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */; };
 		036B8E9E1CEACC6700FDE9E2 /* NKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */; };
 		036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */; };
@@ -174,7 +174,6 @@
 		03E184251C5F97EA00529D98 /* NKParam.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03E184241C5F97EA00529D98 /* NKParam.swift */; };
 		03F0C0031D31E396003B2F40 /* NKSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */; };
 		03F0C0051D322CDB003B2F40 /* NKSettingListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0041D322CDB003B2F40 /* NKSettingListCell.swift */; };
-		03F0C00A1D33E8B5003B2F40 /* NKProductManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */; };
 		03F0C00C1D33F12F003B2F40 /* NKFeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */; };
 		03F26B331D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */; };
 		03F85B271C38F2880026F61E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03F85B261C38F2880026F61E /* AppDelegate.swift */; };
@@ -233,7 +232,6 @@
 		0329C2BB1C943B6700904299 /* NKCustomTextField.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKCustomTextField.xib; path = View/Parts/NKCustomTextField.xib; sourceTree = "<group>"; };
 		033059B31CAFC47800786CC9 /* NKMyMenuMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKMyMenuMainViewController.swift; path = Controller/LeftMenu/NKMyMenuMainViewController.swift; sourceTree = "<group>"; };
 		033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeMenuViewController.swift; path = Controller/LeftMenu/YouTubeMenu/NKYouTubeMenuViewController.swift; sourceTree = "<group>"; };
-		033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKYouTubeLoginViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Login/NKYouTubeLoginViewController.swift; sourceTree = "<group>"; };
 		03345E201D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoQulitySelectionViewController.swift; path = Controller/MainView/NKVideoQulitySelectionViewController.swift; sourceTree = "<group>"; };
 		033CCCAB1C82C94D00F7BF93 /* NKCachedVideoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCachedVideoListCell.swift; path = View/Parts/NKCachedVideoListCell.swift; sourceTree = "<group>"; };
 		033CCCAC1C82C94D00F7BF93 /* NKCachedVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKCachedVideoListCell.xib; path = View/Parts/NKCachedVideoListCell.xib; sourceTree = "<group>"; };
@@ -254,6 +252,7 @@
 		034379A61CFAF13D00A767E0 /* NKTube0.1.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.4.xcdatamodel; sourceTree = "<group>"; };
 		034379A91CFB367700A767E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCacheSearchViewController.swift; path = Controller/CacheSearch/NKCacheSearchViewController.swift; sourceTree = "<group>"; };
+		0365A769219EB3E5002B6C07 /* LoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginManager.swift; sourceTree = "<group>"; };
 		036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKLoadingView.swift; path = Utility/NKLoadingView.swift; sourceTree = "<group>"; };
 		036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKLoadingView.xib; path = Utility/NKLoadingView.xib; sourceTree = "<group>"; };
 		036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSplitviewController.swift; path = Controller/MainView/NKSplitviewController.swift; sourceTree = "<group>"; };
@@ -469,7 +468,6 @@
 		03E184241C5F97EA00529D98 /* NKParam.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKParam.swift; path = Constants/NKParam.swift; sourceTree = "<group>"; };
 		03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSettingViewController.swift; path = Controller/LeftMenu/OtherMenu/NKSettingViewController.swift; sourceTree = "<group>"; };
 		03F0C0041D322CDB003B2F40 /* NKSettingListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSettingListCell.swift; path = View/Parts/NKSettingListCell.swift; sourceTree = "<group>"; };
-		03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKProductManager.swift; path = "Service/과금/NKProductManager.swift"; sourceTree = "<group>"; };
 		03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFeedbackViewController.swift; path = Controller/LeftMenu/OtherMenu/NKFeedbackViewController.swift; sourceTree = "<group>"; };
 		03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKRecommnadVideoViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Recommand/NKRecommnadVideoViewController.swift; sourceTree = "<group>"; };
 		03F85B231C38F2880026F61E /* NKTube.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NKTube.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -586,7 +584,6 @@
 		033059BE1CB0016E00786CC9 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				033059BF1CB0019C00786CC9 /* NKYouTubeLoginViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -685,6 +682,7 @@
 				03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */,
 				03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */,
 				03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */,
+				0365A769219EB3E5002B6C07 /* LoginManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -1334,7 +1332,6 @@
 		03FDEAC31C4A24D30059EC3D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C643F6441D0E845B00576AB7 /* 과금 */,
 				0322D6991C7D279500AA92ED /* Download */,
 				03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */,
 			);
@@ -1363,14 +1360,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C643F6441D0E845B00576AB7 /* 과금 */ = {
-			isa = PBXGroup;
-			children = (
-				03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */,
-			);
-			name = "과금";
-			sourceTree = "<group>";
-		};
 		F3823AA459A80CCB09BF9C45 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1397,7 +1386,6 @@
 				03F85B211C38F2880026F61E /* Resources */,
 				03D9F9711C96001F001711A6 /* ShellScript */,
 				FE2744B176BF664D90D29A5B /* [CP] Embed Pods Frameworks */,
-				2F37033F0F07D69A1704B288 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1562,24 +1550,6 @@
 			shellPath = /bin/sh;
 			shellScript = "./Fabric.framework/run 45e8a635b616fce814d5876428367b41c3116759 ee812a236ddc4070668c591124ba1c614a2f40f8f60f958c56bf02fe134b3b92\n";
 		};
-		2F37033F0F07D69A1704B288 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-resources.sh",
-				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		32BD25E634B9A677F5F11BC5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -1642,10 +1612,9 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-NKTube/Pods-NKTube-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
 				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMOAuth2/GTMOAuth2.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/RNCryptor/RNCryptor.framework",
@@ -1655,10 +1624,9 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMOAuth2.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCryptor.framework",
@@ -1750,8 +1718,8 @@
 				03C4A8C81CB7FCDC008E67D1 /* MABYT3_ChannelSnippet.m in Sources */,
 				03DBFEB21CD869B10044931E /* NKChannelCell.swift in Sources */,
 				03C4A8DA1CB7FCDC008E67D1 /* MABYT3_PlayListContentDetails.m in Sources */,
+				0365A76A219EB3E5002B6C07 /* LoginManager.swift in Sources */,
 				03C4A8C61CB7FCDC008E67D1 /* MABYT3_ChannelContentDetails.m in Sources */,
-				03F0C00A1D33E8B5003B2F40 /* NKProductManager.swift in Sources */,
 				03C4A8D11CB7FCDC008E67D1 /* MABYT3_GuideCategory.m in Sources */,
 				03C4A8B31CB7FCDC008E67D1 /* MABYT3_ActivityContentDetails.m in Sources */,
 				03C4A8BC1CB7FCDC008E67D1 /* MABYT3_ChannelBrandingSettingsWatch.m in Sources */,
@@ -1816,7 +1784,6 @@
 				03C4A8DB1CB7FCDC008E67D1 /* MABYT3_PlayListSnippet.m in Sources */,
 				03E1841E1C5F95AB00529D98 /* NKVideo.swift in Sources */,
 				03C4A8221CB7FBA0008E67D1 /* MAB_GoogleAccessToken.m in Sources */,
-				033059C01CB0019C00786CC9 /* NKYouTubeLoginViewController.swift in Sources */,
 				03C4A8EF1CB7FCDC008E67D1 /* MABYT3_VideoStatus.m in Sources */,
 				03C4A8CA1CB7FCDC008E67D1 /* MABYT3_ChannelStatus.m in Sources */,
 				03C4A8EB1CB7FCDC008E67D1 /* MABYT3_VideoProcessingProgress.m in Sources */,
