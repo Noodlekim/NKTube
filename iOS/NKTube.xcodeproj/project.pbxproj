@@ -50,7 +50,6 @@
 		034379AA1CFB367700A767E0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 034379A91CFB367700A767E0 /* GoogleService-Info.plist */; };
 		0344BB931CF8DE9D00FE220E /* NKCacheSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */; };
 		035F3D661D39B27000B3635D /* NKMoviePlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03FDEAC11C4A0DC80059EC3D /* NKMoviePlayerViewController.swift */; };
-		0363EF4A1CF14C3600FFA759 /* NKOtherMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */; };
 		036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */; };
 		036B8E9E1CEACC6700FDE9E2 /* NKLoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */; };
 		036CB1761D03D3BE00E94739 /* NKSplitviewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */; };
@@ -255,7 +254,6 @@
 		034379A61CFAF13D00A767E0 /* NKTube0.1.4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NKTube0.1.4.xcdatamodel; sourceTree = "<group>"; };
 		034379A91CFB367700A767E0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0344BB921CF8DE9D00FE220E /* NKCacheSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKCacheSearchViewController.swift; path = Controller/CacheSearch/NKCacheSearchViewController.swift; sourceTree = "<group>"; };
-		0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKOtherMenuViewController.swift; path = Controller/LeftMenu/OtherMenu/NKOtherMenuViewController.swift; sourceTree = "<group>"; };
 		036B8E9B1CEACC4E00FDE9E2 /* NKLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKLoadingView.swift; path = Utility/NKLoadingView.swift; sourceTree = "<group>"; };
 		036B8E9D1CEACC6700FDE9E2 /* NKLoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKLoadingView.xib; path = Utility/NKLoadingView.xib; sourceTree = "<group>"; };
 		036CB1751D03D3BE00E94739 /* NKSplitviewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSplitviewController.swift; path = Controller/MainView/NKSplitviewController.swift; sourceTree = "<group>"; };
@@ -615,7 +613,6 @@
 		0363EF481CF14C0800FFA759 /* OtherMenu */ = {
 			isa = PBXGroup;
 			children = (
-				0363EF491CF14C3600FFA759 /* NKOtherMenuViewController.swift */,
 				03F0C00B1D33F12F003B2F40 /* NKFeedbackViewController.swift */,
 				03F0C0021D31E396003B2F40 /* NKSettingViewController.swift */,
 				037E95E11D3E639E007B272C /* NKAboutThisAppViewController.swift */,
@@ -1337,7 +1334,7 @@
 		03FDEAC31C4A24D30059EC3D /* Service */ = {
 			isa = PBXGroup;
 			children = (
-				C643F6441D0E845B00576AB7 /* 과금 */,
+				C643F6441D0E845B00576AB7 /* 과금 */,
 				0322D6991C7D279500AA92ED /* Download */,
 				03FDEAC41C4AEFC90059EC3D /* NKYouTubeService.swift */,
 			);
@@ -1366,7 +1363,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		C643F6441D0E845B00576AB7 /* 과금 */ = {
+		C643F6441D0E845B00576AB7 /* 과금 */ = {
 			isa = PBXGroup;
 			children = (
 				03F0C0091D33E8B5003B2F40 /* NKProductManager.swift */,
@@ -1782,7 +1779,6 @@
 				03C4A8F11CB7FCDC008E67D1 /* MABYT3_VideoSuggestions.m in Sources */,
 				030ADEDB1D1ABEF70004FCA1 /* NKSuperVideoControlViewController.swift in Sources */,
 				036B8E9C1CEACC4E00FDE9E2 /* NKLoadingView.swift in Sources */,
-				0363EF4A1CF14C3600FFA759 /* NKOtherMenuViewController.swift in Sources */,
 				03BF09611C6247B2000B3CCB /* NKExtension.swift in Sources */,
 				0310BF1A1CF09A3C00B9013F /* NKSplashViewController.swift in Sources */,
 				03C4A8D51CB7FCDC008E67D1 /* MABYT3_RegionRestriction.m in Sources */,

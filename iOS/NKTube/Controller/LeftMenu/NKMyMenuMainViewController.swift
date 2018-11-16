@@ -22,8 +22,6 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
     @IBOutlet weak var olHeightCacheView: NSLayoutConstraint!
     @IBOutlet weak var olScrollView: UIScrollView!
     @IBOutlet weak var olHeightContentView: NSLayoutConstraint!
-    @IBOutlet weak var olHeightOtherMenuView: NSLayoutConstraint!    
-    @IBOutlet weak var olTopMarginSearchBar: NSLayoutConstraint!
     @IBOutlet weak var olSearchBar: UISearchBar!
     
     var currentHeight: CGFloat = 0.0
@@ -33,7 +31,6 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
     var youtubeMenuViewController: NKYouTubeMenuViewController?
     var cachedMovieListViewController: NKCachedMovieListViewController?
     var downloadStatusViewController: NKDownloadStatusViewController?
-    var otherMenuViewController: NKOtherMenuViewController?
     
     var creatingGroupView: UINavigationController?
     
@@ -74,10 +71,6 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
                 if let vc = childVC as? NKDownloadStatusViewController {
                     vc.delegate = self
                     self.downloadStatusViewController = vc
-                }
-
-                if let vc = childVC as? NKOtherMenuViewController {
-                    self.otherMenuViewController = vc
                 }
             }
         }
@@ -126,8 +119,7 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
     
     fileprivate func updateEntireContireView() {
         
-        let heightSearchView: CGFloat = olTopMarginSearchBar.constant == 0 ? 44 : 0
-        olHeightContentView.constant = heightSearchView + olHeightYoutubeView.constant + olHeightCacheView.constant + olHeightDownloadStatusView.constant + olHeightOtherMenuView.constant
+        olHeightContentView.constant = olHeightYoutubeView.constant + olHeightCacheView.constant + olHeightDownloadStatusView.constant
 
     }
 
@@ -150,7 +142,6 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
                 isShowingSearchBar = true
 
                 UIView.animate(withDuration: aniDuration*2, animations: { () -> Void in
-                    self.olTopMarginSearchBar.constant = 0
                     scrollView.layoutIfNeeded()
                     scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: 0), animated: true)
                     self.updateEntireContireView()
@@ -165,7 +156,6 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
             if scrollView.contentOffset.y < 44 && scrollView.contentOffset.y > 5 {
                 isShowingSearchBar = false
                 UIView.animate(withDuration: aniDuration*2, animations: { () -> Void in
-                    self.olTopMarginSearchBar.constant = -44
                     scrollView.layoutIfNeeded()
                     scrollView.setContentOffset(CGPoint(x: scrollView.contentOffset.x, y: 0), animated: true)
                     self.updateEntireContireView()
@@ -190,8 +180,8 @@ class NKMyMenuMainViewController: UIViewController, UISearchBarDelegate, NKCache
                 
                 var heightCacheView = height
                 let heightScreen = UIScreen.main.bounds.height-20
-                if heightScreen > heightCacheView + self.olHeightYoutubeView.constant + self.olHeightDownloadStatusView.constant + self.olHeightOtherMenuView.constant {
-                    heightCacheView = heightScreen - self.olHeightOtherMenuView.constant - self.olHeightYoutubeView.constant - self.olHeightDownloadStatusView.constant
+                if heightScreen > heightCacheView + self.olHeightYoutubeView.constant + self.olHeightDownloadStatusView.constant {
+                    heightCacheView = heightScreen - self.olHeightYoutubeView.constant - self.olHeightDownloadStatusView.constant
                 }
                 self.olHeightCacheView.constant = heightCacheView+1
 
