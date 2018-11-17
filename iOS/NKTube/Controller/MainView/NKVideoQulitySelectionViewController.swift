@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/07/17.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -88,11 +88,11 @@ class NKVideoQulitySelectionViewController: UIViewController {
         let qulity = settingMenus[indexPath.row]
         switch qulity {
         case "240p":
-            NKUserInfo.sharedInstance.videoQulity = NKVideoQulity.Small240
+            NKUserInfo.shared.videoQulity = NKVideoQulity.Small240
         case "360p":
-            NKUserInfo.sharedInstance.videoQulity = NKVideoQulity.Medium360
+            NKUserInfo.shared.videoQulity = NKVideoQulity.Medium360
         case "720HD":
-            NKUserInfo.sharedInstance.videoQulity = NKVideoQulity.HD720
+            NKUserInfo.shared.videoQulity = NKVideoQulity.HD720
         default:
             break
         }

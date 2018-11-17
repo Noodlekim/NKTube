@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/02/21.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -45,7 +45,7 @@ class NKDownloadManager: NKDownloadOperationDelegate {
     
     func addQue(_ video: NKVideo) {
                 
-        video.videoQulity = NKUserInfo.sharedInstance.qulityNameForVideoQulity()
+        video.videoQulity = NKUserInfo.shared.qulityNameForVideoQulity()
 
         let downloadQue = NKDownloadOperation(video: video)
 

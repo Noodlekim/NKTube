@@ -108,6 +108,7 @@
 		03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8B1D29075100944EEF /* NKDesign.swift */; };
 		03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */; };
 		03A8AA901D2AAC3100944EEF /* NKDownloadBadgeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8F1D2AAC3100944EEF /* NKDownloadBadgeViewController.swift */; };
+		03B52E76219FD92A0036D2C6 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03B52E75219FD92A0036D2C6 /* LikesViewController.swift */; };
 		03B75C52218D125C00398E1B /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03B75C51218D125C00398E1B /* AudioToolbox.framework */; };
 		03BF095E1C620708000B3CCB /* NKVideoListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF095C1C620708000B3CCB /* NKVideoListCell.swift */; };
 		03BF095F1C620708000B3CCB /* NKVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 03BF095D1C620708000B3CCB /* NKVideoListCell.xib */; };
@@ -115,7 +116,6 @@
 		03BF09641C635A47000B3CCB /* NKUserInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03BF09631C635A46000B3CCB /* NKUserInfo.swift */; };
 		03C4A8171CB156DB008E67D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 03C4A8151CB156DB008E67D1 /* Main.storyboard */; };
 		03C4A8F31CB97158008E67D1 /* NKChannelListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */; };
-		03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */; };
 		03C4A8F71CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */; };
 		03D83A291D1E085B006B123E /* FontAwesome.otf in Resources */ = {isa = PBXBuildFile; fileRef = 03D83A281D1E085B006B123E /* FontAwesome.otf */; };
 		03D83A2B1D1FF62D006B123E /* NKOrderManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */; };
@@ -271,6 +271,7 @@
 		03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoStatusManager.swift; path = Utility/NKVideoStatusManager.swift; sourceTree = "<group>"; };
 		03A8AA8F1D2AAC3100944EEF /* NKDownloadBadgeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDownloadBadgeViewController.swift; path = Controller/MainScreen/NKDownloadBadgeViewController.swift; sourceTree = "<group>"; };
 		03A958AA1D0ED5AE00FE2B12 /* NKTube.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = NKTube.entitlements; sourceTree = "<group>"; };
+		03B52E75219FD92A0036D2C6 /* LikesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		03B75C51218D125C00398E1B /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		03BF095C1C620708000B3CCB /* NKVideoListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoListCell.swift; path = View/Parts/NKVideoListCell.swift; sourceTree = "<group>"; };
 		03BF095D1C620708000B3CCB /* NKVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKVideoListCell.xib; path = View/Parts/NKVideoListCell.xib; sourceTree = "<group>"; };
@@ -278,7 +279,6 @@
 		03BF09631C635A46000B3CCB /* NKUserInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKUserInfo.swift; path = Utility/UserInfo/NKUserInfo.swift; sourceTree = "<group>"; };
 		03C4A8161CB156DB008E67D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKChannelListViewController.swift; path = Controller/LeftMenu/YouTubeMenu/Channel/NKChannelListViewController.swift; sourceTree = "<group>"; };
-		03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKWatchAfterViewController.swift; path = Controller/LeftMenu/YouTubeMenu/WatchAfter/NKWatchAfterViewController.swift; sourceTree = "<group>"; };
 		03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFavoriteMoviesViewController.swift; path = Controller/LeftMenu/FavoriteMovies/NKFavoriteMoviesViewController.swift; sourceTree = "<group>"; };
 		03D83A281D1E085B006B123E /* FontAwesome.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.otf; sourceTree = "<group>"; };
 		03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKOrderManager.swift; path = Utility/NKOrderManager.swift; sourceTree = "<group>"; };
@@ -413,9 +413,9 @@
 				033059B61CAFCD8700786CC9 /* NKYouTubeMenuViewController.swift */,
 				03C4A8F21CB97158008E67D1 /* NKChannelListViewController.swift */,
 				031656801CBA2680005D957C /* NKChannelDetailViewController.swift */,
-				03C4A8F41CB9717A008E67D1 /* NKWatchAfterViewController.swift */,
 				03C4A8F61CB971AE008E67D1 /* NKFavoriteMoviesViewController.swift */,
 				03F26B321D0DA6A600DEAF54 /* NKRecommnadVideoViewController.swift */,
+				03B52E75219FD92A0036D2C6 /* LikesViewController.swift */,
 				033059BE1CB0016E00786CC9 /* Login */,
 			);
 			name = YouTubeMenu;
@@ -1300,7 +1300,6 @@
 				0365A8AE219F1041002B6C07 /* ChannelList.swift in Sources */,
 				03E184251C5F97EA00529D98 /* NKParam.swift in Sources */,
 				038F14681CE74A81008EE2D7 /* NKAlertView.swift in Sources */,
-				03C4A8F51CB9717A008E67D1 /* NKWatchAfterViewController.swift in Sources */,
 				03FDEAB81C4A01CC0059EC3D /* NKSearchViewController.swift in Sources */,
 				03FDEAC21C4A0DC80059EC3D /* NKMoviePlayerViewController.swift in Sources */,
 				038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */,
@@ -1315,6 +1314,7 @@
 				03345E211D3C80F5009DEA0C /* NKVideoQulitySelectionViewController.swift in Sources */,
 				0365A8BA219F1041002B6C07 /* Subscription.swift in Sources */,
 				03270A1D1E0E6CD00029751F /* Constants.swift in Sources */,
+				03B52E76219FD92A0036D2C6 /* LikesViewController.swift in Sources */,
 				0365A8AB219F1041002B6C07 /* VideoRoot.swift in Sources */,
 				038F145A1CE4CA57008EE2D7 /* NKCreatingGroupViewController.swift in Sources */,
 				0365A8B2219F1041002B6C07 /* PageInfo.swift in Sources */,

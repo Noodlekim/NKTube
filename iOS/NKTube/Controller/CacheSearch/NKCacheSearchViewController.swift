@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/05/28.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit

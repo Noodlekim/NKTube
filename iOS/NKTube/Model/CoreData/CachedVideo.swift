@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/03/07.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import Foundation
@@ -82,7 +82,7 @@ class CachedVideo: NSManagedObject, VideoProtocol, NKFlurryManagerProtocol {
             if let quality = video.videoQulity {
                 videoModel.quality = quality
             } else {
-                videoModel.quality = NKUserInfo.sharedInstance.videoQulity.stringValue
+                videoModel.quality = NKUserInfo.shared.videoQulity.stringValue
             }
             videoModel.title = video.title!
             
@@ -130,21 +130,21 @@ class CachedVideo: NSManagedObject, VideoProtocol, NKFlurryManagerProtocol {
     
     func flurryDictionary() -> [String: String] {
         // isCached? title, qulity, playTime, videoId
-        var param: [String: String] = [:]
-        param["isCached"] = "YES"
+        var parameters: [String: String] = [:]
+        parameters["isCached"] = "YES"
         
         if let videoId = self.videoId {
-            param["videoId"] = videoId
+            parameters["videoId"] = videoId
         }
         if let title = self.title {
-            param["title"] = title
+            parameters["title"] = title
         }
         if let qulity = self.quality {
-            param["qulity"] = qulity
+            parameters["qulity"] = qulity
         }        
         if let playTime = self.duration {
-            param["playTime"] = playTime
+            parameters["playTime"] = playTime
         }
-        return param
+        return parameters
     }
 }

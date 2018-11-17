@@ -2,8 +2,8 @@
 //  NKYouTubeService.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/01/17.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/01/17.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -473,9 +473,9 @@ class NKYouTubeService: NSObject {
             
             for item in items {
                 
-                let video = NKVideo()
+                let video = NKVideo.init()
                 
-                if let item = item as? Dictionary<String, AnyObject> {
+                if let item = item as? Dictionary<String, Any> {
                     
                     // common
                     if let id = item[NKKey.Id] as? String {
@@ -601,7 +601,7 @@ class NKYouTubeService: NSObject {
             complete(decryptFileURL)
         } else {
             // 스트림 영상일 경우
-            self.getStreamURLWithVideoId(videoId, quality: NKUserInfo.sharedInstance.videoQulity, complete: { (streamURL) -> Void in
+            self.getStreamURLWithVideoId(videoId, quality: NKUserInfo.shared.videoQulity, complete: { (streamURL) -> Void in
                 KLog("stream video url : \(streamURL)")
                 complete(streamURL)
             })
@@ -741,33 +741,3 @@ class NKYouTubeService: NSObject {
         }
     }    
 }
-
-//extension NKYouTubeService {
-//
-//
-//    func getSubscriptions() {
-//     
-//        let parameters: [String: Any] = ["part": "id,snippet,contentDetails",
-//                                    "mine": true,
-//                                    "maxResults": 30]
-//
-//        var url = YouTubeURL.baseURL + "/subscriptions"
-//        
-//        if !parameters.isEmpty {
-//            url += "?"
-//            url += parameters.map({ (k: String, v: Any) -> String in "\(k)=\(v)" }).joined(separator: "&")
-//            url += "&key=" + apiKey
-//        }
-//
-//        var headers: HTTPHeaders?
-//        if let accessToken = NKUserInfo.sharedInstance.accessToken as? String {
-//            headers = ["Authorization": "Bearer \(accessToken)"]
-//        }
-//
-//        Alamofire.request(encodingUrl, headers: headers).responseJSON { (response: DataResponse<Any>) in
-//            KLog("JSON \(String(describing: response.result.value))")
-//
-//            
-//        }
-//    }
-//}

@@ -2,8 +2,8 @@
 //  NKMoviePlayerViewController.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/01/16.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/01/16.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -187,7 +187,7 @@ class NKMoviePlayerViewController: UIViewController, NKVideoControlViewDelegate,
             }
         }
         
-        switch NKUserInfo.sharedInstance.playMode {
+        switch NKUserInfo.shared.playMode {
         case NKPlayMode.None:
             KLog("nothing" as AnyObject?)
             skinView?.resetSeekBar()
@@ -635,7 +635,7 @@ class NKMoviePlayerViewController: UIViewController, NKVideoControlViewDelegate,
             player.pause()
         }
 
-        switch NKUserInfo.sharedInstance.playMode {
+        switch NKUserInfo.shared.playMode {
         case NKPlayMode.None, NKPlayMode.AllRepeat:
             playNextVideo()
         case NKPlayMode.Random:
@@ -657,7 +657,7 @@ class NKMoviePlayerViewController: UIViewController, NKVideoControlViewDelegate,
             player.pause()
         }
 
-        switch NKUserInfo.sharedInstance.playMode {
+        switch NKUserInfo.shared.playMode {
         case NKPlayMode.None, NKPlayMode.AllRepeat:
             playPreviousVideo()
         case NKPlayMode.Random:

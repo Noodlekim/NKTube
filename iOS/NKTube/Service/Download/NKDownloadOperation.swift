@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/02/21.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -42,7 +42,7 @@ class NKDownloadOperation: Operation {
             if let delegate = self.delegate {
                 
                 delegate.currentOperation(self)
-                service.downloadYouTubeWithViedo(video, quality: NKUserInfo.sharedInstance.videoQulity, downloadingStatus: { (isDownload, totalData, currentData, error) in
+                service.downloadYouTubeWithViedo(video, quality: NKUserInfo.shared.videoQulity, downloadingStatus: { (isDownload, totalData, currentData, error) in
                     if self.isCancelled {
                         return
                     }

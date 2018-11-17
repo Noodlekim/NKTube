@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/06/22.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -73,7 +73,7 @@ class NKSuperVideoControlViewController: UIViewController {
         // 선택된 화질
         self.setVideoQulity()
         
-        let mode = NKUserInfo.sharedInstance.playMode
+        let mode = NKUserInfo.shared.playMode
         olPlayModeButton.setImage(NKPlayMode.playModeIcon(mode), for: UIControlState())
 
         olPlayBar.bringSubview(toFront: olCurrentBar)
@@ -184,7 +184,7 @@ class NKSuperVideoControlViewController: UIViewController {
     
     
     func setVideoQulity() {
-        self.olSettingButton.setTitle(NKUserInfo.sharedInstance.qulityNameForVideoQulity(), for: UIControlState())
+        self.olSettingButton.setTitle(NKUserInfo.shared.qulityNameForVideoQulity(), for: UIControlState())
     }
     
     func updateVideoStatus(_ video: VideoProtocol) {
@@ -335,12 +335,12 @@ class NKSuperVideoControlViewController: UIViewController {
     
     @IBAction func acPlayMode(_ sender: UIButton) {
         beginTimerForHidingControlPanel()
-        let currentIndex = NKUserInfo.sharedInstance.currentModeIndex() + 1
+        let currentIndex = NKUserInfo.shared.currentModeIndex() + 1
         let nextModeIndex = currentIndex%NKPlayMode.allMode.count
         if nextModeIndex < NKPlayMode.allMode.count {
-            NKUserInfo.sharedInstance.playMode = NKPlayMode.allMode[nextModeIndex]
+            NKUserInfo.shared.playMode = NKPlayMode.allMode[nextModeIndex]
             
-            let currentPlayMode = NKUserInfo.sharedInstance.playMode
+            let currentPlayMode = NKUserInfo.shared.playMode
             self.olPlayModeButton.setImage(NKPlayMode.playModeIcon(currentPlayMode), for: UIControlState())
         }
     }

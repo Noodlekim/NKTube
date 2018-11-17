@@ -2,15 +2,19 @@
 //  NKChannelListViewController.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/04/10.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/04/10.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
 
-class NKChannelListViewController: UIViewController, MainViewCommonProtocol {
+class NKChannelListViewController: UIViewController {
 
     @IBOutlet weak var olTableView: UITableView!
+    
+    var channels: [Channel] = []
+    
+    // MARK: - View Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,79 +25,87 @@ class NKChannelListViewController: UIViewController, MainViewCommonProtocol {
         // 네비게이션 커스터마이징
         navigationItem.leftBarButtonItem = NKStyle.backButtonItem(self.navigationController!)
         navigationItem.titleView = NKStyle.navititleLabel("チャンネル一覧")
+        
+        fetch()
     }
     
-    // MARK: - MainViewCommonProtocol
-    
-    func doScrollToTop() {
-        olTableView.setContentOffset(CGPoint.zero, animated: true)
-    }
-    
-    func doNeedToReload() {
-        olTableView.reloadData()
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
+        if let channelDetailViewController = segue.destination as? NKChannelDetailViewController {
+            
+            if let channel = sender as? Channel {
+                channelDetailViewController.channelId = channel.channelId
+            }
+        }
     }
 
-    /*
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        self.setEmptyBackButton()
-    }
-        
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?){
-//        if let channelDetailViewController = segue.destination as? NKChannelDetailViewController {
-//
-//            if let item = sender as? MABYT3_Subscription {
-//                channelDetailViewController.channelId = item.snippet.resourceId.channelId
-//            }
-//        }
-    }
-    
-    private func fetchSubscriptions() {
+    private func fetch() {
         
         let param: [String: Any] = ["part": "id,snippet,contentDetails",
                                     "mine": true,
                                     "maxResults": 30]
-
+        
+        YouTubeService2.shared.getSubscriptions(param: param) { (subscription, error) in
+            
+            if let error = error {
+                switch error {
+                case .successRefreshToken:
+                    self.fetch()
+                default: break
+                }
+                return
+            }
+            
+            guard let subscription = subscription, let channels = subscription.channels else {
+                return
+            }
+            
+            self.channels = channels
+            self.olTableView.reloadData()
+        }
     }
+}
 
+// MARK: - MainViewCommonProtocol
 
-    // MARK: - MainViewCommonProtocol
+extension NKChannelListViewController: MainViewCommonProtocol {
     
     func doScrollToTop() {
         olTableView.setContentOffset(CGPoint.zero, animated: true)
     }
-
+    
     func doNeedToReload() {
         olTableView.reloadData()
     }
+}
 
+// MARK: - UITableViewDelegate, DataSource
+
+extension NKChannelListViewController: UITableViewDelegate, UITableViewDataSource {
     
-    // MARK: - UITableViewDelegate, DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return userCredentials!.ytSubs.count
+        return channels.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let item: MABYT3_Subscription = userCredentials!.ytSubs[indexPath.row] as! MABYT3_Subscription
-        
+        let channel = channels[indexPath.row]
         let cell: NKChannelCell = olTableView.dequeueReusableCell(withIdentifier: "channelCell") as! NKChannelCell
-        cell.setData(item.snippet)
+        cell.setData(channel)
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return NKChannelCell.height()
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let item: MABYT3_Subscription = userCredentials!.ytSubs[indexPath.row] as! MABYT3_Subscription        
-        performSegue(withIdentifier: "showChannelDetail", sender: item)
+        let channel = channels[indexPath.row]
+        performSegue(withIdentifier: "showChannelDetail", sender: channel)
     }
-     */
+
 }

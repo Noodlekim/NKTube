@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by GiBong Kim on 2018/11/16.
-//  Copyright © 2018 GibongKim. All rights reserved.
+//  Copyright © 2018 NoodleKim. All rights reserved.
 //
 
 import Foundation
@@ -38,30 +38,29 @@ class LoginManager: NSObject {
                     let refreshToken = authState?.lastTokenResponse?.refreshToken
                 {
                     // FlurryManager.shared.actionBottomMenuLoginLoginSuccess()
-                    // TODO: UserDefault의 저장 방식을 바꿀예정.
-                    NKUserInfo.sharedInstance.setAccessToken(accessToken)
-                    NKUserInfo.sharedInstance.setRefreshToken(refreshToken)
+                    NKUserInfo.shared.setAccessToken(accessToken)
+                    NKUserInfo.shared.setRefreshToken(refreshToken)
 
                     // ログイン完了Notificationを通知
                     
-//                    let parameters: [String: Any] = [
-//                        "part": "id,snippet,contentDetails,status,topicDetails",
-//                        "mine": "true"
-//                    ]
-//                    YouTubeService.shared.getUserRelatedPlaylists(param: parameters, completion: { (relatedPlaylists, error) in
-//                        if let relatedPlaylists = relatedPlaylists {
-//                            
-//                            if let favorites = relatedPlaylists.favorites {
-//                                UserInfos.favorites.set(value: favorites)
-//                            }
-//                            if let likes = relatedPlaylists.likes {
-//                                UserInfos.likes.set(value: likes)
-//                            }
-//                            if let uploads = relatedPlaylists.uploads {
-//                                UserInfos.uploads.set(value: uploads)
-//                            }
-//                        }
-//                    })
+                    let parameters: [String: Any] = [
+                        "part": "id,snippet,contentDetails,status,topicDetails",
+                        "mine": "true"
+                    ]
+                    YouTubeService2.shared.getUserRelatedPlaylists(param: parameters, completion: { (relatedPlaylists, error) in
+                        if let relatedPlaylists = relatedPlaylists {
+                            
+                            if let favoritesId = relatedPlaylists.favorites {
+                                NKUserInfo.shared.setFavorites(favoritesId)
+                            }
+                            if let likesId = relatedPlaylists.likes {
+                                NKUserInfo.shared.setLikes(likesId)
+                            }
+                            if let uploadsId = relatedPlaylists.uploads {
+                                NKUserInfo.shared.setUploadsId(uploadsId)
+                            }
+                        }
+                    })
                     
                 } else {
                     print("로그인 에러")
@@ -72,7 +71,7 @@ class LoginManager: NSObject {
     }
     
     var isLogin: Bool {
-        guard let _ = NKUserInfo.sharedInstance.accessToken as? String, let refreshToken = NKUserInfo.sharedInstance.refreshToken as? String else {
+        guard NKUserInfo.shared.accessToken != nil , NKUserInfo.shared.refreshToken != nil else {
             return false
         }
         return true

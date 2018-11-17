@@ -3,8 +3,8 @@
 //  NKMainViewController.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/01/16.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/01/16.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -572,8 +572,8 @@ class NKMainViewController: UIViewController, NKAVAudioManagerDelegate, NKMyMenu
     
     func didSuccessYouTubeLogin()  {
 
-        let accessToken = NKUserInfo.sharedInstance.accessToken
-        NKUserInfo.sharedInstance.setAccessToken(accessToken!)
+        let accessToken = NKUserInfo.shared.accessToken
+        NKUserInfo.shared.setAccessToken(accessToken!)
 
         if let moviePlayerVC = self.moviePlayerViewController {
             moviePlayerVC.relatedVideoViewController?.loadRecommandVideos()
@@ -582,7 +582,7 @@ class NKMainViewController: UIViewController, NKAVAudioManagerDelegate, NKMyMenu
     
     func didLogoutFromYouTube() {
         
-        NKUserInfo.sharedInstance.setAccessToken("")
+        NKUserInfo.shared.setAccessToken("")
     }
     
     func didChangeDownloadListView(_ open: Bool, height: CGFloat) {

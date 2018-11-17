@@ -2,8 +2,8 @@
 //  NKVideo.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/02/01.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/02/01.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -15,7 +15,6 @@ class NKVideo: NSObject, VideoProtocol, NKFlurryManagerProtocol {
             return videoId
         }
     }
-
     
     var videoId: String?
     var title: String?
@@ -50,26 +49,68 @@ class NKVideo: NSObject, VideoProtocol, NKFlurryManagerProtocol {
     var definition: String?
     var binaryData: Data?
     
+    override init() {
+        
+    }
+    
+    init(_ video: Video) {
+        
+        self.videoId = video.videoId
+        self.title = video.title
+        self.videoDescription = video.descriptions
+        self.channelId = video.channelId
+        self.channelTitle = video.channelTitle
+        self.viewCount = video.statistics?.viewCount
+        self.likeCount = video.statistics?.likeCount
+        self.dislikeCount = video.statistics?.dislikeCount
+        self.favoriteCount = video.statistics?.favoriteCount
+        self.commentCount = video.statistics?.commentCount
+        self.embedHtml = video.status?.embeddable // ?
+        self.duration = video.duration
+        self.thumbDefault = video.defaultThumb
+        self.thumbMedium = video.mediumThumb
+        self.thumbHigh = video.highThumb
+        self.thumbStandard = video.standardThumb
+//        self.thumbMaxres = ??
+//        var channelThumbDefault: String?
+//        var channelThumbMedium: String?
+//        var channelThumbHigh: String?
+
+        self.videoQulity = video.status?.uploadStatus
+        self.license = video.status?.license
+        /*
+         var embeddable: String?
+         var license : String?
+         var privacyStatus : String?
+         var publicStatsViewable : String?
+         var uploadStatus: String?
+
+         */
+        self.privacyStatus = video.status?.privacyStatus
+//        self.publicStatsViewable = NSNumber.init(value: video.status!.publicStatsViewable == "1")
+        self.definition = video.definition
+//        self.binaryData =
+    }
     
     func flurryDictionary() -> [String: String] {
         // isCached? title, qulity, playTime, videoId
-        var param: [String: String] = [:]
+        var parameters: [String: String] = [:]
         let isCachedVideo = NKFileManager.checkCachedVideo(self.videoId!)
-        param["isCached"] = isCachedVideo ? "YES" : "NO"
+        parameters["isCached"] = isCachedVideo ? "YES" : "NO"
         
         if let videoId = self.videoId {
-            param["videoId"] = videoId
+            parameters["videoId"] = videoId
         }
         if let title = self.title {
-            param["title"] = title
+            parameters["title"] = title
         }
         if let qulity = self.videoQulity {
-            param["qulity"] = qulity
+            parameters["qulity"] = qulity
         }
         
         if let playTime = self.duration {
-            param["playTime"] = playTime
+            parameters["playTime"] = playTime
         }
-        return param
+        return parameters
     }
 }

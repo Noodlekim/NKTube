@@ -2,8 +2,8 @@
 //  NKUserInfo.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/02/04.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/02/04.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -52,11 +52,16 @@ let KeySearchHistory: String = "kSearchHistory"
 let KeyAccessToken: String = "kAccessToken"
 let KeyRefreshToken: String = "kRefreshToken"
 
+let KeyFavorites: String = "kFavorites"
+let KeyLikes: String = "kLikes"
+let KeyUploads: String = "kUploads"
+
+
 class NKUserInfo: NSObject {
 
     let userInfo: UserDefaults = UserDefaults.standard
 
-    static var sharedInstance = NKUserInfo()
+    static let shared = NKUserInfo()
 
     func currentModeIndex() -> Int {
        
@@ -152,7 +157,7 @@ class NKUserInfo: NSObject {
     }
     
     
-    // 유투브 검색 토큰
+    /// AccessToken
     func setAccessToken(_ token: String) {
         userInfo.set(token, forKey: KeyAccessToken)
     }
@@ -167,7 +172,7 @@ class NKUserInfo: NSObject {
         }
     }
     
-    
+    /// RefreshToken
     func setRefreshToken(_ token: String) {
         userInfo.set(token, forKey: KeyRefreshToken)
     }
@@ -181,5 +186,53 @@ class NKUserInfo: NSObject {
             }
         }
     }
+    
+    /// FavoritesId
+    func setFavorites(_ favoritesId: String) {
+        userInfo.set(favoritesId, forKey: KeyFavorites)
+    }
+    
+    var favoritesId: String? {
+        get {
+            if let id = userInfo.object(forKey: KeyFavorites) {
+                return id as? String
+            } else {
+                return nil
+            }
+        }
+    }
+
+    
+    /// Likes
+    func setLikes(_ likesId: String) {
+        userInfo.set(likesId, forKey: KeyLikes)
+    }
+    
+    var likesId: String? {
+        get {
+            if let id = userInfo.object(forKey: KeyLikes) {
+                return id as? String
+            } else {
+                return nil
+            }
+        }
+    }
+
+    
+    /// UploadsId
+    func setUploadsId(_ uploadsId: String) {
+        userInfo.set(uploadsId, forKey: KeyUploads)
+    }
+    
+    var uploadsId: String? {
+        get {
+            if let id = userInfo.object(forKey: KeyUploads) {
+                return id as? String
+            } else {
+                return nil
+            }
+        }
+    }
+
 
 }

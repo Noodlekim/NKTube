@@ -3,7 +3,7 @@
 //  YellowTube
 //
 //  Created by NoodleKim on 2017. 7. 20..
-//  Copyright © 2017년 GibongKim. All rights reserved.
+//  Copyright © 2017년 NoodleKim. All rights reserved.
 //
 
 import Foundation

@@ -89,12 +89,3 @@ class Video: NSObject, Mappable, VideoProtocol {
         return video
     }
 }
-
-//extension Video: FlurryManagerProtocol {
-//    func flurryDictionary() -> [String: String] {
-//        return [
-//            "title": title ?? "",
-//            "videoId": videoId ?? ""
-//        ]
-//    }
-//}

@@ -2,8 +2,8 @@
 //  NKLoadingView.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/05/17.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/05/17.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -130,8 +130,7 @@ class NKLoadingView: UIView {
 
     
     // 애니메이션이 반복으로 움직이는 거랑
-    class func showLoadingView(_ isShow: Bool,
-                               type: LoadingViewType,
+    class func showLoadingView(_ type: LoadingViewType,
                                duration: TimeInterval? = nil,
                                animationImages: [UIImage]? = nil) {
         

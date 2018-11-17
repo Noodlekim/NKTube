@@ -2,16 +2,14 @@
 //  NKFavoriteMoviesViewController.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/04/10.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/04/10.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
-import DZNEmptyDataSet
 
-class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCommonProtocol, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
+class NKFavoriteMoviesViewController: NKSuperVideoListViewController {
     
-//    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     var playListId: String?
     var videos: [NKVideo] = []
     
@@ -26,8 +24,6 @@ class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCo
         
         self.setEmptyBackButton()
         olTableView.registerCell("NKVideoListCell", cellId: "videoCell")
-        olTableView.emptyDataSetDelegate = self
-        olTableView.emptyDataSetSource = self
         
         fetch()
     }
@@ -44,58 +40,58 @@ class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCo
     
     fileprivate func fetch() {
         
-        if let playListId = playListId {
-            NKLoadingView.showLoadingView(true, type: .youtubeMenuGood)
-//            NKYouTubeService.sharedInstance.getWatchLater((userCredentials?.token.accessToken)!, playlistId: playListId, completion: { (videos, nextPageToken, error, canPaging) in
-//                KLog("videos >> \(videos)")
-//                self.videos = videos
-//                self.olTableView.reloadData()
-//                NKLoadingView.hideLoadingView(.youtubeMenuGood)
-//            })
-        }
+        let param: [String: Any] = [
+            "part": "id,snippet,contentDetails,status,topicDetails",
+            "mine": "true"
+        ]
+
+        YouTubeService2.shared.getUserRelatedPlaylists(param: param, completion: { (relatedPlaylists, error) in
+            if let relatedPlaylists = relatedPlaylists {
+                
+                if let favorites = relatedPlaylists.favorites {
+                }
+//                if let likes = relatedPlaylists.likes {
+//                    UserInfos.likes.set(value: likes)
+//                }
+//                if let uploads = relatedPlaylists.uploads {
+//                    UserInfos.uploads.set(value: uploads)
+//                }
+            }
+        })
+
     }
+}
 
+// MARK: - MainViewCommonProtocol
+
+extension NKFavoriteMoviesViewController: MainViewCommonProtocol {
     
-    // MARK: - MainViewCommonProtocol
-
     func doScrollToTop() {
         olTableView.setContentOffset(CGPoint.zero, animated: true)
     }
     
     func doNeedToReload() {
-        olTableView.reloadData()        
+        olTableView.reloadData()
     }
+}
 
+// MARK: - UITableViewDelegate, DataSource
 
-    // MARK: - DZNEmptyDataSetSource
-    func image(forEmptyDataSet scrollView: UIScrollView!) -> UIImage! {
-        
-        return UIImage(named: "empty_default")
-    }
-    
-    func title(forEmptyDataSet scrollView: UIScrollView!) -> NSAttributedString! {
-        return NSAttributedString(string: "今日も頑張りましょう！")        
-    }
-    
-    // MARK: -
-    func emptyDataSetShouldDisplay(_ scrollView: UIScrollView!) -> Bool {
-        return true
-    }
+extension NKFavoriteMoviesViewController: UITableViewDelegate, UITableViewDataSource {
 
-    
-    // MARK: - UITableViewDelegate, DataSource
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return videos.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAtIndexPath indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let video = videos[indexPath.row]
         let cell: NKVideoListCell = self.olTableView.dequeueReusableCell(withIdentifier: "videoCell", for: indexPath) as! NKVideoListCell
         video.indexPath = indexPath
+        
         cell.setVideoCellData(video, location: .youtubeGood)
-
+        
         // 페이징
         if indexPath.row > videos.count-3 && canPaging {
             if let nextPageToken = nextPageToken {
@@ -105,16 +101,16 @@ class NKFavoriteMoviesViewController: NKSuperVideoListViewController, MainViewCo
                 }
             }
         }
-
+        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAtIndexPath indexPath: IndexPath) -> CGFloat {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         
         return NKFavoriteCell.height()
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
         let video = videos[indexPath.row]

@@ -2,8 +2,8 @@
 //  NKStatusButton.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/06/18.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/06/18.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit

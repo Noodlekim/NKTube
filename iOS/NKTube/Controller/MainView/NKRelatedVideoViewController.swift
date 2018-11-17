@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/05/04.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class NKRelatedVideoViewController: NKSuperVideoListViewController, NKVideoDescr
     var relatedVideo: VideoProtocol?
     var headerView: NKVideoDescriptionView?
     let token = {
-        NKUserInfo.sharedInstance.accessToken // TODO: 이거 토큰 갱신 같이 되는지 확인해야됨.
+        NKUserInfo.shared.accessToken // TODO: 이거 토큰 갱신 같이 되는지 확인해야됨.
     }()
     
     
@@ -49,9 +49,9 @@ class NKRelatedVideoViewController: NKSuperVideoListViewController, NKVideoDescr
 
     func loadRecommandVideos() {
         
-        if let token = NKUserInfo.sharedInstance.accessToken {
+        if let token = NKUserInfo.shared.accessToken {
 
-            NKLoadingView.showLoadingView(true, type: .playVideoViewUnder)
+            NKLoadingView.showLoadingView(.playVideoViewUnder)
             NKYouTubeService.sharedInstance.getRecommandVideos(token, nextPageToken: nextPageToken, completion: { (videos, nextPageToken, error, canPaging) in
 
                 if nextPageToken == nil {
@@ -72,7 +72,7 @@ class NKRelatedVideoViewController: NKSuperVideoListViewController, NKVideoDescr
     
     func loadPopularVideos() {
         
-        NKLoadingView.showLoadingView(true, type: .playVideoViewUnder)
+        NKLoadingView.showLoadingView(.playVideoViewUnder)
         NKYouTubeService.sharedInstance.getPopularVideos(nextPageToken) { (videos, nextPageToken, error, canPaging) in
 
             if nextPageToken == nil {
@@ -114,7 +114,7 @@ class NKRelatedVideoViewController: NKSuperVideoListViewController, NKVideoDescr
         }
         self.relatedVideoId = videoId
 
-        NKLoadingView.showLoadingView(true, type: .playVideoViewUnder)
+        NKLoadingView.showLoadingView(.playVideoViewUnder)
         NKYouTubeService.sharedInstance.getRelatedVideoIds(videoId, nextPage: nextPageToken) { (videos, pageToken, error, canPaging) in
             
             if nextPageToken == nil || nextPageToken == "" {

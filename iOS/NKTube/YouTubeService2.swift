@@ -101,7 +101,7 @@ class YouTubeService2: NSObject {
         }
         
         var headers: HTTPHeaders?
-        if isNeedsToken, let accessToken = NKUserInfo.sharedInstance.accessToken as? String {
+        if isNeedsToken, let accessToken = NKUserInfo.shared.accessToken {
             headers = ["Authorization": "Bearer \(accessToken)"]
         }
         Alamofire.request(encodingUrl, headers: headers).responseJSON { (response: DataResponse<Any>) in
@@ -120,10 +120,10 @@ class YouTubeService2: NSObject {
                             return
                         } else {
                             // 리프레쉬 토큰 갱신 처리
-                            if let refreshToken = NKUserInfo.sharedInstance.refreshToken as? String {
+                            if let refreshToken = NKUserInfo.shared.refreshToken {
                                 self.updateAPIToken(refreshToken: refreshToken, completion: { auth, error in
                                     if let newAccessToken = auth?.access_token {
-                                        NKUserInfo.sharedInstance.setAccessToken(newAccessToken)
+                                        NKUserInfo.shared.setAccessToken(newAccessToken)
                                         completion(nil, PTError.successRefreshToken)
                                     } else {
                                         completion(nil, PTError.failRefreshToken)
@@ -160,7 +160,7 @@ class YouTubeService2: NSObject {
             url += "&key=" + apiKey
         }
         var headers: HTTPHeaders?
-        if isNeedsToken, let accessToken = NKUserInfo.sharedInstance.accessToken as? String {
+        if isNeedsToken, let accessToken = NKUserInfo.shared.accessToken {
             headers = ["Authorization": "Bearer \(accessToken)"]
         }
         Alamofire.request(url, headers: headers).responseJSON { (response: DataResponse<Any>) in
@@ -339,7 +339,7 @@ class YouTubeService2: NSObject {
         self.getVideoDetails(param: self.parameter(forDetailVideo: videoId), nextPageToken: nil ,completion: completion)
     }
     
-//    // 유투브의 스트림 URL을 취득
+    // 유투브의 스트림 URL을 취득
 //    func getStreamURLWithVideoId(_ videoId: String, quality: String, complete: @escaping (_ streamURL: URL?) -> Void) {
 //
 //        let youTubeParser = YouTubeParser.init(videoId: videoId)

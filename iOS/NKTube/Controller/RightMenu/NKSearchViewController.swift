@@ -2,8 +2,8 @@
 //  NKSearchViewController.swift
 //  NKTube
 //
-//  Created by GibongKim on 2016/01/16.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2016/01/16.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -46,7 +46,7 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
         NotificationCenter.default.addObserver(self, selector: #selector(NKSearchViewController.didChangeKeyword(_:)), name: NSNotification.Name.UITextFieldTextDidChange, object: nil)
 
         
-        reserveKeywords = NKUserInfo.sharedInstance.searchHistory
+        reserveKeywords = NKUserInfo.shared.searchHistory
     }
 
     override func didReceiveMemoryWarning() {
@@ -61,7 +61,7 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
     fileprivate func fetch() {
         
         if let keyworkd = self.keyworkd {
-            NKLoadingView.showLoadingView(true, type: .rightSearchView)
+            NKLoadingView.showLoadingView(.rightSearchView)
             NKYouTubeService.sharedInstance.getVideoIdWithKeyword(keyworkd, nextPageToken: self.nextPageToken, complete: { (videos, nextPageToken, error, canPaging) in
                 
                 for viedo in videos {
@@ -102,7 +102,7 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
             self.olReserveKeywordTableView.isHidden = true
             self.olReserveKeywordTableView.reloadData()
         } else {
-            reserveKeywords = NKUserInfo.sharedInstance.searchHistory
+            reserveKeywords = NKUserInfo.shared.searchHistory
             self.olReserveKeywordTableView.isHidden = false
             self.olReserveKeywordTableView.reloadData()
         }
@@ -133,7 +133,7 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
     
     fileprivate func setSearchHistory() {
         olReserveKeywordTableView.isHidden = false
-        reserveKeywords = NKUserInfo.sharedInstance.searchHistory
+        reserveKeywords = NKUserInfo.shared.searchHistory
         KLog("reserveKeywords >> \(reserveKeywords)" as AnyObject?)
         olReserveKeywordTableView.reloadData()
     }
@@ -243,7 +243,7 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
                 
                 // 검색이력
                 canPaging = false
-                NKUserInfo.sharedInstance.setSearchHistory(keyword)
+                NKUserInfo.shared.setSearchHistory(keyword)
                 
                 nextPageToken = nil
                 keyworkd = keyword
@@ -347,9 +347,9 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
 
             if keyword.validateSpace() {
                 // 검색이력
-                NKUserInfo.sharedInstance.setSearchHistory(keyword)
+                NKUserInfo.shared.setSearchHistory(keyword)
 
-                NKLoadingView.showLoadingView(true, type: .rightSearchView)
+                NKLoadingView.showLoadingView(.rightSearchView)
 
                 olSearchTextField.resignFirstResponder()
                 

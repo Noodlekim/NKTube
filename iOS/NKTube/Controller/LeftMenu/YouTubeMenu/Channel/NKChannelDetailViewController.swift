@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/04/10.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -12,7 +12,6 @@ import DZNEmptyDataSet
 class NKChannelDetailViewController: NKSuperVideoListViewController, MainViewCommonProtocol, DZNEmptyDataSetDelegate, DZNEmptyDataSetSource {
 
     var channelId: String?
-//    let userCredentials = MAB_GoogleUserCredentials.sharedInstance()
     var channelItems: [NKVideo] = []
     
     override func viewDidLoad() {
@@ -44,7 +43,7 @@ class NKChannelDetailViewController: NKSuperVideoListViewController, MainViewCom
     fileprivate func fetch() {
         
         if let channelId = channelId {
-            NKLoadingView.showLoadingView(true, type: .youtubeMenuChannel)
+            NKLoadingView.showLoadingView(.youtubeMenuChannel)
             // TODO: 이런것도 결국 공통부분인데... 다 묶을 수 있다면 묶고 싶음.
             NKYouTubeService.sharedInstance.getChannelSections(channelId, nextPageToken: nextPageToken, complete: { (videos, nextPageToken, error, canPaging) in
                 //                KLog("videos >>>> \(videos)")

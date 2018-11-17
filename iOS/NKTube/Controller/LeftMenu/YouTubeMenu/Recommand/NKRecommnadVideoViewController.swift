@@ -3,7 +3,7 @@
 //  NKTube
 //
 //  Created by NoodleKim on 2016/06/12.
-//  Copyright © 2016年 GibongKim. All rights reserved.
+//  Copyright © 2016年 NoodleKim. All rights reserved.
 //
 
 import UIKit
@@ -13,7 +13,7 @@ class NKRecommnadVideoViewController: NKSuperVideoListViewController, MainViewCo
     
     var relatedVideos: [NKVideo] = []
     var relatedVideoId: String?
-    let token = NKUserInfo.sharedInstance.accessToken
+    let token = NKUserInfo.shared.accessToken
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -47,8 +47,8 @@ class NKRecommnadVideoViewController: NKSuperVideoListViewController, MainViewCo
 
     
     func loadRecommandVideos() {
-        if let token = NKUserInfo.sharedInstance.accessToken {
-            NKLoadingView.showLoadingView(true, type: .youtubeMenuRecommand)
+        if let token = NKUserInfo.shared.accessToken {
+            NKLoadingView.showLoadingView(.youtubeMenuRecommand)
             NKYouTubeService.sharedInstance.getRecommandVideos(token, nextPageToken: nextPageToken, completion: { (videos, nextPageToken, error, canPaging) in
                 
                 KLog("videos >> \(videos)")
@@ -64,7 +64,7 @@ class NKRecommnadVideoViewController: NKSuperVideoListViewController, MainViewCo
     }
     
     func loadPopularVideos() {
-        NKLoadingView.showLoadingView(true, type: .youtubeMenuPopular)
+        NKLoadingView.showLoadingView(.youtubeMenuPopular)
         NKYouTubeService.sharedInstance.getPopularVideos(nextPageToken) { (videos, nextPageToken, error, canPaging) in
             KLog("videos >> \(videos)")
             for video in videos {
