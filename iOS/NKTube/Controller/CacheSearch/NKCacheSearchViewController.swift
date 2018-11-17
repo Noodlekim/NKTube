@@ -102,7 +102,6 @@ class NKCacheSearchViewController: UIViewController, UISearchBarDelegate, UITabl
         
         tableView.deselectRow(at: indexPath, animated: true)
         let video = searchedVideos[indexPath.row]
-        NKFlurryManager.sharedInstance.actionForPlayVideoOnCacheSearchMenu(video)
         NKAVAudioManager.sharedInstance.startPlay(video)
         if olSearchBar.isFirstResponder {
             olSearchBar.resignFirstResponder()

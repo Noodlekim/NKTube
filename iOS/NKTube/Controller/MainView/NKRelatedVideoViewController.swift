@@ -201,11 +201,6 @@ class NKRelatedVideoViewController: NKSuperVideoListViewController, NKVideoDescr
         let video = self.relatedVideos[indexPath.row]
         NKAVAudioManager.sharedInstance.startPlay(video)
         
-        if token == nil || token == "" {
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnCenterPopular(video)
-        } else {
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnCenterRecommand(video)
-        }
     }
     
     // MARK: - NKVideoDescriptionViewDelegate

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NKVideo: NSObject, VideoProtocol, NKFlurryManagerProtocol {
+class NKVideo: NSObject, VideoProtocol {
     
     var commonId: String? {
         get {
@@ -90,27 +90,5 @@ class NKVideo: NSObject, VideoProtocol, NKFlurryManagerProtocol {
 //        self.publicStatsViewable = NSNumber.init(value: video.status!.publicStatsViewable == "1")
         self.definition = video.definition
 //        self.binaryData =
-    }
-    
-    func flurryDictionary() -> [String: String] {
-        // isCached? title, qulity, playTime, videoId
-        var parameters: [String: String] = [:]
-        let isCachedVideo = NKFileManager.checkCachedVideo(self.videoId!)
-        parameters["isCached"] = isCachedVideo ? "YES" : "NO"
-        
-        if let videoId = self.videoId {
-            parameters["videoId"] = videoId
-        }
-        if let title = self.title {
-            parameters["title"] = title
-        }
-        if let qulity = self.videoQulity {
-            parameters["qulity"] = qulity
-        }
-        
-        if let playTime = self.duration {
-            parameters["playTime"] = playTime
-        }
-        return parameters
-    }
+    }    
 }

@@ -38,10 +38,8 @@ class NKRecommnadVideoViewController: NKSuperVideoListViewController, MainViewCo
     fileprivate func fetch() {
         if token == nil || token == "" {
             loadPopularVideos()
-            NKFlurryManager.sharedInstance.viewForYoutubeMenuPopularVideos()
         } else {
             loadRecommandVideos()
-            NKFlurryManager.sharedInstance.viewForYoutubeMenuRecommandVideos()
         }
     }
 
@@ -123,13 +121,7 @@ class NKRecommnadVideoViewController: NKSuperVideoListViewController, MainViewCo
     func tableView(_ tableView: UITableView, didSelectRowAtIndexPath indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let video = relatedVideos[indexPath.row]
-        
-        if token == nil || token == "" {
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnYoutubeMenuPopular(video)
-        } else {
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnYoutubeMenuRecommand(video)
-        }
+        let video = relatedVideos[indexPath.row]        
         NKAVAudioManager.sharedInstance.startPlay(video)
     }
 

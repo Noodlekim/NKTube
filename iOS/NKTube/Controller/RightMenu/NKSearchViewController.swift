@@ -251,7 +251,6 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
                 self.completedPageTokens = []
                 self.olResultTableView.reloadData()
                 
-                NKFlurryManager.sharedInstance.actionForSearch(keyword)
                 fetch()
             }
         }
@@ -333,7 +332,6 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
 
             let video = searchedVideos[indexPath.row]
             // 재생 로그
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnSearchMenu(video)
             NKAVAudioManager.sharedInstance.startPlay(video)
         } else {
             let keyword = reserveKeywords[indexPath.row]
@@ -354,7 +352,6 @@ class NKSearchViewController: NKSuperVideoListViewController, MainViewCommonProt
                 olSearchTextField.resignFirstResponder()
                 
                 nextPageToken = nil
-                NKFlurryManager.sharedInstance.actionForSearch(keyword)
                 NKYouTubeService.sharedInstance.getVideoIdWithKeyword(keyword, nextPageToken: self.nextPageToken, complete: { (videos, nextPageToken, error, canPaging) in
                     self.canPaging = canPaging
                     

@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class CachedVideo: NSManagedObject, VideoProtocol, NKFlurryManagerProtocol {
+class CachedVideo: NSManagedObject, VideoProtocol {
 
 // Insert code here to add functionality to your managed object subclass
 
@@ -123,28 +123,5 @@ class CachedVideo: NSManagedObject, VideoProtocol, NKFlurryManagerProtocol {
         }
         
         return nil
-    }
-    
-    
-    // MARK: - NKFlurryManagerProtocol
-    
-    func flurryDictionary() -> [String: String] {
-        // isCached? title, qulity, playTime, videoId
-        var parameters: [String: String] = [:]
-        parameters["isCached"] = "YES"
-        
-        if let videoId = self.videoId {
-            parameters["videoId"] = videoId
-        }
-        if let title = self.title {
-            parameters["title"] = title
-        }
-        if let qulity = self.quality {
-            parameters["qulity"] = qulity
-        }        
-        if let playTime = self.duration {
-            parameters["playTime"] = playTime
-        }
-        return parameters
-    }
+    }    
 }

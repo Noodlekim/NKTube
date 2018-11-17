@@ -24,9 +24,7 @@ class NKVideoQulitySelectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.alpha = 0.0
-        
-        NKFlurryManager.sharedInstance.viewForSettingList()
+        self.view.alpha = 0.0        
     }
     
     func load() {

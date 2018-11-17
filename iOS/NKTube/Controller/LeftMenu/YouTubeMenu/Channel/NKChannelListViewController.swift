@@ -20,7 +20,6 @@ class NKChannelListViewController: UIViewController {
         super.viewDidLoad()
 
         self.navigationController?.setNavigationBarHidden(false, animated: false)
-        NKFlurryManager.sharedInstance.viewForYouTubeMenuChannelList()
 
         // 네비게이션 커스터마이징
         navigationItem.leftBarButtonItem = NKStyle.backButtonItem(self.navigationController!)

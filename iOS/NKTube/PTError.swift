@@ -2,7 +2,7 @@
 //  PTError.swift
 //  NKTube
 //
-//  Created by GiBong Kim on 2018/11/16.
+//  Created by NoodleKim on 2018/11/16.
 //  Copyright © 2018 NoodleKim. All rights reserved.
 //
 

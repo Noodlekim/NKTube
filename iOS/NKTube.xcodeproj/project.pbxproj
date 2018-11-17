@@ -103,7 +103,6 @@
 		038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */; };
 		03A8A8311D22CAEE00944EEF /* NKSuperVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */; };
 		03A8AA851D25DAB300944EEF /* Flurry_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */; };
-		03A8AA881D25DD6500944EEF /* NKFlurryManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */; };
 		03A8AA8A1D268B9F00944EEF /* NKNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */; };
 		03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8B1D29075100944EEF /* NKDesign.swift */; };
 		03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */; };
@@ -265,7 +264,6 @@
 		038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAlertManager.swift; path = Controller/AlertManager/NKAlertManager.swift; sourceTree = "<group>"; };
 		03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSuperVideoListViewController.swift; path = Controller/MainScreen/NKSuperVideoListViewController.swift; sourceTree = "<group>"; };
 		03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flurry_iOS_SDK.framework; path = "Pods/../build/Debug-iphoneos/Flurry-iOS-SDK/Flurry_iOS_SDK.framework"; sourceTree = "<group>"; };
-		03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKFlurryManager.swift; path = Utility/NKFlurryManager.swift; sourceTree = "<group>"; };
 		03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKNotificationManager.swift; path = Utility/NKNotificationManager.swift; sourceTree = "<group>"; };
 		03A8AA8B1D29075100944EEF /* NKDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDesign.swift; path = Constants/NKDesign.swift; sourceTree = "<group>"; };
 		03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoStatusManager.swift; path = Utility/NKVideoStatusManager.swift; sourceTree = "<group>"; };
@@ -557,7 +555,6 @@
 				0341EEDF1C66D53700527023 /* NKFileManager.swift */,
 				0322D6901C75D18900AA92ED /* NKPlayManager.swift */,
 				03D83A2A1D1FF62D006B123E /* NKOrderManager.swift */,
-				03A8AA871D25DD6500944EEF /* NKFlurryManager.swift */,
 				03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */,
 				03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */,
 				0365A769219EB3E5002B6C07 /* LoginManager.swift */,
@@ -1258,7 +1255,6 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
 				"${BUILT_PRODUCTS_DIR}/DZNEmptyDataSet/DZNEmptyDataSet.framework",
-				"${BUILT_PRODUCTS_DIR}/Flurry-iOS-SDK/Flurry_iOS_SDK.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
@@ -1271,7 +1267,6 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DZNEmptyDataSet.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Flurry_iOS_SDK.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
@@ -1356,7 +1351,6 @@
 				038F14561CDF8CB7008EE2D7 /* NKDownloadListCell.swift in Sources */,
 				0365A8B0219F1041002B6C07 /* AdNative.swift in Sources */,
 				031656811CBA2680005D957C /* NKChannelDetailViewController.swift in Sources */,
-				03A8AA881D25DD6500944EEF /* NKFlurryManager.swift in Sources */,
 				0365A8A6219F1041002B6C07 /* RecommandVideo.swift in Sources */,
 				03F85B271C38F2880026F61E /* AppDelegate.swift in Sources */,
 				030ADEDB1D1ABEF70004FCA1 /* NKSuperVideoControlViewController.swift in Sources */,

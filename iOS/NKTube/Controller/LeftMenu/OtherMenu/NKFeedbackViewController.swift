@@ -48,7 +48,6 @@ class NKFeedbackViewController: UIViewController, UITextViewDelegate {
         ]
         
         
-        NKFlurryManager.sharedInstance.viewForFeedback()
         NotificationCenter.default.addObserver(self, selector: #selector(NKFeedbackViewController.keyboardWillShow(_:)), name: NSNotification.Name.UIKeyboardWillShow, object: nil)
 
         olFeedBackTextView.becomeFirstResponder()
@@ -61,11 +60,6 @@ class NKFeedbackViewController: UIViewController, UITextViewDelegate {
             // 송신 애니메이션
             self.sendAirplanAnimation { (finish) in
                 self.dismiss()
-                if let content = self.olFeedBackTextView.text {
-                    if content != "" {
-                        NKFlurryManager.sharedInstance.actionForFeedback("", content: content)
-                    }
-                }
             }
         })
         let cancelButton: UIAlertAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)

@@ -47,7 +47,6 @@ class NKAlertView: UIView {
     @IBAction func acTapped(_ sender: AnyObject) {
         
         if let video = self.video {
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnAlertview(video)
             NKAVAudioManager.sharedInstance.startPlay(video)
         }
     }

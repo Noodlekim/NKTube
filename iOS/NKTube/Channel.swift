@@ -1,7 +1,7 @@
 //
 //	Channel.swift
 //
-//	Create by GiBong Kim on 21/5/2017
+//	Create by NoodleKim on 21/5/2017
 //	Copyright © 2017. All rights reserved.
 //	Model file generated using JSONExport: https://github.com/Ahmed-Ali/JSONExport
 

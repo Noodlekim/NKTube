@@ -14,7 +14,6 @@ import AVKit
 import Fabric
 import Crashlytics
 import Firebase
-import Flurry_iOS_SDK
 import AppAuth
 
 
@@ -36,7 +35,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
 
         // Flurry 셋팅
-        Flurry.startSession(FlurryAPIKey);
         Fabric.with([Crashlytics.self])
 
         do {
@@ -75,7 +73,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if let userInfo = notification.userInfo {
             if let videoId = userInfo["videoId"] as? String {
                 if let video = CachedVideo.oldCachedVideo(videoId) {
-                    NKFlurryManager.sharedInstance.actionForPlayVideoWithLocalNotification(video)
                     NKAVAudioManager.sharedInstance.startPlay(video)
                 }
             }
@@ -152,9 +149,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         // 스포트라이트에서 곡이 선택되었을 경우
         if let videoId = userActivity.userInfo?["kCSSearchableItemActivityIdentifier"] as? String {
-            if let video = CachedVideo.oldCachedVideo(videoId) {
-                NKFlurryManager.sharedInstance.actionForPlayVideoWithSpotlight(video)
-            }
             NKAVAudioManager.sharedInstance.startPlayWithVideoId(videoId)
         }
         return true

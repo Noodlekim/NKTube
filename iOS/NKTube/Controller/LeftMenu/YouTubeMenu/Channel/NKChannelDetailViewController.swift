@@ -28,7 +28,6 @@ class NKChannelDetailViewController: NKSuperVideoListViewController, MainViewCom
         olTableView.emptyDataSetSource = self
 
         fetch()
-        NKFlurryManager.sharedInstance.viewForYoutubeMenuChannelDetail()
     }
     
     override func viewWillLayoutSubviews() {
@@ -130,7 +129,6 @@ class NKChannelDetailViewController: NKSuperVideoListViewController, MainViewCom
         tableView.deselectRow(at: indexPath, animated: true)
         
         let video = channelItems[indexPath.row]
-        NKFlurryManager.sharedInstance.actionForPlayVideoOnYoutubeMenuChannel(video)
         NKAVAudioManager.sharedInstance.startPlay(video)
     }
 

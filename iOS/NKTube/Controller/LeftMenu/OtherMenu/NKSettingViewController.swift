@@ -21,8 +21,6 @@ class NKSettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.alpha = 0.0
-        
-        NKFlurryManager.sharedInstance.viewForSettingList()
     }
     
     func load() {

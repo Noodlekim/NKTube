@@ -114,7 +114,6 @@ extension NKFavoriteMoviesViewController: UITableViewDelegate, UITableViewDataSo
         tableView.deselectRow(at: indexPath, animated: true)
         
         let video = videos[indexPath.row]
-        NKFlurryManager.sharedInstance.actionForPlayVideoOnYouTubeMenuGood(video)
         NKAVAudioManager.sharedInstance.startPlay(video)
     }
 

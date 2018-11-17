@@ -376,7 +376,6 @@ class NKCachedMovieListViewController: UIViewController, UITableViewDataSource, 
         let group = self.groupTitleOfSection(indexPath.section)
         if let videos = self.cachedVideoList[group] {
             let video = videos[indexPath.row]
-            NKFlurryManager.sharedInstance.actionForPlayVideoOnMyCacheList(video)
             NKAVAudioManager.sharedInstance.startPlay(video)
         }
     }

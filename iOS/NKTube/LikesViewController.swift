@@ -2,8 +2,8 @@
 //  LikesViewController.swift
 //  NKTube
 //
-//  Created by GiBong Kim on 2018/11/17.
-//  Copyright © 2018 GibongKim. All rights reserved.
+//  Created by NoodleKim on 2018/11/17.
+//  Copyright © 2018 NoodleKim. All rights reserved.
 //
 
 import UIKit
