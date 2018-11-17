@@ -102,7 +102,6 @@
 		038F146A1CE74A91008EE2D7 /* NKAlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 038F14691CE74A91008EE2D7 /* NKAlertView.xib */; };
 		038F146D1CE74E22008EE2D7 /* NKAlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */; };
 		03A8A8311D22CAEE00944EEF /* NKSuperVideoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */; };
-		03A8AA851D25DAB300944EEF /* Flurry_iOS_SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */; };
 		03A8AA8A1D268B9F00944EEF /* NKNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */; };
 		03A8AA8C1D29075100944EEF /* NKDesign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8B1D29075100944EEF /* NKDesign.swift */; };
 		03A8AA8E1D2942FE00944EEF /* NKVideoStatusManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */; };
@@ -263,7 +262,6 @@
 		038F14691CE74A91008EE2D7 /* NKAlertView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NKAlertView.xib; path = View/Parts/NKAlertView.xib; sourceTree = "<group>"; };
 		038F146C1CE74E22008EE2D7 /* NKAlertManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKAlertManager.swift; path = Controller/AlertManager/NKAlertManager.swift; sourceTree = "<group>"; };
 		03A8A8301D22CAEE00944EEF /* NKSuperVideoListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKSuperVideoListViewController.swift; path = Controller/MainScreen/NKSuperVideoListViewController.swift; sourceTree = "<group>"; };
-		03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Flurry_iOS_SDK.framework; path = "Pods/../build/Debug-iphoneos/Flurry-iOS-SDK/Flurry_iOS_SDK.framework"; sourceTree = "<group>"; };
 		03A8AA891D268B9F00944EEF /* NKNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKNotificationManager.swift; path = Utility/NKNotificationManager.swift; sourceTree = "<group>"; };
 		03A8AA8B1D29075100944EEF /* NKDesign.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKDesign.swift; path = Constants/NKDesign.swift; sourceTree = "<group>"; };
 		03A8AA8D1D2942FE00944EEF /* NKVideoStatusManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NKVideoStatusManager.swift; path = Utility/NKVideoStatusManager.swift; sourceTree = "<group>"; };
@@ -348,7 +346,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				03A8AA851D25DAB300944EEF /* Flurry_iOS_SDK.framework in Frameworks */,
 				0343799D1CF9590300A767E0 /* CoreSpotlight.framework in Frameworks */,
 				03D9F9751C960081001711A6 /* Crashlytics.framework in Frameworks */,
 				03D9F9741C960081001711A6 /* Fabric.framework in Frameworks */,
@@ -981,7 +978,6 @@
 			isa = PBXGroup;
 			children = (
 				03B75C51218D125C00398E1B /* AudioToolbox.framework */,
-				03A8AA841D25DAB300944EEF /* Flurry_iOS_SDK.framework */,
 				03D96E361D04807E007AA338 /* Google */,
 				03D96E431D04807E007AA338 /* Google-Mobile-Ads-SDK */,
 				03D96E471D04807E007AA338 /* GoogleAppUtilities */,
